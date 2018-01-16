@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+  <!-- partial:partials/html-head.hbs --><!-- partial -->
+	<body>
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top">
+					<table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+            <!-- Header -->
+            <tr>
+              <td class="w-100 ph4-ns pb4 bb b--light-gray tc">
+                <!-- partial:partials/logo.hbs --><!-- partial -->
+
+                <h1>((i18n.invoice.invoiced))</h1>
+                <!-- partial:partials/messages/order-reference.hbs --><!-- partial -->
+
+                <!-- partial:partials/messages/cant-cancel.hbs --><!-- partial -->
+
+                <!-- Alert: mode than 1 invoice -->
+                {{#compare items.length '!=' shippingData.logisticsInfo.length}}
+                  <div class="bg-light-gray ph3 pv3 mt4 fw7 dib w-70-ns center lh-copy">
+                    <div>((i18n.invoice.manyInvoices))</div>
+                    <div>((i18n.invoice.notifications))</div>
+                  </div>
+                {{/compare}}
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-100 ph4-ns">
+                <div class="mt4">
+                  <!-- Intro message: if not inStore anonymous purchase -->
+                  {{#if clientProfileData.firstName}}
+                    {{#compare clientProfileData.firstName '!=' 'isAnonymous'}}
+                      <p>
+                        <!-- partial:partials/messages/hi-order.hbs --><!-- partial -->
+                        {{#compare items.length '==' 1}}
+                          ((i18n.invoice.handlingProduct))
+                        {{/compare}}
+                        {{#compare items.length '>' 1}}
+                          ((i18n.invoice.handlingProducts))
+                        {{/compare}}
+                      </p>
+                    {{/compare}}
+                  {{/if}}
+
+                  <p>
+                    ((i18n.common.cancelationInstructions))
+                  </p>
+
+                  <!-- partial:partials/messages/order-link.hbs --><!-- partial -->
+                </div>
+              </td>
+            </tr>
+
+            <!-- Order info -->
+						<tr>
+							<td class="w-100 ph4-ns pt3 pb4">
+                {{#group shippingData.logisticsInfo by="addessId"}}
+                  <div class="cb fn">
+                    {{#compare items.length '==' 1}}
+                      <h3 class="ma0">((i18n.invoice.product))</h3>
+                    {{/compare}}
+                    {{#compare items.length '>' 1}}
+                      <h3 class="ma0">((i18n.invoice.products))</h3>
+                    {{/compare}}
+
+                    {{#group items by="selectedSla"}}
+                      {{#each items}}
+                        {{#each slas}}
+                          {{#compare ../selectedSla '==' id}}
+                            <!-- partial:partials/items.hbs --><!-- partial -->
+                          {{/compare}}
+                        {{/each}}
+                      {{/each}}
+                    {{/group}}
+                  </div>
+                {{/group}}
+							</td>
+						</tr>
+
+            <tr>
+              <td class="ph4-ns pv3 bt b--light-gray">
+                <!-- partial:partials/messages/regards.hbs --><!-- partial -->
+              </td>
+            </tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

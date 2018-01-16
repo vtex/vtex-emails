@@ -1,0 +1,54 @@
+<div class="bg-light-gray ph3 pv2 mw5-5 mb3 fw5">
+  <div class="f7 gray">{{id}}</div>
+  <!-- Scheduled shipping -->
+  {{#if deliveryWindow}}
+    ((i18n.shipping.scheduled))
+  {{else}}
+
+    <!-- Available Today: business days -->
+    {{#eq shippingEstimate "0bd"}}
+      {{#eq deliveryChannel "delivery"}}
+        ((i18n.shipping.today))
+      {{else}}
+        ((i18n.shipping.fromToday))
+      {{/eq}}
+    {{else}}
+
+    <!-- Available Today: days -->
+    {{#eq shippingEstimate "0d"}}
+      {{#eq deliveryChannel "delivery"}}
+        ((i18n.shipping.today))
+      {{else}}
+        ((i18n.shipping.fromToday))
+      {{/eq}}
+
+    <!-- Available in another day -->
+    {{else}}
+      <!-- Delivery or Pickup -->
+      {{#eq deliveryChannel "delivery"}}
+        ((i18n.shipping.inUpTo))
+      {{else}}
+        ((i18n.shipping.from))
+      {{/eq}}
+
+      <!-- Single or many days -->
+      {{#isMoreThanOneDay shippingEstimate}}
+        <!-- Running days or Business days -->
+        {{#hasSubStr shippingEstimate 'bd'}}
+          {{replace shippingEstimate 'bd' ''}} ((i18n.shipping.businessDays)).
+        {{else}}
+          {{replace shippingEstimate 'd' ''}} ((i18n.shipping.days))
+        {{/hasSubStr}}
+      {{else}}
+        <!-- Running days or Business days -->
+        {{#hasSubStr shippingEstimate 'bd'}}
+          {{replace shippingEstimate 'bd' ''}} ((i18n.shipping.businessDay)).
+        {{else}}
+          {{replace shippingEstimate 'd' ''}} ((i18n.shipping.day))
+        {{/hasSubStr}}
+      {{/isMoreThanOneDay}}
+
+    {{/eq}}
+    {{/eq}}
+  {{/if}}
+</div>

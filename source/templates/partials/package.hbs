@@ -1,0 +1,20 @@
+<!-- for each item in logisticsInfo -->
+{{#each items}}
+  <!-- for each item sla -->
+  {{#each slas}}
+    <!-- get selected SLA info -->
+    {{#compare ../selectedSla '==' id}}
+      <!-- print SLA info just one time at the top -->
+      {{#compare @../index '==' 0}}
+        <!-- show info for estimate days or date -->
+        {{#unless shippingEstimateDate}}
+          <!-- partial:shipping-estimate-days.hbs --><!-- partial -->
+        {{else}}
+          <!-- partial:shipping-estimate-date.hbs --><!-- partial -->
+        {{/unless}}
+      {{/compare}}
+      <!-- back to items list -->
+      <!-- partial:items.hbs --><!-- partial -->
+    {{/compare}}
+  {{/each}}
+{{/each}}

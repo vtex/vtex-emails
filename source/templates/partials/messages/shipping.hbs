@@ -1,0 +1,26 @@
+{{#compare shippingData.logisticsInfo.0.selectedDeliveryChannel '==' 'delivery'}}
+  {{#compare items.length '==' shippingData.logisticsInfo.length}}
+    <p class="mt4">
+      <!-- partial:hi-order.hbs --><!-- partial -->
+      {{#compare items.length '==' 1}}
+        ((i18n.shipping.shippingProduct))
+      {{/compare}}
+      {{#compare items.length '>' 1}}
+        ((i18n.shipping.shippingProducts))
+      {{/compare}}
+    </p>
+  {{/compare}}
+
+  <!-- Intro message: Just some items shipped -->
+  {{#compare items.length '!=' shippingData.logisticsInfo.length}}
+    <p class="mt4">
+      <!-- partial:hi-order.hbs --><!-- partial -->
+      {{#compare items.length '==' 1}}
+        ((i18n.shipping.shippingOneProduct))
+      {{/compare}}
+      {{#compare items.length '>' 1}}
+        ((i18n.shipping.shippingSomeProducts))
+      {{/compare}}
+    </p>
+  {{/compare}}
+{{/compare}}

@@ -1,0 +1,44 @@
+<table class="" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <thead>
+  </thead>
+  <tbody>
+  <!-- back to order items list -->
+  {{#each ../../../../items}}
+    <!-- show info for this shippingInfo item -->
+    {{#eq id ../../itemId}}
+      <tr>
+        <td class="v-top pv2 w3 pr2"><img alt="" src="{{imageUrl}}" /></td>
+        <td class="v-top pv2">
+          <div class="f5 lh-title mv1-ns">{{name}}</div>
+          <div class="gray">
+            {{quantity}} ((i18n.common.units))
+            {{#if sellingPrice}}
+              ((i18n.common.currency)) {{formatCurrency sellingPrice}}
+            {{else}}
+              ((i18n.common.free))
+            {{/if}}
+          </div>
+        </td>
+      </tr>
+      {{#each bundleItems}}
+        {{#if name}}
+          <tr>
+            <td class="v-top pv2 w3 pr2"><img alt="" src="{{imageUrl}}" /></td>
+            <td class="v-top pv2">
+              <div class="f5 lh-title mv1-ns">{{name}}</div>
+              <div class="gray">
+                {{quantity}} ((i18n.common.units))
+                {{#if price}}
+                  ((i18n.common.currency)) {{formatCurrency price}}
+                {{else}}
+                  ((i18n.common.free))
+                {{/if}}
+              </div>
+            </td>
+          </tr>
+        {{/if}}
+      {{/each}}
+    {{/eq}}
+  {{/each}}
+  </tbody>
+</table>

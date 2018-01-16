@@ -1,0 +1,59 @@
+/**
+ * Buttons (components/_buttons.scss)
+ */
+
+/* ----- General ----- */
+.btn {
+	td {
+		text-align: center;
+		background-color: $button-bg-color;
+		padding-top: 15px;
+		padding-right: 35px;
+		padding-bottom: 15px;
+		padding-left: 35px;
+	}
+
+	a {
+		color: $color-white;
+		text-decoration: none;
+	}
+}
+
+/* ----- Variations ----- */
+.btn--full-width {
+	width: 100%;
+
+	td {
+		text-align: center;
+	}
+}
+
+.btn--rounded {
+	td {
+		border-radius: 50px;
+	}
+}
+
+.btn--green {
+	td {
+		background-color: $color-green;
+	}
+}
+
+.btn--red {
+	td {
+		background-color: $color-red;
+	}
+}
+
+.btn--blue {
+	td {
+		background-color: $color-blue;
+	}
+}
+
+.btn--dark {
+	td {
+		background-color: $color-dark;
+	}
+}

@@ -1,0 +1,98 @@
+/**
+ * Reset (generic/_reset.scss)
+ */
+
+/* ----- General ----- */
+/**
+ * 1. Prevent Webkit and Windows Mobile platforms from changing default font
+ *    sizes, while not breaking desktop design.
+ * 2. Reset margins and paddings.
+ * 3. Default email background color (Optional).
+ * 4. Apply anti-aliasing when fonts are rendered.
+ * 5. The #body-table id helps reset some email client specific formatting while
+ *    setting the canvas for you to work in.
+ * 6. Adding spacing around main table (Optional).
+ */
+html,
+body {
+	width: 100% !important;
+	height: 100% !important;
+	-webkit-text-size-adjust: 100%; /* 1 */
+	-ms-text-size-adjust: 100%; /* 1 */
+	margin: 0 !important; /* 2 */
+	padding: 0 !important; /* 2 */
+	background: $email-bg-color !important; /* 3 */
+	-webkit-font-smoothing: antialiased; /* 4 */
+	-moz-osx-font-smoothing: grayscale; /* 4 */
+}
+
+#body-table {
+	/* 5 */
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+	height: 100% !important;
+	line-height: 100% !important;
+	background: $email-bg-color;
+}
+
+.body-table-spacing {
+	/* 6 */
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	@media (max-width: $breakpoint-mobile) {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+}
+
+/* ----- Tables ----- */
+/**
+ * 1. Remove spacing around Outlook 2007 and 2010 tables.
+ *    More info: http://www.campaignmonitor.com/blog/post/3694/removing-spacing-from-around-tables-in-outlook-2007-and-2010
+ * 2. Outlook 2007 and 2010 padding issue fix. These "newer" versions of Outlook
+ *    add some padding around table cells potentially throwing off your
+ *    perfectly pixeled table. The issue can cause added space and also throw
+ *    off borders completely.
+ *    More info:
+ *    - http://www.ianhoar.com/2008/04/29/outlook-2007-borders-and-1px-padding-on-table-cells
+ *    - http://www.campaignmonitor.com/blog/post/3392/1px-borders-padding-on-table-cells-in-outlook-07
+ * 3. Proper table cell alignment on all email clients.
+ */
+table {
+	/* 1 */
+	border-collapse: collapse !important;
+	border-spacing: 0 !important;
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+
+	td {
+		border-collapse: collapse; /* 2 */
+		text-align: left; /* 3 */
+	}
+}
+
+/* ----- Images ----- */
+/**
+ * 1. This works to help IE properly resize images (if you are resizing them
+ *    using the width and height attributes).
+ * 2. Makes images responsive on smaller screens.
+ * 3. Removes border when linking images.
+ */
+img {
+	vertical-align: top;
+	outline: none;
+	text-decoration: none;
+	-ms-interpolation-mode: bicubic; /* 1 */
+
+	@media (max-width: $breakpoint-mobile) {
+		/* 2 */
+		max-width: 100%;
+		height: auto !important;
+	}
+
+	a & {
+		border: none; /* 3 */
+	}
+}

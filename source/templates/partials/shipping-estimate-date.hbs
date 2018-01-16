@@ -1,0 +1,15 @@
+<div class="bg-light-gray ph3 pv2 mw5-5 mb3 fw5">
+  <!-- Scheduled shipping -->
+  {{#if deliveryWindow}}
+    ((i18n.shipping.scheduled))
+  {{else}}
+    <!-- Delivery or Pickup -->
+    {{#eq deliveryChannel "delivery"}}
+      ((i18n.shipping.upTo))
+    {{else}}
+      ((i18n.shipping.from))
+    {{/eq}}
+
+    {{formatDateTime shippingEstimateDate 'dd/MM/yyyy'}}
+  {{/if}}
+</div>

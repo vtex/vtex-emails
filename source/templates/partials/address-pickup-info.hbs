@@ -1,0 +1,5 @@
+<strong>{{items.0.slas.0.pickupStoreInfo.friendlyName}}</strong>
+{{#with items.0.slas.0.pickupStoreInfo.address}}
+  <br />{{street}}, {{number}}{{#if complement}}, {{complement}}{{/if}}
+  <br />{{neighborhood}}
+{{/with}}

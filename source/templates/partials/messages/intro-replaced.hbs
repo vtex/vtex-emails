@@ -1,0 +1,22 @@
+<tr>
+  <td class="w-100 ph4-ns pt3 pb4">
+    <p class="mt4">
+      <!-- partial:hi-orders.hbs --><!-- partial -->
+      ((i18n.order.introMessageReplaced))
+    </p>
+
+    <!-- partial:order-link.hbs --><!-- partial -->
+
+    <!-- Boleto bancário -->
+    {{#each orders.0.paymentData.transactions}}
+      {{#each payments}}
+        {{#eq paymentSystemName 'Boleto Bancário'}}
+          <p>((i18n.payment.bankInvoiceReminder))</p>
+          <p>
+            <a class="dib ph3 pv2 br2 white bg-green no-underline fw5" href="{{replace url '{Installment}' installments}}">((i18n.payment.bankInvoiceShow))</a>
+          </p>
+        {{/eq}}
+      {{/each}}
+    {{/each}}
+  </td>
+</tr>

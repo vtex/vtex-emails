@@ -1,0 +1,104 @@
+/**
+ * Typography (generic/_typography.scss)
+ */
+
+/* ----- General ----- */
+/**
+ * 1. Base typography settings.
+ * 2. System fonts stack.
+ */
+td {
+	/* 1 */
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+}
+
+body,
+table,
+td {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; /* 2 */
+}
+
+/* ----- Headings ----- */
+/**
+ * 1. Reset margins.
+ * 2. Base headings typography settings.
+ */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	margin: 0; /* 1 */
+}
+
+h1, .h1 {
+	/* 2 */
+	font-size: $font-size-h1;
+	line-height: $line-height-h1;
+}
+
+h2, .h2 {
+	/* 2 */
+	font-size: $font-size-h2;
+	line-height: $line-height-h2;
+  font-weight: 300;
+}
+
+h3, .h3 {
+	/* 2 */
+	font-size: $font-size-h3;
+	line-height: $line-height-h3;
+  text-transform: uppercase;
+  letter-spacing: 1.2pt;
+  font-weight: 300;
+  margin-top: 16px;
+}
+
+h4, .h4 {
+	/* 2 */
+	font-size: $font-size-h4;
+	line-height: $line-height-h4;
+  text-transform: uppercase;
+  letter-spacing: .9pt;
+}
+
+h5, .h5 {
+	/* 2 */
+	font-size: $font-size-h5;
+	line-height: $line-height-h5;
+}
+
+h6, .h6 {
+	/* 2 */
+	font-size: $font-size-h6;
+	line-height: $line-height-h6;
+}
+
+/* ----- Lists ----- */
+/**
+ * 1. Reset margins.
+ * 2. Adding padding on list wrapper when used for Outlook fix.
+ * 3. Removing padding on lists inside list wrapper when used for Outlook fix.
+ */
+ul, ol {
+	margin: 0; /* 1 */
+}
+
+.have-list {
+	padding-left: 25px; /* 2 */
+
+	ul, ol {
+		padding: 0; /* 3 */
+	}
+}
+
+/* ----- Etc ----- */
+.fw3 {
+  font-weight: 300;
+}
+
+.fw5 {
+  font-weight: 500;
+}

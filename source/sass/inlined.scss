@@ -1,0 +1,32 @@
+/**
+ * Inlined (inlined.scss)
+ *
+ * - This CSS code will be inlined.
+ * - Media queries will be grouped in the <head> of your email template.
+ */
+
+/* ----- Charset ----- */
+@charset 'UTF-8';
+
+/* ----- Variables ----- */
+@import 'variables';
+
+/* ----- Tools ----- */
+// @import 'tools/grid';
+
+/* ----- Generic ----- */
+@import 'generic/reset';
+@import 'generic/typography';
+@import 'generic/vtex';
+
+/* ----- Objects ----- */
+// @import 'objects/grid';
+
+/* ----- Utilities ----- */
+// @import 'utilities/alignment';
+// @import 'utilities/images';
+
+/* ----- Components ----- */
+// @import 'components/preheader';
+// @import 'components/buttons';
+// @import 'components/hero';

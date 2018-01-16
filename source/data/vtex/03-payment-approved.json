@@ -1,0 +1,652 @@
+{
+	"package": null,
+	"subjectItemAttachment": {
+		"item": "Produto Variação SKU...",
+		"totalItems": 3,
+		"extraItems": 2
+	},
+	"items": [
+		{
+			"additionalInfo": {
+				"dimension": {
+					"cubicweight": 0.1667,
+					"height": 10,
+					"length": 10,
+					"weight": 10,
+					"width": 10
+				},
+				"categoriesIds": "/4/5/",
+				"productClusterId": "135",
+				"commercialConditionId": "1",
+				"brandName": "Marca Exemplo",
+				"brandId": "2000000",
+				"offeringInfo": null,
+				"offeringType": null,
+				"offeringTypeId": null
+			},
+			"sellerSku": "15",
+			"priceValidUntil": "2019-01-15T18:31:11.0419667Z",
+			"callCenterOperator": null,
+			"commission": 0,
+			"freightCommission": 0,
+			"uniqueId": "EDB96C39162E48F7B5BC803B7DD3632B",
+			"id": "15",
+			"productId": "4",
+			"refId": "produtohomologação",
+			"ean": "produtohomologação",
+			"name": "Novalgina",
+			"skuName": "Novalgina",
+			"modalType": null,
+			"tax": 0,
+			"price": 5764,
+			"listPrice": 8000,
+			"manualPrice": null,
+			"sellingPrice": 4264,
+			"rewardValue": 0,
+			"isGift": false,
+			"preSaleDate": null,
+			"productCategoryIds": "/4/5/",
+			"productCategories": {
+				"4": "Departamento 2",
+				"5": "Categoria 2.3 (Campo Produto)"
+			},
+			"defaultPicker": null,
+			"handlerSequence": 0,
+			"handling": false,
+			"quantity": 1,
+			"seller": "1",
+			"imageUrl": "http://qamarketplace.vteximg.com.br/arquivos/ids/155400-55-55/Novalgina.jpg?v=635985172600570000",
+			"detailUrl": "/novalgina/p",
+			"components": [],
+			"bundleItems": [],
+			"attachments": [],
+			"itemAttachment": {
+				"name": null,
+				"content": {}
+			},
+			"attachmentOfferings": [
+				{
+					"name": "Receita",
+					"required": false,
+					"schema": {
+						"Nome1": {
+							"maximumNumberOfCharacters": 5,
+							"domain": []
+						},
+						"Teste": {
+							"maximumNumberOfCharacters": 10,
+							"domain": [
+								"0987654321"
+							]
+						},
+						"Embalagem": {
+							"maximumNumberOfCharacters": 6,
+							"domain": [
+								"true",
+								" false"
+							]
+						}
+					}
+				}
+			],
+			"offerings": [],
+			"priceTags": [
+				{
+					"name": "discount@price-e518d70e-6da2-47bb-9e1a-6540a1a214c6#b0fa7aae-a482-42cc-9d44-87ea502886f2",
+					"value": -1500,
+					"rawValue": -15,
+					"isPercentual": false,
+					"identifier": "e518d70e-6da2-47bb-9e1a-6540a1a214c6"
+				}
+			],
+			"availability": "available",
+			"measurementUnit": "un",
+			"unitMultiplier": 1
+		},
+		{
+			"additionalInfo": {
+				"dimension": {
+					"cubicweight": 0.25,
+					"height": 10,
+					"length": 15,
+					"weight": 100,
+					"width": 10
+				},
+				"categoriesIds": "/4/7/",
+				"productClusterId": "135",
+				"commercialConditionId": "1",
+				"brandName": "Marca Exemplo",
+				"brandId": "2000000",
+				"offeringInfo": null,
+				"offeringType": null,
+				"offeringTypeId": null
+			},
+			"sellerSku": "1",
+			"priceValidUntil": "2019-01-15T18:31:11.0419667Z",
+			"callCenterOperator": null,
+			"commission": 0,
+			"freightCommission": 0,
+			"uniqueId": "2C098F6FD5754551862B09325631CE85",
+			"id": "1",
+			"productId": "1",
+			"refId": null,
+			"ean": "SKUUN14",
+			"name": "Produto Simples 2 Sku Simples 2",
+			"skuName": "Sku Simples 2",
+			"modalType": null,
+			"tax": 0,
+			"price": 7123,
+			"listPrice": 10000,
+			"manualPrice": null,
+			"sellingPrice": 7123,
+			"rewardValue": 0,
+			"isGift": false,
+			"preSaleDate": null,
+			"productCategoryIds": "/4/7/",
+			"productCategories": {
+				"4": "Departamento 2",
+				"7": "Categoria 2.1"
+			},
+			"defaultPicker": null,
+			"handlerSequence": 0,
+			"handling": false,
+			"quantity": 1,
+			"seller": "1",
+			"imageUrl": "http://qamarketplace.vteximg.com.br/arquivos/ids/155378-55-55/ProdutoSimples2.png?v=635930460938200000",
+			"detailUrl": "/produto-simples-2/p",
+			"components": [],
+			"bundleItems": [],
+			"attachments": [],
+			"itemAttachment": {
+				"name": null,
+				"content": {}
+			},
+			"attachmentOfferings": [
+				{
+					"name": "Anexo não obrigatório",
+					"required": false,
+					"schema": {
+						"embalagem": {
+							"maximumNumberOfCharacters": 6,
+							"domain": [
+								"true",
+								" false"
+							]
+						}
+					}
+				}
+			],
+			"offerings": [],
+			"priceTags": [],
+			"availability": "available",
+			"measurementUnit": "un",
+			"unitMultiplier": 1
+		},
+		{
+			"additionalInfo": {
+				"dimension": {
+					"cubicweight": 0.5625,
+					"height": 15,
+					"length": 15,
+					"weight": 100,
+					"width": 15
+				},
+				"categoriesIds": "/4/6/",
+				"productClusterId": "135",
+				"commercialConditionId": "1",
+				"brandName": "Marca Exemplo",
+				"brandId": "2000000",
+				"offeringInfo": null,
+				"offeringType": null,
+				"offeringTypeId": null
+			},
+			"sellerSku": "2",
+			"priceValidUntil": "2019-01-15T18:31:11.0419667Z",
+			"callCenterOperator": null,
+			"commission": 0,
+			"freightCommission": 0,
+			"uniqueId": "13658606EB3949269CA896BE00C1E09C",
+			"id": "2",
+			"productId": "2",
+			"refId": null,
+			"ean": "SKUVR1",
+			"name": "Produto Variação SKU Variação 1 Azul",
+			"skuName": "SKU Variação 1 Azul",
+			"modalType": null,
+			"tax": 0,
+			"price": 8775,
+			"listPrice": 3000,
+			"manualPrice": null,
+			"sellingPrice": 8775,
+			"rewardValue": 0,
+			"isGift": false,
+			"preSaleDate": null,
+			"productCategoryIds": "/4/6/",
+			"productCategories": {
+				"4": "Departamento 2",
+				"6": "Categoria 2.2 ( campo sku)"
+			},
+			"defaultPicker": null,
+			"handlerSequence": 0,
+			"handling": false,
+			"quantity": 1,
+			"seller": "1",
+			"imageUrl": "http://qamarketplace.vteximg.com.br/arquivos/ids/155379-55-55/ProdutoVariacaoSku.png?v=635930463425670000",
+			"detailUrl": "/produto-variacao/p",
+			"components": [],
+			"bundleItems": [],
+			"attachments": [],
+			"itemAttachment": {
+				"name": null,
+				"content": {}
+			},
+			"attachmentOfferings": [],
+			"offerings": [],
+			"priceTags": [],
+			"availability": "available",
+			"measurementUnit": "un",
+			"unitMultiplier": 1
+		}
+	],
+	"sellers": [
+		{
+			"subSellerId": "1",
+			"fulfillmentEndpoint": "http://qamarketplace.vtexcommercebeta.com.br/api/fulfillment",
+			"id": "1",
+			"name": "qamarketplace",
+			"logo": ""
+		}
+	],
+	"paymentData": {
+		"giftCards": [
+			{
+				"redemptionCode": null,
+				"provider": "VtexGiftCard",
+				"value": 0,
+				"balance": 0,
+				"name": "loyalty-program",
+				"caption": null,
+				"id": "03064672-ab65-45d0-a60b-c91e7690269c_45",
+				"inUse": false,
+				"isSpecialCard": true,
+				"groupName": null
+			}
+		],
+		"transactions": [
+			{
+				"isActive": true,
+				"transactionId": "205FA405B1C144E6B8C1A14D9A5BF553",
+				"merchantName": "QAMARKETPLACE",
+				"payments": [
+					{
+						"id": "EAEA6DC716B542ECB466300EFB103F07",
+						"paymentSystem": "4",
+						"paymentSystemName": "Mastercard",
+						"value": 34295,
+						"installments": 1,
+						"connectorResponses": {
+							"Tid": "60615477",
+							"ReturnCode": null,
+							"Message": null,
+							"authId": "615477"
+						},
+						"referenceValue": 34295,
+						"cardHolder": null,
+						"cardNumber": null,
+						"firstDigits": "510510",
+						"lastDigits": "5100",
+						"cvv2": null,
+						"expireMonth": null,
+						"expireYear": null,
+						"url": null,
+						"koinUrl": null,
+						"tid": "60615477",
+						"redemptionCode": null,
+						"giftCardId": null,
+						"giftCardProvider": null,
+						"giftCardAsDiscount": null,
+						"group": "creditCard",
+						"dueDate": null,
+						"accountId": "185844FA3E844A2B882E0AE7015D662F",
+						"parentAccountId": "185844FA3E844A2B882E0AE7015D662F"
+					}
+				]
+			}
+		]
+	},
+	"giftRegistryData": null,
+	"receiptData": null,
+	"contextData": null,
+	"marketPlaceOrderId": "",
+	"orderFormId": "d5b969da23b64840b2075fcd05edfb58",
+	"sequence": "1301722",
+	"affiliateId": "",
+	"status": "",
+	"callCenterOperator": "",
+	"userProfileId": "03064672-ab65-45d0-a60b-c91e7690269c",
+	"hostName": "qamarketplace",
+	"creationVersion": null,
+	"creationEnvironment": null,
+	"lastChangeVersion": null,
+	"workflowInstanceId": null,
+	"orderId": "803551859492-01",
+	"orderGroup": "803551859492",
+	"state": "payment-approved",
+	"isCheckedIn": false,
+	"sellerOrderId": "00-803551859492-01",
+	"storeId": null,
+	"value": 34295,
+	"totals": [
+		{
+			"id": "Items",
+			"name": "Total dos Itens",
+			"value": 21662
+		},
+		{
+			"id": "Discounts",
+			"name": "Total dos Descontos",
+			"value": -1500
+		},
+		{
+			"id": "Shipping",
+			"name": "Total do Frete",
+			"value": 14133
+		},
+		{
+			"id": "Tax",
+			"name": "Total da Taxa",
+			"value": 0
+		}
+	],
+	"clientProfileData": {
+		"attachmentId": "clientProfileData",
+		"email": "lucasvtex123456789@mailinator.com-850b.ct.vtex.com.br",
+		"firstName": "Lucas",
+		"lastName": "Teste QA",
+		"document": "06657875614",
+		"documentType": "cpf",
+		"phone": "+551234567893",
+		"corporateName": null,
+		"tradeName": null,
+		"corporateDocument": null,
+		"stateInscription": null,
+		"corporatePhone": null,
+		"isCorporate": false,
+		"profileCompleteOnLoading": true,
+		"profileErrorOnLoading": false,
+		"customerClass": null
+	},
+	"ratesAndBenefitsData": {
+		"attachmentId": "ratesAndBenefitsData",
+		"rateAndBenefitsIdentifiers": [
+			{
+				"id": "e518d70e-6da2-47bb-9e1a-6540a1a214c6",
+				"name": "Desconto no Sku 15",
+				"featured": false,
+				"description": null
+			}
+		],
+		"teaser": []
+	},
+	"shippingData": {
+		"attachmentId": "shippingData",
+		"address": {
+			"addressType": "residential",
+			"receiverName": "asda sd",
+			"addressId": "8ef6004da7bc4962b515c34283124ace",
+			"postalCode": "22250-040",
+			"city": "Rio de Janeiro",
+			"state": "RJ",
+			"country": "BRA",
+			"street": "Praia de Botafogo",
+			"number": "100",
+			"neighborhood": "Botafogo",
+			"complement": "",
+			"reference": null,
+			"geoCoordinates": []
+		},
+		"logisticsInfo": [
+			{
+				"itemIndex": 0,
+				"selectedSla": "Normal",
+				"selectedDeliveryChannel": "delivery",
+				"addressId": "8ef6004da7bc4962b515c34283124ace",
+				"slas": [
+					{
+						"id": "Normal",
+						"deliveryChannel": "delivery",
+						"name": "PAC",
+						"deliveryIds": [
+							{
+								"courierId": "1",
+								"warehouseId": "169cdbc",
+								"dockId": "1",
+								"courierName": "Transportadora",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "7d",
+						"shippingEstimateDate": "2018-01-22T16:31:15.9308237Z",
+						"lockTTL": "8d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 1501,
+						"listPrice": 1501,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						}
+					}
+				],
+				"shipsTo": [
+					"BRA"
+				],
+				"itemId": "15",
+				"deliveryChannels": [
+					{
+						"id": "delivery"
+					}
+				]
+			},
+			{
+				"itemIndex": 1,
+				"selectedSla": "PAC",
+				"selectedDeliveryChannel": "delivery",
+				"addressId": "8ef6004da7bc4962b515c34283124ace",
+				"slas": [
+					{
+						"id": "PAC",
+						"deliveryChannel": "delivery",
+						"name": "PAC",
+						"deliveryIds": [
+							{
+								"courierId": "155ad08",
+								"warehouseId": "169c78d",
+								"dockId": "19d95d2",
+								"courierName": "[Teste QA] Nao Mexer",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "4bd",
+						"shippingEstimateDate": "2018-01-19T14:31:15.9328237Z",
+						"lockTTL": "8d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 0,
+						"listPrice": 0,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						}
+					}
+				],
+				"shipsTo": [
+					"BRA"
+				],
+				"itemId": "1",
+				"deliveryChannels": [
+					{
+						"id": "delivery"
+					}
+				]
+			},
+			{
+				"itemIndex": 2,
+				"selectedSla": "Sedex",
+				"selectedDeliveryChannel": "delivery",
+				"addressId": "8ef6004da7bc4962b515c34283124ace",
+				"slas": [
+					{
+						"id": "Sedex",
+						"deliveryChannel": "delivery",
+						"name": "PAC",
+						"deliveryIds": [
+							{
+								"courierId": "1d1b046",
+								"warehouseId": "1_1",
+								"dockId": "TESTE CHECKOUT",
+								"courierName": "Teste CHECKOUT Sedex",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "7bd",
+						"shippingEstimateDate": "2018-01-24T14:31:15.9328237Z",
+						"lockTTL": "8d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 12632,
+						"listPrice": 12632,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						}
+					}
+				],
+				"shipsTo": [
+					"BRA"
+				],
+				"itemId": "2",
+				"deliveryChannels": [
+					{
+						"id": "delivery"
+					}
+				]
+			}
+		],
+		"selectedAddresses": [
+			{
+				"addressType": "residential",
+				"receiverName": "asda sd",
+				"addressId": "8ef6004da7bc4962b515c34283124ace",
+				"postalCode": "22250-040",
+				"city": "Rio de Janeiro",
+				"state": "RJ",
+				"country": "BRA",
+				"street": "Praia de Botafogo",
+				"number": "100",
+				"neighborhood": "Botafogo",
+				"complement": "",
+				"reference": null,
+				"geoCoordinates": []
+			}
+		],
+		"availableAddresses": [
+			{
+				"addressType": "residential",
+				"receiverName": "asda sd",
+				"addressId": "8ef6004da7bc4962b515c34283124ace",
+				"postalCode": "22250-040",
+				"city": "Rio de Janeiro",
+				"state": "RJ",
+				"country": "BRA",
+				"street": "Praia de Botafogo",
+				"number": "100",
+				"neighborhood": "Botafogo",
+				"complement": "",
+				"reference": null,
+				"geoCoordinates": []
+			}
+		]
+	},
+	"clientPreferencesData": {
+		"attachmentId": "clientPreferencesData",
+		"locale": "pt-BR",
+		"optinNewsLetter": true
+	},
+	"commercialConditionData": null,
+	"marketingData": null,
+	"storePreferencesData": {
+		"countryCode": "BRA",
+		"checkToSavePersonDataByDefault": false,
+		"templateOptions": {
+			"toggleCorporate": false
+		},
+		"timeZone": "E. South America Standard Time",
+		"currencyCode": "BRL",
+		"currencyLocale": 1046,
+		"currencySymbol": "R$",
+		"currencyFormatInfo": {
+			"currencyDecimalDigits": 2,
+			"currencyDecimalSeparator": ",",
+			"currencyGroupSeparator": ".",
+			"currencyGroupSize": 3,
+			"startsWithCurrencySymbol": true
+		}
+	},
+	"openTextField": null,
+	"customData": null,
+	"hooksData": null,
+	"changeData": null,
+	"salesChannel": "1",
+	"followUpEmail": "0f5b71497a1344c0a2b7ab25f3b5eaaa@ct.vtex.com.br",
+	"creationDate": "2018-01-15T18:31:18.0520791Z",
+	"lastChange": "2018-01-15T18:31:54.7639929Z",
+	"timeZoneCreationDate": "2018-01-15T16:31:18.0520791",
+	"timeZoneLastChange": "2018-01-15T16:31:54.7639929",
+	"isCompleted": true,
+	"merchantName": null,
+	"userType": "",
+	"roundingError": 0,
+	"allowEdition": false,
+	"allowCancellation": false,
+	"_accountInfo": {
+		"HostName": "qamarketplace",
+		"MainAccountName": "qamarketplace",
+		"IsPersisted": true,
+		"IsRemoved": false,
+    "Id": "e39d05f9-0c54-4469-a626-8bb5cff169f8",
+		"Cnpj": "99999999999999",
+		"CompanyName": "QA Marketplace VTEX",
+		"TradingName": "VTEX Developers",
+		"AccountName": "qamarketplace",
+		"DefaultUrl": null,
+		"Address": "Praia de Botafogo",
+		"Number": "518",
+		"Complement": "2 andar",
+		"District": "Botafogo",
+		"City": "Rio de Janeiro",
+		"State": "RJ",
+		"PostalCode": "22250-040",
+		"Country": "Brazil",
+		"Telephone": null,
+		"IsActive": true,
+		"Sponsor": "f4e493df-fdba-4dbf-921d-50271b22c82e",
+		"Logo": null,
+		"AppId": "49fb1d8f-256f-4d5d-9280-35595c6e0493",
+		"IsOperating": false,
+		"LV": "LV-1066896",
+		"Sigla": null
+	}
+}

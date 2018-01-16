@@ -1,0 +1,47 @@
+/**
+ * Embedded (embedded.scss)
+ *
+ * - This CSS will be embedded in the <head> of your email template.
+ */
+
+/* ----- Reset ----- */
+/**
+ * 1. Removing auto-generated blue links on Apple devices.
+ *    More info: http://removebluelinks.com
+ * 2. Force Outlook to provide a "View in browser" menu link.
+ * 3. Yahoo! Mail has a knack for picking keywords in emails and linking them to
+ *    advertising popups (blue, dotted links). This is how we remove them.
+ * 4. Force Hotmail to display emails at full width.
+ * 5. Force Hotmail to display normal line spacing.
+ *    More info: http://www.emailonacid.com/forum/viewthread/43
+ */
+a[x-apple-data-detectors] {
+	/* 1 */
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+}
+
+#outlook a {
+	padding: 0; /* 2 */
+}
+
+.yshortcuts a {
+	border-bottom: none !important; /* 3 */
+}
+
+.ExternalClass {
+	width: 100%; /* 4 */
+
+	&,
+	p,
+	span,
+	font,
+	td,
+	div {
+		line-height: 100%; /* 5 */
+	}
+}

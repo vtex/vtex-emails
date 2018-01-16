@@ -1,0 +1,452 @@
+{
+	"package": {
+		"items": [
+			{
+				"itemIndex": 0,
+				"quantity": 1,
+				"price": 10980,
+				"description": null
+			}
+		],
+		"courier": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRA",
+		"invoiceNumber": "199893",
+		"invoiceValue": 10980,
+		"invoiceUrl": "http://eldoc.com.br/eldoc/html/externo/consultar_nfe.sbx?chave=35171111137051040641550020001998931137161791",
+		"issuanceDate": "2017-11-17T21:55:16.7626205",
+		"trackingNumber": "PN442840126BR",
+		"invoiceKey": "35171111137051040641550020001998931137161791",
+		"trackingUrl": "http://status.intelipost.com.br/tracking/6438/27761349",
+		"embeddedInvoice": "",
+		"type": "Output",
+		"courierStatus": {
+			"status": "ok",
+			"finished": false,
+			"data": [
+				{
+					"lastChange": "2017-11-22T12:47:00+00:00",
+					"city": null,
+					"state": "Em trânsito",
+					"description": "Objeto recebido na Unidade dos Correios\nAC ORIZONA\nOrizona/GO"
+				}
+			]
+		}
+	},
+	"subjectItemAttachment": {
+		"item": "Kit Presente Portina...",
+		"totalItems": 1
+	},
+	"items": [
+		{
+			"additionalInfo": {
+				"dimension": {
+					"cubicweight": 0.8964,
+					"height": 21.3,
+					"length": 20.2,
+					"weight": 880,
+					"width": 10
+				},
+				"categoriesIds": "/1000048/1000033/1000069/",
+				"productClusterId": "138,140,143,287,381,463,492,540,549,585,604,609,632,638,681,701,747,785,791,821,835,913,919,972,1031,1036,1164,1181,1209,1282,1291,1298,1300,1301,1305,1309,1313,1318,1319,1320,1321,1326,1332,1337,1340,1341,1342,1365,1369,1371,1382,1404,1470,1471,1479,1498,1508,1510,1512,1515,1538,1559,1564,1565,1580",
+				"commercialConditionId": "1",
+				"brandName": "Portinari",
+				"brandId": "2000036",
+				"offeringInfo": null,
+				"offeringType": null,
+				"offeringTypeId": null
+			},
+			"sellerSku": "2004169",
+			"priceValidUntil": "2018-09-01T03:00:00Z",
+			"callCenterOperator": null,
+			"commission": 0,
+			"freightCommission": 0,
+			"uniqueId": "24F73820B6374C13AFE2624A24788770",
+			"id": "2004169",
+			"productId": "2003286",
+			"refId": "29042",
+			"ean": "7891033290420",
+			"name": "Kit Presente Portinari",
+			"skuName": "Kit Presente Portinari",
+			"modalType": null,
+			"tax": 0,
+			"price": 11830,
+			"listPrice": 16900,
+			"manualPrice": null,
+			"sellingPrice": 10980,
+			"rewardValue": 0,
+			"isGift": false,
+			"preSaleDate": null,
+			"productCategoryIds": "/1000048/1000033/1000069/",
+			"productCategories": {
+				"1000033": "Kits",
+				"1000048": "Presentes",
+				"1000069": "Homens"
+			},
+			"defaultPicker": null,
+			"handlerSequence": 0,
+			"handling": false,
+			"quantity": 1,
+			"seller": "1",
+			"imageUrl": "http://boticario.vteximg.com.br/arquivos/ids/186477-60-60/perfume-portinari-kit-natal-29042.jpg?v=636137943455400000",
+			"detailUrl": "/kit-presente-portinari-natal-29042/p",
+			"components": [],
+			"bundleItems": [],
+			"attachments": [],
+			"itemAttachment": {
+				"name": null,
+				"content": {}
+			},
+			"attachmentOfferings": [],
+			"offerings": [],
+			"priceTags": [
+				{
+					"name": "discount@shipping-7f5d863a-c901-49fc-a061-8a2c0a75ab2b#7577af55-0979-4f52-a428-dd1717a0a3df",
+					"value": -1611,
+					"rawValue": -16.11,
+					"isPercentual": false,
+					"identifier": "7f5d863a-c901-49fc-a061-8a2c0a75ab2b"
+				},
+				{
+					"name": "DISCOUNT@GIFTCARD_boticario",
+					"value": -850,
+					"rawValue": -8.5,
+					"isPercentual": false,
+					"identifier": null
+				}
+			],
+			"availability": "available",
+			"measurementUnit": "un",
+			"unitMultiplier": 1
+		}
+	],
+	"sellers": [
+		{
+			"subSellerId": "1",
+			"fulfillmentEndpoint": "http://fulfillment.vtexcommerce.com.br/api/fulfillment?sc=1&an=boticario",
+			"id": "1",
+			"name": "Boticario",
+			"logo": ""
+		}
+	],
+	"paymentData": {
+		"giftCards": [
+			{
+				"redemptionCode": "",
+				"provider": "boticario",
+				"value": 850,
+				"balance": 850,
+				"name": null,
+				"caption": "Clube Viva",
+				"id": "01674347138",
+				"inUse": true,
+				"isSpecialCard": true,
+				"groupName": null
+			}
+		],
+		"transactions": [
+			{
+				"isActive": true,
+				"transactionId": "F1639B8FF87348B28175CBCBE4F879AE",
+				"merchantName": "BOTICARIO",
+				"payments": [
+					{
+						"id": "1BB1AED6719A4B98B2C358EEB45222EA",
+						"paymentSystem": "4",
+						"paymentSystemName": "Mastercard",
+						"value": 10980,
+						"installments": 5,
+						"connectorResponses": {
+							"nsu": "7URIQI",
+							"tid": "322257",
+							"acquirerReference": "322257",
+							"authorizationcode": "7URIQI",
+							"pspReference": "4615102365489735"
+						},
+						"referenceValue": 10980,
+						"cardHolder": null,
+						"cardNumber": null,
+						"firstDigits": "550209",
+						"lastDigits": "0869",
+						"cvv2": null,
+						"expireMonth": null,
+						"expireYear": null,
+						"url": null,
+						"koinUrl": null,
+						"tid": "322257",
+						"redemptionCode": null,
+						"giftCardId": null,
+						"giftCardProvider": null,
+						"giftCardAsDiscount": null,
+						"group": "creditCard",
+						"dueDate": null,
+						"accountId": "9A0881896E3A4575952191454C11CF16",
+						"parentAccountId": null
+					}
+				]
+			}
+		]
+	},
+	"giftRegistryData": null,
+	"receiptData": null,
+	"contextData": null,
+	"marketPlaceOrderId": "",
+	"orderFormId": "643b42ed7e154f309db02f993307e0a8",
+	"sequence": "75036027",
+	"affiliateId": "",
+	"status": "",
+	"callCenterOperator": "",
+	"userProfileId": "07363c20-06f8-47bc-9758-106e80847ab5",
+	"hostName": "boticario",
+	"creationVersion": null,
+	"creationEnvironment": null,
+	"lastChangeVersion": null,
+	"workflowInstanceId": null,
+	"orderId": "v75036027bot-01",
+	"orderGroup": "v75036027bot",
+	"state": "invoiced",
+	"isCheckedIn": false,
+	"sellerOrderId": "00-v75036027bot-01",
+	"storeId": null,
+	"value": 10980,
+	"totals": [
+		{
+			"id": "Items",
+			"name": "Total dos Itens",
+			"value": 11830
+		},
+		{
+			"id": "Discounts",
+			"name": "Total dos Descontos",
+			"value": 0
+		},
+		{
+			"id": "Shipping",
+			"name": "Total do Frete",
+			"value": 0
+		},
+		{
+			"id": "Tax",
+			"name": "Total da Taxa",
+			"value": 0
+		},
+		{
+			"id": "Discounts_boticario",
+			"name": "Total dos Descontos - boticario",
+			"value": -850
+		}
+	],
+	"clientProfileData": {
+		"attachmentId": "clientProfileData",
+		"email": "rodrigo@vtex.com",
+		"firstName": "Gabriela",
+		"lastName": "Marques",
+		"document": "01674347138",
+		"documentType": "cpf",
+		"phone": "+5564999677759",
+		"corporateName": null,
+		"tradeName": null,
+		"corporateDocument": null,
+		"stateInscription": null,
+		"corporatePhone": null,
+		"isCorporate": false,
+		"profileCompleteOnLoading": true,
+		"profileErrorOnLoading": false,
+		"customerClass": null
+	},
+	"ratesAndBenefitsData": {
+		"attachmentId": "ratesAndBenefitsData",
+		"rateAndBenefitsIdentifiers": [
+			{
+				"id": "7f5d863a-c901-49fc-a061-8a2c0a75ab2b",
+				"name": "2016.08_frete gratis principal 109,90",
+				"featured": false,
+				"description": "frete gratis acima de 109,90"
+			},
+			{
+				"id": "DISCOUNT@GIFTCARD_boticario",
+				"name": "DISCOUNT@GIFTCARD_boticario",
+				"featured": null,
+				"description": null
+			}
+		],
+		"teaser": []
+	},
+	"shippingData": {
+		"attachmentId": "shippingData",
+		"address": {
+			"addressType": "residential",
+			"receiverName": "Gabriela Marques",
+			"addressId": "-1477568377563",
+			"postalCode": "75280-000",
+			"city": "Orizona",
+			"state": "GO",
+			"country": "BRA",
+			"street": "Rua Getúlio Vargas",
+			"number": "64",
+			"neighborhood": "Centro",
+			"complement": null,
+			"reference": null,
+			"geoCoordinates": []
+		},
+		"logisticsInfo": [
+			{
+				"itemIndex": 0,
+				"selectedSla": "Normal",
+				"selectedDeliveryChannel": "delivery",
+				"addressId": "-1477568377563",
+				"slas": [
+					{
+						"id": "Normal",
+						"deliveryChannel": "delivery",
+						"name": "Normal",
+						"deliveryIds": [
+							{
+								"courierId": "001_Correios PAC Normal",
+								"warehouseId": "1_1",
+								"dockId": "1_1_1",
+								"courierName": "001_Correios PAC Normal",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "16bd",
+						"shippingEstimateDate": "2017-12-04T12:09:48.1337615Z",
+						"lockTTL": "6d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 0,
+						"listPrice": 1611,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						}
+					}
+				],
+				"shipsTo": [
+					"BRA"
+				],
+				"itemId": "2004169",
+				"deliveryChannels": [
+					{
+						"id": "delivery"
+					}
+				]
+			}
+		],
+		"selectedAddresses": [
+			{
+				"addressType": "residential",
+				"receiverName": "Gabriela Marques",
+				"addressId": "-1477568377563",
+				"postalCode": "75280-000",
+				"city": "Orizona",
+				"state": "GO",
+				"country": "BRA",
+				"street": "Rua Getúlio Vargas",
+				"number": "64",
+				"neighborhood": "Centro",
+				"complement": null,
+				"reference": null,
+				"geoCoordinates": []
+			}
+		],
+		"availableAddresses": [
+			{
+				"addressType": "residential",
+				"receiverName": "Gabriela Marques",
+				"addressId": "-1477568377563",
+				"postalCode": "75280-000",
+				"city": "Orizona",
+				"state": "GO",
+				"country": "BRA",
+				"street": "Rua Getúlio Vargas",
+				"number": "64",
+				"neighborhood": "Centro",
+				"complement": null,
+				"reference": null,
+				"geoCoordinates": []
+			}
+		]
+	},
+	"clientPreferencesData": {
+		"attachmentId": "clientPreferencesData",
+		"locale": "pt-BR",
+		"optinNewsLetter": true
+	},
+	"commercialConditionData": null,
+	"marketingData": {
+		"attachmentId": "marketingData",
+		"utmSource": "clube_viva",
+		"utmMedium": "e-mail",
+		"utmCampaign": "hc_ciclo16_Clube_Ecomm_Esquenta_Black_5221_email",
+		"utmipage": "",
+		"utmiPart": "",
+		"utmiCampaign": "",
+		"coupon": null,
+		"marketingTags": []
+	},
+	"storePreferencesData": {
+		"countryCode": "BRA",
+		"checkToSavePersonDataByDefault": false,
+		"templateOptions": {
+			"toggleCorporate": false
+		},
+		"timeZone": "E. South America Standard Time",
+		"currencyCode": "BRL",
+		"currencyLocale": 1046,
+		"currencySymbol": "R$",
+		"currencyFormatInfo": {
+			"currencyDecimalDigits": 2,
+			"currencyDecimalSeparator": ",",
+			"currencyGroupSeparator": ".",
+			"currencyGroupSize": 3,
+			"startsWithCurrencySymbol": true
+		}
+	},
+	"openTextField": null,
+	"customData": null,
+	"hooksData": null,
+	"changeData": null,
+	"salesChannel": "1",
+	"followUpEmail": "rodrigo@vtex.com",
+	"creationDate": "2017-11-09T14:08:56.7441425Z",
+	"lastChange": "2017-11-17T23:55:27.4663142Z",
+	"timeZoneCreationDate": "2017-11-09T12:08:56.7441425",
+	"timeZoneLastChange": "2017-11-17T21:55:27.4663142",
+	"isCompleted": true,
+	"merchantName": null,
+	"userType": "",
+	"roundingError": 0,
+	"allowEdition": false,
+	"allowCancellation": false,
+	"_accountInfo": {
+		"HostName": "vtex",
+		"MainAccountName": "vtex",
+		"IsPersisted": true,
+		"IsRemoved": false,
+		"Id": "e39d05f9-0c54-4469-a626-8bb5cff169f8",
+		"Cnpj": "123456789",
+		"CompanyName": "Vtex Remarkable Technology",
+		"TradingName": "VTEX",
+		"AccountName": "vtex",
+		"DefaultUrl": null,
+		"Address": "PRAIA DE BOTAFOGO",
+		"Number": "518",
+		"Complement": "",
+		"District": "BOTAFOGO",
+		"City": "RIO DE JANEIRO",
+		"State": "RJ",
+		"PostalCode": "22250040",
+		"Country": "Brazil",
+		"Telephone": "2222222222",
+		"IsActive": false,
+		"Sponsor": "bd4b4b3f-d486-4412-9c90-18cac00b52bb",
+		"Logo": "VTEX_icon_pink_RGB.jpg",
+		"AppId": "80ec8b10-25b7-48de-b425-7b93554002cb",
+		"IsOperating": false,
+		"LV": "LV-1000009",
+		"Sigla": null
+	}
+}

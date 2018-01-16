@@ -1,0 +1,11 @@
+{{#if orders.0.giftRegistryData}}
+  {{orders.0.giftRegistryData.description}}
+{{else}}
+  {{#each ../shippingData.availableAddresses}}
+    {{#eq ../addressId AddressId}}
+      <strong>{{receiverName}}</strong>
+      <br/>{{street}}, {{number}}{{#if complement}}, {{complement}}{{/if}}
+      <br />{{neighborhood}} - {{city}} - {{state}}
+    {{/eq}}
+  {{/each}}
+{{/if}}
