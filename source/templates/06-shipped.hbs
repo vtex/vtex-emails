@@ -47,10 +47,11 @@
               <td class="w-100 ph4-ns">
                 <!-- Intro message: All items shipped -->
 
-                <!-- partial:partials/messages/shipping.hbs --><!-- partial -->
-                <!-- partial:partials/messages/pickup.hbs --><!-- partial -->
-
-                <!-- partial:partials/messages/order-link.hbs --><!-- partial -->
+                {{#compare shippingData.logisticsInfo.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
+                  <!-- partial:partials/messages/pickup.hbs --><!-- partial -->
+                {{else}}
+                  <!-- partial:partials/messages/shipping.hbs --><!-- partial -->
+                {{/compare}}
               </td>
             </tr>
 
