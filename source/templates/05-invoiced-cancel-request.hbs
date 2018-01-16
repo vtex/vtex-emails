@@ -35,12 +35,7 @@
                     {{#compare clientProfileData.firstName '!=' 'isAnonymous'}}
                       <p>
                         <!-- partial:partials/messages/hi-order.hbs --><!-- partial -->
-                        {{#compare items.length '==' 1}}
-                          ((i18n.invoice.handlingProduct))
-                        {{/compare}}
-                        {{#compare items.length '>' 1}}
-                          ((i18n.invoice.handlingProducts))
-                        {{/compare}}
+                        <!-- partial:partials/messages/handling.hbs --><!-- partial -->
                       </p>
                     {{/compare}}
                   {{/if}}
