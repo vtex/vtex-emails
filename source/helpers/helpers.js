@@ -1,6 +1,6 @@
 var helpers = module.exports;
 
-helpers.formatDateTime = function( value, format ) {
+helpers._formatDateTime = function( value, format ) {
 	'use strict';
 	value = new Date( value );
 	var o = {
@@ -20,6 +20,26 @@ helpers.formatDateTime = function( value, format ) {
 		}
 	}
 	return format;
+};
+
+helpers.formatDate = function( value ) {
+	'use strict';
+	return helpers._formatDateTime( value, 'dd/MM/yyyy' );
+};
+
+helpers.formatDateTime = function( value ) {
+	'use strict';
+	return helpers._formatDateTime( value, 'dd/MM/yyyy h:mm:ss' );
+};
+
+helpers.formatUSDate = function( value ) {
+	'use strict';
+	return helpers._formatDateTime( value, 'MM/dd/yyyy' );
+};
+
+helpers.formatUSDateTime = function( value ) {
+	'use strict';
+	return helpers._formatDateTime( value, 'MM/dd/yyyy h:mm:ss' );
 };
 
 helpers.addDaysToDate = function( date, days ) {
