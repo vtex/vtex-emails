@@ -7,28 +7,28 @@
 
     <!-- Available Today: business days -->
     {{#eq shippingEstimate "0bd"}}
-      {{#eq deliveryChannel "delivery"}}
-        ((i18n.shipping.today))
-      {{else}}
+      {{#eq deliveryChannel "pickup-in-point"}}
         ((i18n.shipping.fromToday))
+      {{else}}
+        ((i18n.shipping.today))
       {{/eq}}
     {{else}}
 
     <!-- Available Today: days -->
     {{#eq shippingEstimate "0d"}}
-      {{#eq deliveryChannel "delivery"}}
-        ((i18n.shipping.today))
-      {{else}}
+      {{#eq deliveryChannel "pickup-in-point"}}
         ((i18n.shipping.fromToday))
+      {{else}}
+        ((i18n.shipping.today))
       {{/eq}}
 
     <!-- Available in another day -->
     {{else}}
       <!-- Delivery or Pickup -->
-      {{#eq deliveryChannel "delivery"}}
-        ((i18n.shipping.inUpTo))
-      {{else}}
+      {{#eq deliveryChannel "pickup-in-point"}}
         ((i18n.shipping.from))
+      {{else}}
+        ((i18n.shipping.inUpTo))
       {{/eq}}
 
       <!-- Single or many days -->

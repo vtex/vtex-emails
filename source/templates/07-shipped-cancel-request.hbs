@@ -14,29 +14,25 @@
 
                 <!-- Just 1 package -->
                 {{#compare items.length '==' shippingData.logisticsInfo.length}}
-                  {{#compare shippingData.logisticsInfo.0.selectedDeliveryChannel '==' 'delivery'}}
-                    <h1>((i18n.shipping.onePackageDelivery))</h1>
-                  {{/compare}}
                   {{#compare shippingData.logisticsInfo.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
                     <h1>((i18n.shipping.onePackagePickup))</h1>
+                  {{else}}
+                    <h1>((i18n.shipping.onePackageDelivery))</h1>
                   {{/compare}}
 
                   <!-- partial:partials/messages/order-reference.hbs --><!-- partial -->
-
                   <!-- partial:partials/messages/cant-cancel.hbs --><!-- partial -->
                 {{/compare}}
 
                 <!-- More than 1 package -->
                 {{#compare items.length '!=' shippingData.logisticsInfo.length}}
-                  {{#compare shippingData.logisticsInfo.0.selectedDeliveryChannel '==' 'delivery'}}
-                    <h1>((i18n.shipping.manyPackagesDelivery))</h1>
-                  {{/compare}}
                   {{#compare shippingData.logisticsInfo.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
                     <h1>((i18n.shipping.manyPackagesPickup))</h1>
+                  {{else}}
+                    <h1>((i18n.shipping.manyPackagesDelivery))</h1>
                   {{/compare}}
 
                   <!-- partial:partials/messages/order-reference.hbs --><!-- partial -->
-
                   <!-- partial:partials/messages/cant-cancel.hbs --><!-- partial -->
 
                   <div class="bg-light-gray ph3 pv3 mt4 fw7 dib w-70-ns center lh-copy">
@@ -74,7 +70,11 @@
                     <!-- partial:partials/address-pickup-no-title.hbs --><!-- partial -->
 
                     {{#group items by="selectedSla"}}
-                      <!-- partial:partials/package.hbs --><!-- partial -->
+                      {{#compare items.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
+                        <!-- partial:partials/package-no-estimate.hbs --><!-- partial -->
+                      {{else}}
+                        <!-- partial:partials/package.hbs --><!-- partial -->
+                      {{/compare}}
                     {{/group}}
                   </div>
                 {{/group}}

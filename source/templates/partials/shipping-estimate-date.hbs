@@ -4,12 +4,12 @@
     ((i18n.shipping.scheduled))
   {{else}}
     <!-- Delivery or Pickup -->
-    {{#eq deliveryChannel "delivery"}}
-      ((i18n.shipping.upTo))
-    {{else}}
+    {{#eq deliveryChannel "pickup-in-point"}}
       ((i18n.shipping.from))
+    {{else}}
+      ((i18n.shipping.upTo))
     {{/eq}}
 
-    {{formatDateTime shippingEstimateDate 'dd/MM/yyyy'}}
+    {{formatDate shippingEstimateDate}}
   {{/if}}
 </div>

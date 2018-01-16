@@ -1,26 +1,24 @@
-{{#compare shippingData.logisticsInfo.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
-  {{#compare items.length '==' shippingData.logisticsInfo.length}}
-    <p class="mt4">
-      <!-- partial:hi-order.hbs --><!-- partial -->
-      {{#compare items.length '==' 1}}
-        ((i18n.shipping.pickupProduct))
-      {{/compare}}
-      {{#compare items.length '>' 1}}
-        ((i18n.shipping.pickupProducts))
-      {{/compare}}
-    </p>
-  {{/compare}}
+{{#compare items.length '==' shippingData.logisticsInfo.length}}
+  <p class="mt4">
+    <!-- partial:hi-order.hbs --><!-- partial -->
+    {{#compare items.length '==' 1}}
+      ((i18n.shipping.pickupProduct))
+    {{/compare}}
+    {{#compare items.length '>' 1}}
+      ((i18n.shipping.pickupProducts))
+    {{/compare}}
+  </p>
+{{/compare}}
 
-  <!-- Intro message: Just some items shipped -->
-  {{#compare items.length '!=' shippingData.logisticsInfo.length}}
-    <p class="mt4">
-      <!-- partial:hi-order.hbs --><!-- partial -->
-      {{#compare items.length '==' 1}}
-        ((i18n.shipping.pickupOneProduct))
-      {{/compare}}
-      {{#compare items.length '>' 1}}
-        ((i18n.shipping.pickupSomeProducts))
-      {{/compare}}
-    </p>
-  {{/compare}}
+<!-- Intro message: Just some items shipped -->
+{{#compare items.length '!=' shippingData.logisticsInfo.length}}
+  <p class="mt4">
+    <!-- partial:hi-order.hbs --><!-- partial -->
+    {{#compare items.length '==' 1}}
+      ((i18n.shipping.pickupOneProduct))
+    {{/compare}}
+    {{#compare items.length '>' 1}}
+      ((i18n.shipping.pickupSomeProducts))
+    {{/compare}}
+  </p>
 {{/compare}}
