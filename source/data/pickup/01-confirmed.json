@@ -1,0 +1,2034 @@
+{
+	"orders": [
+		{
+			"orderId": "v502517ljvt-01",
+			"orderGroup": "v502517ljvt",
+			"state": "payment-pending",
+			"isCheckedIn": false,
+			"sellerOrderId": "SLR-v502517ljvt-01",
+			"storeId": null,
+			"value": 173500,
+			"items": [
+				{
+					"uniqueId": "25820D2D2D8B4436976C17075AB3FD78",
+					"id": "2001060",
+					"productId": "2000973",
+					"refId": "5700302259070",
+					"ean": "5700302259070",
+					"name": "BRACELETE SÍMBOLO DO AMOR - 16 CM",
+					"skuName": "BRACELETE SÍMBOLO DO AMOR - 16 CM",
+					"modalType": null,
+					"priceValidUntil": "2019-01-16T20:41:59.9330591Z",
+					"tax": 0,
+					"price": 22500,
+					"listPrice": 22500,
+					"manualPrice": null,
+					"sellingPrice": 22500,
+					"rewardValue": 0,
+					"isGift": false,
+					"additionalInfo": {
+						"brandName": "Pandora",
+						"brandId": "2000002",
+						"offeringInfo": null,
+						"offeringType": null,
+						"offeringTypeId": null
+					},
+					"preSaleDate": null,
+					"productCategoryIds": "/1000012/1000017/",
+					"productCategories": {
+						"1000012": "BRACELETES",
+						"1000017": "SÍMBOLOS"
+					},
+					"defaultPicker": null,
+					"handlerSequence": 0,
+					"handling": false,
+					"quantity": 1,
+					"seller": "lojavtexrj",
+					"sellerChain": [
+						"lojavtexrj"
+					],
+					"imageUrl": "http://lojavtex.vteximg.com.br/arquivos/ids/157030-55-55/image-fd10419b784a44b0a7ba87733dba1780.jpg?v=636066038900570000",
+					"detailUrl": "/bracelete-simbolo-do-amor-2000973/p",
+					"components": [],
+					"bundleItems": [],
+					"attachments": [],
+					"itemAttachment": {
+						"name": null,
+						"content": {}
+					},
+					"attachmentOfferings": [],
+					"offerings": [],
+					"priceTags": [],
+					"availability": "available",
+					"measurementUnit": "un",
+					"unitMultiplier": 1
+				},
+				{
+					"uniqueId": "C6547FFA357E4FDAB04536C8958E7642",
+					"id": "2000789",
+					"productId": "2000729",
+					"refId": "5700302259056",
+					"ean": "5700302259056",
+					"name": "BRACELETE SÍMBOLO DA PROTEÇÃO - 18 CM",
+					"skuName": "BRACELETE SÍMBOLO DA PROTEÇÃO - 18 CM",
+					"modalType": null,
+					"priceValidUntil": "2019-01-16T20:41:59.9330591Z",
+					"tax": 0,
+					"price": 22500,
+					"listPrice": 22500,
+					"manualPrice": null,
+					"sellingPrice": 22500,
+					"rewardValue": 0,
+					"isGift": false,
+					"additionalInfo": {
+						"brandName": "Pandora",
+						"brandId": "2000002",
+						"offeringInfo": null,
+						"offeringType": null,
+						"offeringTypeId": null
+					},
+					"preSaleDate": null,
+					"productCategoryIds": "/1000012/1000017/",
+					"productCategories": {
+						"1000012": "BRACELETES",
+						"1000017": "SÍMBOLOS"
+					},
+					"defaultPicker": null,
+					"handlerSequence": 0,
+					"handling": false,
+					"quantity": 1,
+					"seller": "lojavtexrj",
+					"sellerChain": [
+						"lojavtexrj"
+					],
+					"imageUrl": "http://lojavtex.vteximg.com.br/arquivos/ids/156458-55-55/image-b27375cfcba941a39021fa6c7492d79e.jpg?v=636066036708800000",
+					"detailUrl": "/bracelete-simbolo-da-protecao-2000729/p",
+					"components": [],
+					"bundleItems": [],
+					"attachments": [],
+					"itemAttachment": {
+						"name": null,
+						"content": {}
+					},
+					"attachmentOfferings": [],
+					"offerings": [],
+					"priceTags": [],
+					"availability": "available",
+					"measurementUnit": "un",
+					"unitMultiplier": 1
+				},
+				{
+					"uniqueId": "F8AB654602BF4E0EB6BAFF29C86D1587",
+					"id": "2001661",
+					"productId": "2001154",
+					"refId": "5700302317527",
+					"ean": "5700302317527",
+					"name": "ANEL BRILHANTE CONDESSA ROUND AND SQUARE ETERNITY SILVER RING WI - 20",
+					"skuName": "ROUND AND SQUARE ETERNITY SILVER RING WI - 20",
+					"modalType": null,
+					"priceValidUntil": "2019-01-16T20:41:59.9330591Z",
+					"tax": 0,
+					"price": 31500,
+					"listPrice": 31500,
+					"manualPrice": null,
+					"sellingPrice": 31500,
+					"rewardValue": 0,
+					"isGift": false,
+					"additionalInfo": {
+						"brandName": "Pandora",
+						"brandId": "2000002",
+						"offeringInfo": null,
+						"offeringType": null,
+						"offeringTypeId": null
+					},
+					"preSaleDate": null,
+					"productCategoryIds": "/1000018/",
+					"productCategories": {
+						"1000018": "ANÉIS"
+					},
+					"defaultPicker": null,
+					"handlerSequence": 0,
+					"handling": false,
+					"quantity": 1,
+					"seller": "lojavtexrj",
+					"sellerChain": [
+						"lojavtexrj"
+					],
+					"imageUrl": "http://lojavtex.vteximg.com.br/arquivos/ids/158243-55-55/image-9ac4726c1b114651a112de6ea39e7581.jpg?v=636066043060970000",
+					"detailUrl": "/anel-brilhante-condessa-2001154/p",
+					"components": [],
+					"bundleItems": [],
+					"attachments": [],
+					"itemAttachment": {
+						"name": null,
+						"content": {}
+					},
+					"attachmentOfferings": [],
+					"offerings": [],
+					"priceTags": [],
+					"availability": "available",
+					"measurementUnit": "un",
+					"unitMultiplier": 1
+				},
+				{
+					"uniqueId": "A86421E78ABF4619A61E75062612C2D1",
+					"id": "2000728",
+					"productId": "2000658",
+					"refId": "5700302379327",
+					"ean": "5700302379327",
+					"name": "SEPARADOR ETERNO AZUL ROYAL",
+					"skuName": "SEPARADOR ETERNO AZUL ROYAL",
+					"modalType": null,
+					"priceValidUntil": "2019-01-16T20:41:59.9330591Z",
+					"tax": 0,
+					"price": 16500,
+					"listPrice": 16500,
+					"manualPrice": null,
+					"sellingPrice": 16500,
+					"rewardValue": 0,
+					"isGift": false,
+					"additionalInfo": {
+						"brandName": "Pandora",
+						"brandId": "2000002",
+						"offeringInfo": null,
+						"offeringType": null,
+						"offeringTypeId": null
+					},
+					"preSaleDate": null,
+					"productCategoryIds": "/1000007/1000009/",
+					"productCategories": {
+						"1000007": "CHARMS",
+						"1000009": "SEPARADORES"
+					},
+					"defaultPicker": null,
+					"handlerSequence": 0,
+					"handling": false,
+					"quantity": 1,
+					"seller": "lojavtexrj",
+					"sellerChain": [
+						"lojavtexrj"
+					],
+					"imageUrl": "http://lojavtex.vteximg.com.br/arquivos/ids/156324-55-55/image-7a65e06f90cf46ea83648288b8a0cab8.jpg?v=636064203981970000",
+					"detailUrl": "/separador-eterno-azul-royal-2000658/p",
+					"components": [],
+					"bundleItems": [],
+					"attachments": [],
+					"itemAttachment": {
+						"name": null,
+						"content": {}
+					},
+					"attachmentOfferings": [],
+					"offerings": [],
+					"priceTags": [],
+					"availability": "available",
+					"measurementUnit": "un",
+					"unitMultiplier": 1
+				},
+				{
+					"uniqueId": "B715A05917E34FF1B8E0629DD7825F16",
+					"id": "2000554",
+					"productId": "2000495",
+					"refId": "5700302343861",
+					"ean": "5700302343861",
+					"name": "SEPARADOR BILHO BRILHANTE ROSA",
+					"skuName": "SEPARADOR BILHO BRILHANTE ROSA",
+					"modalType": null,
+					"priceValidUntil": "2019-01-16T20:41:59.9330591Z",
+					"tax": 0,
+					"price": 16500,
+					"listPrice": 16500,
+					"manualPrice": null,
+					"sellingPrice": 16500,
+					"rewardValue": 0,
+					"isGift": false,
+					"additionalInfo": {
+						"brandName": "Pandora",
+						"brandId": "2000002",
+						"offeringInfo": null,
+						"offeringType": null,
+						"offeringTypeId": null
+					},
+					"preSaleDate": null,
+					"productCategoryIds": "/1000007/1000009/",
+					"productCategories": {
+						"1000007": "CHARMS",
+						"1000009": "SEPARADORES"
+					},
+					"defaultPicker": null,
+					"handlerSequence": 0,
+					"handling": false,
+					"quantity": 1,
+					"seller": "lojavtexrj",
+					"sellerChain": [
+						"lojavtexrj"
+					],
+					"imageUrl": "http://lojavtex.vteximg.com.br/arquivos/ids/156041-55-55/image-ca1b7facf6e24a7bbb25513a64767de8.jpg?v=636064202100330000",
+					"detailUrl": "/separador-bilho-brilhante-rosa-2000495/p",
+					"components": [],
+					"bundleItems": [],
+					"attachments": [],
+					"itemAttachment": {
+						"name": null,
+						"content": {}
+					},
+					"attachmentOfferings": [],
+					"offerings": [],
+					"priceTags": [],
+					"availability": "available",
+					"measurementUnit": "un",
+					"unitMultiplier": 1
+				},
+				{
+					"uniqueId": "49424D03173D46F8B404AA63FC5608C2",
+					"id": "2000353",
+					"productId": "2000306",
+					"refId": "5700302276527",
+					"ean": "5700302276527",
+					"name": "SEPARADOR ROSÊ SUA MAJESTADE",
+					"skuName": "SEPARADOR ROSÊ SUA MAJESTADE",
+					"modalType": null,
+					"priceValidUntil": "2019-01-16T20:41:59.9330591Z",
+					"tax": 0,
+					"price": 20500,
+					"listPrice": 20500,
+					"manualPrice": null,
+					"sellingPrice": 20500,
+					"rewardValue": 0,
+					"isGift": false,
+					"additionalInfo": {
+						"brandName": "Pandora",
+						"brandId": "2000002",
+						"offeringInfo": null,
+						"offeringType": null,
+						"offeringTypeId": null
+					},
+					"preSaleDate": null,
+					"productCategoryIds": "/1000007/1000009/",
+					"productCategories": {
+						"1000007": "CHARMS",
+						"1000009": "SEPARADORES"
+					},
+					"defaultPicker": null,
+					"handlerSequence": 0,
+					"handling": false,
+					"quantity": 1,
+					"seller": "lojavtexrj",
+					"sellerChain": [
+						"lojavtexrj"
+					],
+					"imageUrl": "http://lojavtex.vteximg.com.br/arquivos/ids/155777-55-55/image-d528f6f74e0c43c49e893ab77c8358e9.jpg?v=636064200160000000",
+					"detailUrl": "/separador-rose-sua-majestade-2000306/p",
+					"components": [],
+					"bundleItems": [],
+					"attachments": [],
+					"itemAttachment": {
+						"name": null,
+						"content": {}
+					},
+					"attachmentOfferings": [],
+					"offerings": [],
+					"priceTags": [],
+					"availability": "available",
+					"measurementUnit": "un",
+					"unitMultiplier": 1
+				},
+				{
+					"uniqueId": "C18823CA79DA440797120D675FDEA14D",
+					"id": "2001023",
+					"productId": "2000948",
+					"refId": "5700302276701",
+					"ean": "5700302276701",
+					"name": "ANEL ROSÊ PLUMAS - 16",
+					"skuName": "ANEL ROSÊ PLUMAS - 16",
+					"modalType": null,
+					"priceValidUntil": "2019-01-16T20:41:59.9330591Z",
+					"tax": 0,
+					"price": 43500,
+					"listPrice": 43500,
+					"manualPrice": null,
+					"sellingPrice": 43500,
+					"rewardValue": 0,
+					"isGift": false,
+					"additionalInfo": {
+						"brandName": "Pandora",
+						"brandId": "2000002",
+						"offeringInfo": null,
+						"offeringType": null,
+						"offeringTypeId": null
+					},
+					"preSaleDate": null,
+					"productCategoryIds": "/1000018/1000023/",
+					"productCategories": {
+						"1000018": "ANÉIS",
+						"1000023": "PANDORA ROSE"
+					},
+					"defaultPicker": null,
+					"handlerSequence": 0,
+					"handling": false,
+					"quantity": 1,
+					"seller": "lojavtexrj",
+					"sellerChain": [
+						"lojavtexrj"
+					],
+					"imageUrl": "http://lojavtex.vteximg.com.br/arquivos/ids/156959-55-55/image-4130c52a6a1e4dd5aa3ad5f66b7ae5cd.jpg?v=636066038584070000",
+					"detailUrl": "/anel-rose-plumas-2000948/p",
+					"components": [],
+					"bundleItems": [],
+					"attachments": [],
+					"itemAttachment": {
+						"name": null,
+						"content": {}
+					},
+					"attachmentOfferings": [],
+					"offerings": [],
+					"priceTags": [],
+					"availability": "available",
+					"measurementUnit": "un",
+					"unitMultiplier": 1
+				}
+			],
+			"sellers": [
+				{
+					"id": "lojavtexrj",
+					"name": "lojavtexrj",
+					"logo": null
+				}
+			],
+			"totals": [
+				{
+					"id": "Items",
+					"name": "Total dos Itens",
+					"value": 173500
+				},
+				{
+					"id": "Discounts",
+					"name": "Total dos Descontos",
+					"value": 0
+				},
+				{
+					"id": "Shipping",
+					"name": "Total do Frete",
+					"value": 0
+				},
+				{
+					"id": "Tax",
+					"name": "Total da Taxa",
+					"value": 0
+				}
+			],
+			"clientProfileData": {
+				"attachmentId": "clientProfileData",
+				"email": "augustocbarbosa@gmail.com",
+				"firstName": "Augusto",
+				"lastName": "Barbosa",
+				"document": "05250642497",
+				"documentType": "cpf",
+				"phone": "+5521988877776",
+				"corporateName": null,
+				"tradeName": null,
+				"corporateDocument": null,
+				"stateInscription": null,
+				"corporatePhone": null,
+				"isCorporate": false,
+				"profileCompleteOnLoading": true,
+				"profileErrorOnLoading": false,
+				"customerClass": null
+			},
+			"ratesAndBenefitsData": {
+				"attachmentId": "ratesAndBenefitsData",
+				"rateAndBenefitsIdentifiers": [],
+				"teaser": []
+			},
+			"shippingData": {
+				"attachmentId": "shippingData",
+				"address": {
+					"addressType": "pickup",
+					"receiverName": "Augusto Barbosa",
+					"addressId": "1fd2141",
+					"postalCode": "22250040",
+					"city": "Rio de Janeiro",
+					"state": "RJ",
+					"country": "BRA",
+					"street": "Praia de Botafogo",
+					"number": "",
+					"neighborhood": "Botafogo",
+					"complement": "",
+					"reference": null,
+					"geoCoordinates": [
+						-43.18226623535156,
+						-22.945985794067383
+					]
+				},
+				"logisticsInfo": [
+					{
+						"itemIndex": 0,
+						"selectedSla": "Retirada em Loja (1fd2141)",
+						"selectedDeliveryChannel": "pickup-in-point",
+						"addressId": "1fd2141",
+						"slas": [
+							{
+								"id": "Retirada em Loja (1fd2141)",
+								"deliveryChannel": "pickup-in-point",
+								"name": "Retirada em Loja (1fd2141)",
+								"deliveryIds": [
+									{
+										"courierId": "167e434",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Retirada em Loja",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "1bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 0,
+								"listPrice": 0,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": true,
+									"friendlyName": "Loja Shopping Praia de Botafogo",
+									"address": {
+										"addressType": "pickup",
+										"receiverName": null,
+										"addressId": "1fd2141",
+										"postalCode": "22250040",
+										"city": "Rio de Janeiro",
+										"state": "RJ",
+										"country": "BRA",
+										"street": "Praia de Botafogo",
+										"number": "",
+										"neighborhood": "Botafogo",
+										"complement": "",
+										"reference": null,
+										"geoCoordinates": [
+											-43.18226623535156,
+											-22.945985794067383
+										]
+									},
+									"additionalInfo": "Procura o balcão de atendimento. \nLevar documento usado no pedido.",
+									"dockId": "17eb0f4"
+								}
+							},
+							{
+								"id": "Shipping",
+								"deliveryChannel": "delivery",
+								"name": "Shipping",
+								"deliveryIds": [
+									{
+										"courierId": "16db245",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Shipping From Store",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "3bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 73,
+								"listPrice": 73,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Normal",
+								"deliveryChannel": "delivery",
+								"name": "Normal",
+								"deliveryIds": [
+									{
+										"courierId": "1de4e83",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Correios",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 147,
+								"listPrice": 147,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Agendada",
+								"deliveryChannel": "delivery",
+								"name": "Agendada",
+								"deliveryIds": [
+									{
+										"courierId": "150b6fb",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Agendada",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [
+									{
+										"startDateUtc": "2018-01-24T09:00:00+00:00",
+										"endDateUtc": "2018-01-24T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-24T13:00:00+00:00",
+										"endDateUtc": "2018-01-24T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T09:00:00+00:00",
+										"endDateUtc": "2018-01-25T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T13:00:00+00:00",
+										"endDateUtc": "2018-01-25T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T09:00:00+00:00",
+										"endDateUtc": "2018-01-26T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T13:00:00+00:00",
+										"endDateUtc": "2018-01-26T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									}
+								],
+								"deliveryWindow": null,
+								"price": 147,
+								"listPrice": 147,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							}
+						],
+						"shipsTo": [
+							"BRA"
+						],
+						"itemId": "2001060",
+						"deliveryChannels": [
+							{
+								"id": "delivery"
+							},
+							{
+								"id": "pickup-in-point"
+							}
+						]
+					},
+					{
+						"itemIndex": 1,
+						"selectedSla": "Retirada em Loja (1fd2141)",
+						"selectedDeliveryChannel": "pickup-in-point",
+						"addressId": "1fd2141",
+						"slas": [
+							{
+								"id": "Retirada em Loja (1fd2141)",
+								"deliveryChannel": "pickup-in-point",
+								"name": "Retirada em Loja (1fd2141)",
+								"deliveryIds": [
+									{
+										"courierId": "167e434",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Retirada em Loja",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "1bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 0,
+								"listPrice": 0,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": true,
+									"friendlyName": "Loja Shopping Praia de Botafogo",
+									"address": {
+										"addressType": "pickup",
+										"receiverName": null,
+										"addressId": "1fd2141",
+										"postalCode": "22250040",
+										"city": "Rio de Janeiro",
+										"state": "RJ",
+										"country": "BRA",
+										"street": "Praia de Botafogo",
+										"number": "",
+										"neighborhood": "Botafogo",
+										"complement": "",
+										"reference": null,
+										"geoCoordinates": [
+											-43.18226623535156,
+											-22.945985794067383
+										]
+									},
+									"additionalInfo": "Procura o balcão de atendimento. \nLevar documento usado no pedido.",
+									"dockId": "17eb0f4"
+								}
+							},
+							{
+								"id": "Shipping",
+								"deliveryChannel": "delivery",
+								"name": "Shipping",
+								"deliveryIds": [
+									{
+										"courierId": "16db245",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Shipping From Store",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "3bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 77,
+								"listPrice": 77,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Normal",
+								"deliveryChannel": "delivery",
+								"name": "Normal",
+								"deliveryIds": [
+									{
+										"courierId": "1de4e83",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Correios",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 154,
+								"listPrice": 154,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Agendada",
+								"deliveryChannel": "delivery",
+								"name": "Agendada",
+								"deliveryIds": [
+									{
+										"courierId": "150b6fb",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Agendada",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [
+									{
+										"startDateUtc": "2018-01-24T09:00:00+00:00",
+										"endDateUtc": "2018-01-24T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-24T13:00:00+00:00",
+										"endDateUtc": "2018-01-24T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T09:00:00+00:00",
+										"endDateUtc": "2018-01-25T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T13:00:00+00:00",
+										"endDateUtc": "2018-01-25T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T09:00:00+00:00",
+										"endDateUtc": "2018-01-26T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T13:00:00+00:00",
+										"endDateUtc": "2018-01-26T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									}
+								],
+								"deliveryWindow": null,
+								"price": 154,
+								"listPrice": 154,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							}
+						],
+						"shipsTo": [
+							"BRA"
+						],
+						"itemId": "2000789",
+						"deliveryChannels": [
+							{
+								"id": "delivery"
+							},
+							{
+								"id": "pickup-in-point"
+							}
+						]
+					},
+					{
+						"itemIndex": 2,
+						"selectedSla": "Retirada em Loja (1fd2141)",
+						"selectedDeliveryChannel": "pickup-in-point",
+						"addressId": "1fd2141",
+						"slas": [
+							{
+								"id": "Retirada em Loja (1fd2141)",
+								"deliveryChannel": "pickup-in-point",
+								"name": "Retirada em Loja (1fd2141)",
+								"deliveryIds": [
+									{
+										"courierId": "167e434",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Retirada em Loja",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "1bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 0,
+								"listPrice": 0,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": true,
+									"friendlyName": "Loja Shopping Praia de Botafogo",
+									"address": {
+										"addressType": "pickup",
+										"receiverName": null,
+										"addressId": "1fd2141",
+										"postalCode": "22250040",
+										"city": "Rio de Janeiro",
+										"state": "RJ",
+										"country": "BRA",
+										"street": "Praia de Botafogo",
+										"number": "",
+										"neighborhood": "Botafogo",
+										"complement": "",
+										"reference": null,
+										"geoCoordinates": [
+											-43.18226623535156,
+											-22.945985794067383
+										]
+									},
+									"additionalInfo": "Procura o balcão de atendimento. \nLevar documento usado no pedido.",
+									"dockId": "17eb0f4"
+								}
+							},
+							{
+								"id": "Shipping",
+								"deliveryChannel": "delivery",
+								"name": "Shipping",
+								"deliveryIds": [
+									{
+										"courierId": "16db245",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Shipping From Store",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "3bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 87,
+								"listPrice": 87,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Normal",
+								"deliveryChannel": "delivery",
+								"name": "Normal",
+								"deliveryIds": [
+									{
+										"courierId": "1de4e83",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Correios",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 175,
+								"listPrice": 175,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Agendada",
+								"deliveryChannel": "delivery",
+								"name": "Agendada",
+								"deliveryIds": [
+									{
+										"courierId": "150b6fb",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Agendada",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [
+									{
+										"startDateUtc": "2018-01-24T09:00:00+00:00",
+										"endDateUtc": "2018-01-24T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-24T13:00:00+00:00",
+										"endDateUtc": "2018-01-24T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T09:00:00+00:00",
+										"endDateUtc": "2018-01-25T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T13:00:00+00:00",
+										"endDateUtc": "2018-01-25T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T09:00:00+00:00",
+										"endDateUtc": "2018-01-26T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T13:00:00+00:00",
+										"endDateUtc": "2018-01-26T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									}
+								],
+								"deliveryWindow": null,
+								"price": 175,
+								"listPrice": 175,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							}
+						],
+						"shipsTo": [
+							"BRA"
+						],
+						"itemId": "2001661",
+						"deliveryChannels": [
+							{
+								"id": "delivery"
+							},
+							{
+								"id": "pickup-in-point"
+							}
+						]
+					},
+					{
+						"itemIndex": 3,
+						"selectedSla": "Retirada em Loja (1fd2141)",
+						"selectedDeliveryChannel": "pickup-in-point",
+						"addressId": "1fd2141",
+						"slas": [
+							{
+								"id": "Retirada em Loja (1fd2141)",
+								"deliveryChannel": "pickup-in-point",
+								"name": "Retirada em Loja (1fd2141)",
+								"deliveryIds": [
+									{
+										"courierId": "167e434",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Retirada em Loja",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "1bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 0,
+								"listPrice": 0,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": true,
+									"friendlyName": "Loja Shopping Praia de Botafogo",
+									"address": {
+										"addressType": "pickup",
+										"receiverName": null,
+										"addressId": "1fd2141",
+										"postalCode": "22250040",
+										"city": "Rio de Janeiro",
+										"state": "RJ",
+										"country": "BRA",
+										"street": "Praia de Botafogo",
+										"number": "",
+										"neighborhood": "Botafogo",
+										"complement": "",
+										"reference": null,
+										"geoCoordinates": [
+											-43.18226623535156,
+											-22.945985794067383
+										]
+									},
+									"additionalInfo": "Procura o balcão de atendimento. \nLevar documento usado no pedido.",
+									"dockId": "17eb0f4"
+								}
+							},
+							{
+								"id": "Shipping",
+								"deliveryChannel": "delivery",
+								"name": "Shipping",
+								"deliveryIds": [
+									{
+										"courierId": "16db245",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Shipping From Store",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "3bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 63,
+								"listPrice": 63,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Normal",
+								"deliveryChannel": "delivery",
+								"name": "Normal",
+								"deliveryIds": [
+									{
+										"courierId": "1de4e83",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Correios",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 126,
+								"listPrice": 126,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Agendada",
+								"deliveryChannel": "delivery",
+								"name": "Agendada",
+								"deliveryIds": [
+									{
+										"courierId": "150b6fb",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Agendada",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [
+									{
+										"startDateUtc": "2018-01-24T09:00:00+00:00",
+										"endDateUtc": "2018-01-24T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-24T13:00:00+00:00",
+										"endDateUtc": "2018-01-24T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T09:00:00+00:00",
+										"endDateUtc": "2018-01-25T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T13:00:00+00:00",
+										"endDateUtc": "2018-01-25T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T09:00:00+00:00",
+										"endDateUtc": "2018-01-26T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T13:00:00+00:00",
+										"endDateUtc": "2018-01-26T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									}
+								],
+								"deliveryWindow": null,
+								"price": 126,
+								"listPrice": 126,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							}
+						],
+						"shipsTo": [
+							"BRA"
+						],
+						"itemId": "2000728",
+						"deliveryChannels": [
+							{
+								"id": "delivery"
+							},
+							{
+								"id": "pickup-in-point"
+							}
+						]
+					},
+					{
+						"itemIndex": 4,
+						"selectedSla": "Retirada em Loja (1fd2141)",
+						"selectedDeliveryChannel": "pickup-in-point",
+						"addressId": "1fd2141",
+						"slas": [
+							{
+								"id": "Retirada em Loja (1fd2141)",
+								"deliveryChannel": "pickup-in-point",
+								"name": "Retirada em Loja (1fd2141)",
+								"deliveryIds": [
+									{
+										"courierId": "167e434",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Retirada em Loja",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "1bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 0,
+								"listPrice": 0,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": true,
+									"friendlyName": "Loja Shopping Praia de Botafogo",
+									"address": {
+										"addressType": "pickup",
+										"receiverName": null,
+										"addressId": "1fd2141",
+										"postalCode": "22250040",
+										"city": "Rio de Janeiro",
+										"state": "RJ",
+										"country": "BRA",
+										"street": "Praia de Botafogo",
+										"number": "",
+										"neighborhood": "Botafogo",
+										"complement": "",
+										"reference": null,
+										"geoCoordinates": [
+											-43.18226623535156,
+											-22.945985794067383
+										]
+									},
+									"additionalInfo": "Procura o balcão de atendimento. \nLevar documento usado no pedido.",
+									"dockId": "17eb0f4"
+								}
+							},
+							{
+								"id": "Shipping",
+								"deliveryChannel": "delivery",
+								"name": "Shipping",
+								"deliveryIds": [
+									{
+										"courierId": "16db245",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Shipping From Store",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "3bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 42,
+								"listPrice": 42,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Normal",
+								"deliveryChannel": "delivery",
+								"name": "Normal",
+								"deliveryIds": [
+									{
+										"courierId": "1de4e83",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Correios",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 84,
+								"listPrice": 84,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Agendada",
+								"deliveryChannel": "delivery",
+								"name": "Agendada",
+								"deliveryIds": [
+									{
+										"courierId": "150b6fb",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Agendada",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [
+									{
+										"startDateUtc": "2018-01-24T09:00:00+00:00",
+										"endDateUtc": "2018-01-24T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-24T13:00:00+00:00",
+										"endDateUtc": "2018-01-24T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T09:00:00+00:00",
+										"endDateUtc": "2018-01-25T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T13:00:00+00:00",
+										"endDateUtc": "2018-01-25T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T09:00:00+00:00",
+										"endDateUtc": "2018-01-26T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T13:00:00+00:00",
+										"endDateUtc": "2018-01-26T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									}
+								],
+								"deliveryWindow": null,
+								"price": 84,
+								"listPrice": 84,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							}
+						],
+						"shipsTo": [
+							"BRA"
+						],
+						"itemId": "2000554",
+						"deliveryChannels": [
+							{
+								"id": "delivery"
+							},
+							{
+								"id": "pickup-in-point"
+							}
+						]
+					},
+					{
+						"itemIndex": 5,
+						"selectedSla": "Retirada em Loja (1fd2141)",
+						"selectedDeliveryChannel": "pickup-in-point",
+						"addressId": "1fd2141",
+						"slas": [
+							{
+								"id": "Retirada em Loja (1fd2141)",
+								"deliveryChannel": "pickup-in-point",
+								"name": "Retirada em Loja (1fd2141)",
+								"deliveryIds": [
+									{
+										"courierId": "167e434",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Retirada em Loja",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "1bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 0,
+								"listPrice": 0,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": true,
+									"friendlyName": "Loja Shopping Praia de Botafogo",
+									"address": {
+										"addressType": "pickup",
+										"receiverName": null,
+										"addressId": "1fd2141",
+										"postalCode": "22250040",
+										"city": "Rio de Janeiro",
+										"state": "RJ",
+										"country": "BRA",
+										"street": "Praia de Botafogo",
+										"number": "",
+										"neighborhood": "Botafogo",
+										"complement": "",
+										"reference": null,
+										"geoCoordinates": [
+											-43.18226623535156,
+											-22.945985794067383
+										]
+									},
+									"additionalInfo": "Procura o balcão de atendimento. \nLevar documento usado no pedido.",
+									"dockId": "17eb0f4"
+								}
+							},
+							{
+								"id": "Shipping",
+								"deliveryChannel": "delivery",
+								"name": "Shipping",
+								"deliveryIds": [
+									{
+										"courierId": "16db245",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Shipping From Store",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "3bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 56,
+								"listPrice": 56,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Normal",
+								"deliveryChannel": "delivery",
+								"name": "Normal",
+								"deliveryIds": [
+									{
+										"courierId": "1de4e83",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Correios",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 112,
+								"listPrice": 112,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Agendada",
+								"deliveryChannel": "delivery",
+								"name": "Agendada",
+								"deliveryIds": [
+									{
+										"courierId": "150b6fb",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Agendada",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [
+									{
+										"startDateUtc": "2018-01-24T09:00:00+00:00",
+										"endDateUtc": "2018-01-24T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-24T13:00:00+00:00",
+										"endDateUtc": "2018-01-24T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T09:00:00+00:00",
+										"endDateUtc": "2018-01-25T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T13:00:00+00:00",
+										"endDateUtc": "2018-01-25T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T09:00:00+00:00",
+										"endDateUtc": "2018-01-26T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T13:00:00+00:00",
+										"endDateUtc": "2018-01-26T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									}
+								],
+								"deliveryWindow": null,
+								"price": 112,
+								"listPrice": 112,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							}
+						],
+						"shipsTo": [
+							"BRA"
+						],
+						"itemId": "2000353",
+						"deliveryChannels": [
+							{
+								"id": "delivery"
+							},
+							{
+								"id": "pickup-in-point"
+							}
+						]
+					},
+					{
+						"itemIndex": 6,
+						"selectedSla": "Retirada em Loja (1fd2141)",
+						"selectedDeliveryChannel": "pickup-in-point",
+						"addressId": "1fd2141",
+						"slas": [
+							{
+								"id": "Retirada em Loja (1fd2141)",
+								"deliveryChannel": "pickup-in-point",
+								"name": "Retirada em Loja (1fd2141)",
+								"deliveryIds": [
+									{
+										"courierId": "167e434",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Retirada em Loja",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "1bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 0,
+								"listPrice": 0,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": true,
+									"friendlyName": "Loja Shopping Praia de Botafogo",
+									"address": {
+										"addressType": "pickup",
+										"receiverName": null,
+										"addressId": "1fd2141",
+										"postalCode": "22250040",
+										"city": "Rio de Janeiro",
+										"state": "RJ",
+										"country": "BRA",
+										"street": "Praia de Botafogo",
+										"number": "",
+										"neighborhood": "Botafogo",
+										"complement": "",
+										"reference": null,
+										"geoCoordinates": [
+											-43.18226623535156,
+											-22.945985794067383
+										]
+									},
+									"additionalInfo": "Procura o balcão de atendimento. \nLevar documento usado no pedido.",
+									"dockId": "17eb0f4"
+								}
+							},
+							{
+								"id": "Shipping",
+								"deliveryChannel": "delivery",
+								"name": "Shipping",
+								"deliveryIds": [
+									{
+										"courierId": "16db245",
+										"warehouseId": "13f8f21",
+										"dockId": "17eb0f4",
+										"courierName": "Shipping From Store",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "3bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 101,
+								"listPrice": 101,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Normal",
+								"deliveryChannel": "delivery",
+								"name": "Normal",
+								"deliveryIds": [
+									{
+										"courierId": "1de4e83",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Correios",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 201,
+								"listPrice": 201,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							},
+							{
+								"id": "Agendada",
+								"deliveryChannel": "delivery",
+								"name": "Agendada",
+								"deliveryIds": [
+									{
+										"courierId": "150b6fb",
+										"warehouseId": "1b31e97",
+										"dockId": "1",
+										"courierName": "Agendada",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "5bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "10d",
+								"availableDeliveryWindows": [
+									{
+										"startDateUtc": "2018-01-24T09:00:00+00:00",
+										"endDateUtc": "2018-01-24T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-24T13:00:00+00:00",
+										"endDateUtc": "2018-01-24T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T09:00:00+00:00",
+										"endDateUtc": "2018-01-25T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-25T13:00:00+00:00",
+										"endDateUtc": "2018-01-25T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T09:00:00+00:00",
+										"endDateUtc": "2018-01-26T12:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									},
+									{
+										"startDateUtc": "2018-01-26T13:00:00+00:00",
+										"endDateUtc": "2018-01-26T18:00:00+00:00",
+										"price": 1999,
+										"lisPrice": 1999,
+										"tax": 0
+									}
+								],
+								"deliveryWindow": null,
+								"price": 201,
+								"listPrice": 201,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								}
+							}
+						],
+						"shipsTo": [
+							"BRA"
+						],
+						"itemId": "2001023",
+						"deliveryChannels": [
+							{
+								"id": "delivery"
+							},
+							{
+								"id": "pickup-in-point"
+							}
+						]
+					}
+				],
+				"selectedAddresses": [
+					{
+						"addressType": "pickup",
+						"receiverName": "Augusto Barbosa",
+						"addressId": "1fd2141",
+						"postalCode": "22250040",
+						"city": "Rio de Janeiro",
+						"state": "RJ",
+						"country": "BRA",
+						"street": "Praia de Botafogo",
+						"number": "",
+						"neighborhood": "Botafogo",
+						"complement": "",
+						"reference": null,
+						"geoCoordinates": [
+							-43.18226623535156,
+							-22.945985794067383
+						]
+					}
+				],
+				"availableAddresses": [
+					{
+						"addressType": "pickup",
+						"receiverName": "Augusto Barbosa",
+						"addressId": "1fd2141",
+						"postalCode": "22250040",
+						"city": "Rio de Janeiro",
+						"state": "RJ",
+						"country": "BRA",
+						"street": "Praia de Botafogo",
+						"number": "",
+						"neighborhood": "Botafogo",
+						"complement": "",
+						"reference": null,
+						"geoCoordinates": [
+							-43.18226623535156,
+							-22.945985794067383
+						]
+					}
+				]
+			},
+			"paymentData": {
+				"attachmentId": "paymentData",
+				"transactionId": "42CAD767EA7E40CAA9437BC653086A3B",
+				"payments": [
+					{
+						"id": "27FD4BDBBB404DB39BA89CB6C1B8DC7A",
+						"paymentSystem": "17",
+						"paymentSystemName": "Promissory",
+						"value": 173500,
+						"installments": 1,
+						"connectorResponses": {},
+						"referenceValue": 173500,
+						"cardHolder": null,
+						"cardNumber": null,
+						"firstDigits": null,
+						"lastDigits": null,
+						"cvv2": null,
+						"expireMonth": null,
+						"expireYear": null,
+						"url": null,
+						"koinUrl": null,
+						"tid": null,
+						"redemptionCode": null,
+						"giftCardId": null,
+						"giftCardProvider": null,
+						"giftCardAsDiscount": null,
+						"group": "promissory",
+						"dueDate": null,
+						"accountId": null,
+						"parentAccountId": null
+					}
+				],
+				"giftCards": [],
+				"transactions": [
+					{
+						"isActive": true,
+						"transactionId": "42CAD767EA7E40CAA9437BC653086A3B",
+						"merchantName": "LOJAVTEX",
+						"payments": [
+							{
+								"id": "27FD4BDBBB404DB39BA89CB6C1B8DC7A",
+								"paymentSystem": "17",
+								"paymentSystemName": "Promissory",
+								"value": 173500,
+								"installments": 1,
+								"connectorResponses": {},
+								"referenceValue": 173500,
+								"cardHolder": null,
+								"cardNumber": null,
+								"firstDigits": null,
+								"lastDigits": null,
+								"cvv2": null,
+								"expireMonth": null,
+								"expireYear": null,
+								"url": null,
+								"koinUrl": null,
+								"tid": null,
+								"redemptionCode": null,
+								"giftCardId": null,
+								"giftCardProvider": null,
+								"giftCardAsDiscount": null,
+								"group": "promissory",
+								"dueDate": null,
+								"accountId": null,
+								"parentAccountId": null
+							}
+						]
+					}
+				],
+				"merchantName": "LOJAVTEX"
+			},
+			"clientPreferencesData": {
+				"attachmentId": "clientPreferencesData",
+				"locale": "pt-BR",
+				"optinNewsLetter": false
+			},
+			"commercialConditionData": null,
+			"giftRegistryData": null,
+			"marketingData": null,
+			"storePreferencesData": {
+				"countryCode": "BRA",
+				"checkToSavePersonDataByDefault": false,
+				"templateOptions": {
+					"toggleCorporate": false
+				},
+				"timeZone": "E. South America Standard Time",
+				"currencyCode": "BRL",
+				"currencyLocale": 1046,
+				"currencySymbol": "R$",
+				"currencyFormatInfo": {
+					"currencyDecimalDigits": 2,
+					"currencyDecimalSeparator": ",",
+					"currencyGroupSeparator": ".",
+					"currencyGroupSize": 3,
+					"startsWithCurrencySymbol": true
+				}
+			},
+			"openTextField": {
+				"attachmentId": "openTextField",
+				"value": null
+			},
+			"customData": null,
+			"hooksData": null,
+			"changeData": null,
+			"salesChannel": "1",
+			"followUpEmail": "23cde00056e74aee80b32592f72e58f1@ct.vtex.com.br",
+			"creationDate": "2018-01-16T20:42:00.9828678Z",
+			"lastChange": "2018-01-16T20:42:10.7121907Z",
+			"timeZoneCreationDate": "2018-01-16T18:42:00.9828678",
+			"timeZoneLastChange": "2018-01-16T18:42:10.7121907",
+			"isCompleted": true,
+			"hostName": "lojavtex",
+			"merchantName": null,
+			"userType": "",
+			"roundingError": 0,
+			"allowEdition": true,
+			"allowCancellation": true
+		}
+	],
+	"ordersUrl": "http://vtexgame1.vtexcommercestable.com.br/account/orders",
+	"orderGroup": "802810590387",
+	"subjectItemAttachment": {
+		"item": "Camisa Flamengo",
+		"totalItems": 2,
+		"extraItems": 1
+	},
+	"split": false,
+	"totalValue": 51599,
+	"callCenterOperatorData": null,
+	"_accountInfo": {
+		"HostName": "vtexgame1",
+		"MainAccountName": "vtexgame1",
+		"IsPersisted": true,
+		"IsRemoved": false,
+		"Id": "e39d05f9-0c54-4469-a626-8bb5cff169f8",
+		"Cnpj": "99999999999999",
+		"CompanyName": "VTEX Developers",
+		"TradingName": "VTEX Developers",
+		"AccountName": "vtexgame1",
+		"DefaultUrl": null,
+		"Address": null,
+		"Number": null,
+		"Complement": null,
+		"District": null,
+		"City": null,
+		"State": null,
+		"PostalCode": null,
+		"Country": "Brasil",
+		"Telephone": null,
+		"IsActive": true,
+		"Sponsor": "eb436322-473b-4296-89a9-f129c479be4c",
+		"Logo": null,
+		"AppId": "fddf74e6-cc47-4a7d-8956-f0a6629cb23b",
+		"IsOperating": false,
+		"LV": "LV-1068069",
+		"Sigla": null
+	}
+}

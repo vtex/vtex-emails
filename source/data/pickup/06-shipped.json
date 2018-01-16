@@ -1,0 +1,812 @@
+{
+	"package": {
+		"items": [
+			{
+				"itemIndex": 0,
+				"quantity": 1,
+				"price": 19500,
+				"description": null
+			},
+			{
+				"itemIndex": 1,
+				"quantity": 1,
+				"price": 22500,
+				"description": null
+			}
+		],
+		"courier": "RETIRAR NA LOJA TESTE",
+		"invoiceNumber": "45678",
+		"invoiceValue": 42000,
+		"invoiceUrl": null,
+		"issuanceDate": "1970-01-01T00:00:00Z",
+		"trackingNumber": "4567678",
+		"invoiceKey": null,
+		"trackingUrl": null,
+		"embeddedInvoice": "",
+		"type": "Output",
+		"courierStatus": {
+			"status": "unknown",
+			"finished": false,
+			"data": []
+		}
+	},
+	"subjectItemAttachment": {
+		"item": "BRACELETE DE COURO D...",
+		"totalItems": 2,
+		"extraItems": 1
+	},
+	"items": [
+		{
+			"additionalInfo": {
+				"dimension": {
+					"cubicweight": 0.0002,
+					"height": 1,
+					"length": 1,
+					"weight": 80,
+					"width": 1
+				},
+				"categoriesIds": "/1000007/1000010/",
+				"productClusterId": "137,138,141,142",
+				"commercialConditionId": "1",
+				"brandName": "Pandora",
+				"brandId": "2000002",
+				"offeringInfo": null,
+				"offeringType": null,
+				"offeringTypeId": null
+			},
+			"sellerSku": "2000561",
+			"priceValidUntil": "2019-01-16T20:12:31.6859099Z",
+			"callCenterOperator": null,
+			"commission": 0,
+			"freightCommission": 0,
+			"uniqueId": "A9D64EE83C574349A1C4164C192BDAE9",
+			"id": "2000561",
+			"productId": "2000502",
+			"refId": "5700302009804",
+			"ean": "5700302009804",
+			"name": "CORRENTE DE SEGURANÇA DE PRATA MARGARIDAS",
+			"skuName": "CORRENTE DE SEGURANÇA DE PRATA MARGARIDAS",
+			"modalType": null,
+			"tax": 0,
+			"price": 19500,
+			"listPrice": 19500,
+			"manualPrice": null,
+			"sellingPrice": 19500,
+			"rewardValue": 0,
+			"isGift": false,
+			"preSaleDate": null,
+			"productCategoryIds": "/1000007/1000010/",
+			"productCategories": {
+				"1000007": "CHARMS",
+				"1000010": "CORRENTE DE SEGURANÇA"
+			},
+			"defaultPicker": null,
+			"handlerSequence": 0,
+			"handling": false,
+			"quantity": 1,
+			"seller": "lojavtexrj",
+			"imageUrl": "http://lojavtex.vteximg.com.br/arquivos/ids/156048-55-55/image-643d5148293645689da349bc1b4718de.jpg?v=636064202149300000",
+			"detailUrl": "/corrente-de-seguranca-de-prata-margaridas-2000502/p",
+			"components": [],
+			"bundleItems": [],
+			"attachments": [],
+			"itemAttachment": {
+				"name": null,
+				"content": {}
+			},
+			"attachmentOfferings": [],
+			"offerings": [],
+			"priceTags": [],
+			"availability": "available",
+			"measurementUnit": "un",
+			"unitMultiplier": 1
+		},
+		{
+			"additionalInfo": {
+				"dimension": {
+					"cubicweight": 0.0002,
+					"height": 1,
+					"length": 1,
+					"weight": 570,
+					"width": 1
+				},
+				"categoriesIds": "/1000012/1000015/",
+				"productClusterId": "137,138,142",
+				"commercialConditionId": "1",
+				"brandName": "Pandora",
+				"brandId": "2000002",
+				"offeringInfo": null,
+				"offeringType": null,
+				"offeringTypeId": null
+			},
+			"sellerSku": "2000591",
+			"priceValidUntil": "2019-01-16T20:12:31.6859099Z",
+			"callCenterOperator": null,
+			"commission": 0,
+			"freightCommission": 0,
+			"uniqueId": "B8104151A4C84509828662936A6C81E6",
+			"id": "2000591",
+			"productId": "2000531",
+			"refId": "5700302319965",
+			"ean": "5700302319965",
+			"name": "BRACELETE DE COURO DUAS VOLTAS VERDE MAR - 38 CM",
+			"skuName": "BRACELETE DE COURO DUAS VOLTAS VERDE MAR - 38 CM",
+			"modalType": null,
+			"tax": 0,
+			"price": 22500,
+			"listPrice": 22500,
+			"manualPrice": null,
+			"sellingPrice": 22500,
+			"rewardValue": 0,
+			"isGift": false,
+			"preSaleDate": null,
+			"productCategoryIds": "/1000012/1000015/",
+			"productCategories": {
+				"1000012": "BRACELETES",
+				"1000015": "DE COURO"
+			},
+			"defaultPicker": null,
+			"handlerSequence": 0,
+			"handling": false,
+			"quantity": 1,
+			"seller": "lojavtexrj",
+			"imageUrl": "http://lojavtex.vteximg.com.br/arquivos/ids/156083-55-55/image-b49718f291c3412680bad822f5a2039a.jpg?v=636064202353600000",
+			"detailUrl": "/bracelete-de-couro-duas-voltas-verde-mar-2000531/p",
+			"components": [],
+			"bundleItems": [],
+			"attachments": [],
+			"itemAttachment": {
+				"name": null,
+				"content": {}
+			},
+			"attachmentOfferings": [],
+			"offerings": [],
+			"priceTags": [],
+			"availability": "available",
+			"measurementUnit": "un",
+			"unitMultiplier": 1
+		}
+	],
+	"sellers": [
+		{
+			"subSellerId": "1",
+			"fulfillmentEndpoint": "http://fulfillment.vtexcommerce.com.br/api/fulfillment?affiliateid=SLR&sc=1&an=lojavtexrj",
+			"id": "lojavtexrj",
+			"name": "lojavtexrj",
+			"logo": null
+		}
+	],
+	"paymentData": {
+		"giftCards": [],
+		"transactions": [
+			{
+				"isActive": true,
+				"transactionId": "EA945713BB6D4654B836606087738BE4",
+				"merchantName": "LOJAVTEX",
+				"payments": [
+					{
+						"id": "A7DBC2DA577D4D1F982981F5368EA3C6",
+						"paymentSystem": "17",
+						"paymentSystemName": "Promissory",
+						"value": 42000,
+						"installments": 1,
+						"connectorResponses": {},
+						"referenceValue": 42000,
+						"cardHolder": null,
+						"cardNumber": null,
+						"firstDigits": null,
+						"lastDigits": null,
+						"cvv2": null,
+						"expireMonth": null,
+						"expireYear": null,
+						"url": null,
+						"koinUrl": null,
+						"tid": null,
+						"redemptionCode": null,
+						"giftCardId": null,
+						"giftCardProvider": null,
+						"giftCardAsDiscount": null,
+						"group": "promissory",
+						"dueDate": null,
+						"accountId": null,
+						"parentAccountId": null
+					}
+				]
+			}
+		]
+	},
+	"giftRegistryData": null,
+	"receiptData": null,
+	"contextData": null,
+	"marketPlaceOrderId": "",
+	"orderFormId": "5beadb808625424397460bf428923691",
+	"sequence": "502512",
+	"affiliateId": "",
+	"status": "",
+	"callCenterOperator": "",
+	"userProfileId": "6ccc4164-4bcc-4f63-b26e-f53a77f28ba6",
+	"hostName": "lojavtex",
+	"creationVersion": null,
+	"creationEnvironment": null,
+	"lastChangeVersion": null,
+	"workflowInstanceId": null,
+	"orderId": "v502512ljvt-01",
+	"orderGroup": "v502512ljvt",
+	"state": "payment-pending",
+	"isCheckedIn": false,
+	"sellerOrderId": "SLR-v502512ljvt-01",
+	"storeId": null,
+	"value": 42000,
+	"totals": [
+		{
+			"id": "Items",
+			"name": "Total dos Itens",
+			"value": 42000
+		},
+		{
+			"id": "Discounts",
+			"name": "Total dos Descontos",
+			"value": 0
+		},
+		{
+			"id": "Shipping",
+			"name": "Total do Frete",
+			"value": 0
+		},
+		{
+			"id": "Tax",
+			"name": "Total da Taxa",
+			"value": 0
+		}
+	],
+	"clientProfileData": {
+		"attachmentId": "clientProfileData",
+		"email": "augustocbarbosa@gmail.com-27b.ct.vtex.com.br",
+		"firstName": "Augusto",
+		"lastName": "Barbosa",
+		"document": "05250642497",
+		"documentType": "cpf",
+		"phone": "+5521988877776",
+		"corporateName": null,
+		"tradeName": null,
+		"corporateDocument": null,
+		"stateInscription": null,
+		"corporatePhone": null,
+		"isCorporate": false,
+		"profileCompleteOnLoading": true,
+		"profileErrorOnLoading": false,
+		"customerClass": null
+	},
+	"ratesAndBenefitsData": {
+		"attachmentId": "ratesAndBenefitsData",
+		"rateAndBenefitsIdentifiers": [],
+		"teaser": []
+	},
+	"shippingData": {
+		"attachmentId": "shippingData",
+		"address": {
+			"addressType": "pickup",
+			"receiverName": "Augusto Barbosa",
+			"addressId": "1fd2141",
+			"postalCode": "22250040",
+			"city": "Rio de Janeiro",
+			"state": "RJ",
+			"country": "BRA",
+			"street": "Praia de Botafogo",
+			"number": "",
+			"neighborhood": "Botafogo",
+			"complement": "",
+			"reference": null,
+			"geoCoordinates": [
+				-43.18226623535156,
+				-22.945985794067383
+			]
+		},
+		"logisticsInfo": [
+			{
+				"itemIndex": 0,
+				"selectedSla": "Retirada em Loja (1fd2141)",
+				"selectedDeliveryChannel": "pickup-in-point",
+				"addressId": "1fd2141",
+				"slas": [
+					{
+						"id": "Retirada em Loja (1fd2141)",
+						"deliveryChannel": "pickup-in-point",
+						"name": "Retirada em Loja (1fd2141)",
+						"deliveryIds": [
+							{
+								"courierId": "167e434",
+								"warehouseId": "13f8f21",
+								"dockId": "17eb0f4",
+								"courierName": "Retirada em Loja",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "1bd",
+						"shippingEstimateDate": null,
+						"lockTTL": "10d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 0,
+						"listPrice": 0,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": true,
+							"friendlyName": "Loja Shopping Praia de Botafogo",
+							"address": {
+								"addressType": "pickup",
+								"receiverName": null,
+								"addressId": "1fd2141",
+								"postalCode": "22250040",
+								"city": "Rio de Janeiro",
+								"state": "RJ",
+								"country": "BRA",
+								"street": "Praia de Botafogo",
+								"number": "",
+								"neighborhood": "Botafogo",
+								"complement": "",
+								"reference": null,
+								"geoCoordinates": [
+									-43.18226623535156,
+									-22.945985794067383
+								]
+							},
+							"additionalInfo": "Procura o balcão de atendimento. \nLevar documento usado no pedido.",
+							"dockId": "17eb0f4"
+						}
+					},
+					{
+						"id": "Shipping",
+						"deliveryChannel": "delivery",
+						"name": "Shipping",
+						"deliveryIds": [
+							{
+								"courierId": "16db245",
+								"warehouseId": "13f8f21",
+								"dockId": "17eb0f4",
+								"courierName": "Shipping From Store",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "3bd",
+						"shippingEstimateDate": null,
+						"lockTTL": "10d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 61,
+						"listPrice": 61,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						}
+					},
+					{
+						"id": "Normal",
+						"deliveryChannel": "delivery",
+						"name": "Normal",
+						"deliveryIds": [
+							{
+								"courierId": "1de4e83",
+								"warehouseId": "1b31e97",
+								"dockId": "1",
+								"courierName": "Correios",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "5bd",
+						"shippingEstimateDate": null,
+						"lockTTL": "10d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 123,
+						"listPrice": 123,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						}
+					},
+					{
+						"id": "Agendada",
+						"deliveryChannel": "delivery",
+						"name": "Agendada",
+						"deliveryIds": [
+							{
+								"courierId": "150b6fb",
+								"warehouseId": "1b31e97",
+								"dockId": "1",
+								"courierName": "Agendada",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "5bd",
+						"shippingEstimateDate": null,
+						"lockTTL": "10d",
+						"availableDeliveryWindows": [
+							{
+								"startDateUtc": "2018-01-24T09:00:00+00:00",
+								"endDateUtc": "2018-01-24T12:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							},
+							{
+								"startDateUtc": "2018-01-24T13:00:00+00:00",
+								"endDateUtc": "2018-01-24T18:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							},
+							{
+								"startDateUtc": "2018-01-25T09:00:00+00:00",
+								"endDateUtc": "2018-01-25T12:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							},
+							{
+								"startDateUtc": "2018-01-25T13:00:00+00:00",
+								"endDateUtc": "2018-01-25T18:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							},
+							{
+								"startDateUtc": "2018-01-26T09:00:00+00:00",
+								"endDateUtc": "2018-01-26T12:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							},
+							{
+								"startDateUtc": "2018-01-26T13:00:00+00:00",
+								"endDateUtc": "2018-01-26T18:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							}
+						],
+						"deliveryWindow": null,
+						"price": 123,
+						"listPrice": 123,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						}
+					}
+				],
+				"shipsTo": [
+					"BRA"
+				],
+				"itemId": "2000561",
+				"deliveryChannels": [
+					{
+						"id": "delivery"
+					},
+					{
+						"id": "pickup-in-point"
+					}
+				]
+			},
+			{
+				"itemIndex": 1,
+				"selectedSla": "Retirada em Loja (1fd2141)",
+				"selectedDeliveryChannel": "pickup-in-point",
+				"addressId": "1fd2141",
+				"slas": [
+					{
+						"id": "Retirada em Loja (1fd2141)",
+						"deliveryChannel": "pickup-in-point",
+						"name": "Retirada em Loja (1fd2141)",
+						"deliveryIds": [
+							{
+								"courierId": "167e434",
+								"warehouseId": "13f8f21",
+								"dockId": "17eb0f4",
+								"courierName": "Retirada em Loja",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "1bd",
+						"shippingEstimateDate": null,
+						"lockTTL": "10d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 0,
+						"listPrice": 0,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": true,
+							"friendlyName": "Loja Shopping Praia de Botafogo",
+							"address": {
+								"addressType": "pickup",
+								"receiverName": null,
+								"addressId": "1fd2141",
+								"postalCode": "22250040",
+								"city": "Rio de Janeiro",
+								"state": "RJ",
+								"country": "BRA",
+								"street": "Praia de Botafogo",
+								"number": "",
+								"neighborhood": "Botafogo",
+								"complement": "",
+								"reference": null,
+								"geoCoordinates": [
+									-43.18226623535156,
+									-22.945985794067383
+								]
+							},
+							"additionalInfo": "Procura o balcão de atendimento. \nLevar documento usado no pedido.",
+							"dockId": "17eb0f4"
+						}
+					},
+					{
+						"id": "Shipping",
+						"deliveryChannel": "delivery",
+						"name": "Shipping",
+						"deliveryIds": [
+							{
+								"courierId": "16db245",
+								"warehouseId": "13f8f21",
+								"dockId": "17eb0f4",
+								"courierName": "Shipping From Store",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "3bd",
+						"shippingEstimateDate": null,
+						"lockTTL": "10d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 438,
+						"listPrice": 438,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						}
+					},
+					{
+						"id": "Normal",
+						"deliveryChannel": "delivery",
+						"name": "Normal",
+						"deliveryIds": [
+							{
+								"courierId": "1de4e83",
+								"warehouseId": "1b31e97",
+								"dockId": "1",
+								"courierName": "Correios",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "5bd",
+						"shippingEstimateDate": null,
+						"lockTTL": "10d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 876,
+						"listPrice": 876,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						}
+					},
+					{
+						"id": "Agendada",
+						"deliveryChannel": "delivery",
+						"name": "Agendada",
+						"deliveryIds": [
+							{
+								"courierId": "150b6fb",
+								"warehouseId": "1b31e97",
+								"dockId": "1",
+								"courierName": "Agendada",
+								"quantity": 1
+							}
+						],
+						"shippingEstimate": "5bd",
+						"shippingEstimateDate": null,
+						"lockTTL": "10d",
+						"availableDeliveryWindows": [
+							{
+								"startDateUtc": "2018-01-24T09:00:00+00:00",
+								"endDateUtc": "2018-01-24T12:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							},
+							{
+								"startDateUtc": "2018-01-24T13:00:00+00:00",
+								"endDateUtc": "2018-01-24T18:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							},
+							{
+								"startDateUtc": "2018-01-25T09:00:00+00:00",
+								"endDateUtc": "2018-01-25T12:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							},
+							{
+								"startDateUtc": "2018-01-25T13:00:00+00:00",
+								"endDateUtc": "2018-01-25T18:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							},
+							{
+								"startDateUtc": "2018-01-26T09:00:00+00:00",
+								"endDateUtc": "2018-01-26T12:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							},
+							{
+								"startDateUtc": "2018-01-26T13:00:00+00:00",
+								"endDateUtc": "2018-01-26T18:00:00+00:00",
+								"price": 1999,
+								"lisPrice": 1999,
+								"tax": 0
+							}
+						],
+						"deliveryWindow": null,
+						"price": 876,
+						"listPrice": 876,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						}
+					}
+				],
+				"shipsTo": [
+					"BRA"
+				],
+				"itemId": "2000591",
+				"deliveryChannels": [
+					{
+						"id": "delivery"
+					},
+					{
+						"id": "pickup-in-point"
+					}
+				]
+			}
+		],
+		"selectedAddresses": [
+			{
+				"addressType": "pickup",
+				"receiverName": "Augusto Barbosa",
+				"addressId": "1fd2141",
+				"postalCode": "22250040",
+				"city": "Rio de Janeiro",
+				"state": "RJ",
+				"country": "BRA",
+				"street": "Praia de Botafogo",
+				"number": "",
+				"neighborhood": "Botafogo",
+				"complement": "",
+				"reference": null,
+				"geoCoordinates": [
+					-43.18226623535156,
+					-22.945985794067383
+				]
+			}
+		],
+		"availableAddresses": [
+			{
+				"addressType": "pickup",
+				"receiverName": "Augusto Barbosa",
+				"addressId": "1fd2141",
+				"postalCode": "22250040",
+				"city": "Rio de Janeiro",
+				"state": "RJ",
+				"country": "BRA",
+				"street": "Praia de Botafogo",
+				"number": "",
+				"neighborhood": "Botafogo",
+				"complement": "",
+				"reference": null,
+				"geoCoordinates": [
+					-43.18226623535156,
+					-22.945985794067383
+				]
+			}
+		]
+	},
+	"clientPreferencesData": {
+		"attachmentId": "clientPreferencesData",
+		"locale": "pt-BR",
+		"optinNewsLetter": false
+	},
+	"commercialConditionData": null,
+	"marketingData": null,
+	"storePreferencesData": {
+		"countryCode": "BRA",
+		"checkToSavePersonDataByDefault": false,
+		"templateOptions": {
+			"toggleCorporate": false
+		},
+		"timeZone": "E. South America Standard Time",
+		"currencyCode": "BRL",
+		"currencyLocale": 1046,
+		"currencySymbol": "R$",
+		"currencyFormatInfo": {
+			"currencyDecimalDigits": 2,
+			"currencyDecimalSeparator": ",",
+			"currencyGroupSeparator": ".",
+			"currencyGroupSize": 3,
+			"startsWithCurrencySymbol": true
+		}
+	},
+	"openTextField": {
+		"attachmentId": "openTextField",
+		"value": null
+	},
+	"customData": null,
+	"hooksData": null,
+	"changeData": null,
+	"salesChannel": "1",
+	"followUpEmail": "bff73cb1c8fa4e10b2fbdbaf1526c0d5@ct.vtex.com.br",
+	"creationDate": "2018-01-16T20:12:33.1130075Z",
+	"lastChange": "2018-01-16T20:12:39.0411523Z",
+	"timeZoneCreationDate": "2018-01-16T18:12:33.1130075",
+	"timeZoneLastChange": "2018-01-16T18:12:39.0411523",
+	"isCompleted": true,
+	"merchantName": null,
+	"userType": "",
+	"roundingError": 0,
+	"allowEdition": false,
+	"allowCancellation": false,
+	"_accountInfo": {
+		"HostName": "lojavtex",
+		"MainAccountName": "lojavtex",
+		"IsPersisted": true,
+		"IsRemoved": false,
+		"Id": "71f41e03-c3a6-4964-a4d1-ee8e0404b0fd",
+		"Cnpj": "05314972000174",
+		"CompanyName": "VTEX",
+		"TradingName": "POC VTEX",
+		"AccountName": "lojavtex",
+		"DefaultUrl": null,
+		"Address": null,
+		"Number": null,
+		"Complement": null,
+		"District": null,
+		"City": null,
+		"State": null,
+		"PostalCode": "22250-04",
+		"Country": null,
+		"Telephone": "2183106100",
+		"IsActive": true,
+		"Sponsor": "3fce0b12-11bf-4b08-b15a-e614af7444cb",
+		"Logo": "vtex-logo-horizontal-checkout.png",
+		"AppId": "30c3bbe7-d766-4c0f-95f8-d4d7f7ba1726",
+		"IsOperating": false,
+		"LV": "LV-178",
+		"Sigla": null
+	}
+}
