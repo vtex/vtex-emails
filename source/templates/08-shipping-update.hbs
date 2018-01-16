@@ -18,7 +18,7 @@
 								<!-- Last update highlighted -->
 								<div class="bg-light-gray ph3 pv2 mt4 dib w-70-ns center fw5 lh-copy">
 									<div class="mb1 fw7 gray">
-										{{formatDateTime package.courierStatus.data.0.lastChange 'dd/MM/yyyy hh:mm'}}
+										{{formatDateTime package.courierStatus.data.0.lastChange}}
 									</div>
 									<div class="f4 fw7">
 										{{package.courierStatus.data.0.description}}
@@ -54,7 +54,7 @@
                   {{#each package.courierStatus.data}}
                     <div class="mb2">
                       <div class="f7 gray">
-                        {{formatDateTime lastChange 'dd/MM/yyyy hh:mm'}}
+                        {{formatDateTime lastChange}}
                       </div>
                       <div>
                         {{description}}
