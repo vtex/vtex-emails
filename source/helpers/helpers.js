@@ -224,7 +224,6 @@ helpers.withRich = function( context, options ) {
 	'use strict';
 
 	var items = context.logisticsInfo;
-	// var ret = '';
 
 	for ( var i = 0, j = items.length; i < j; i++ ) {
 		var item = items[ i ];
@@ -249,9 +248,11 @@ helpers.withRich = function( context, options ) {
 				item.availableDeliveryWindows = sla.availableDeliveryWindows;
 			}
 		}
-
-		// ret = ret + options.fn( item );
 	}
+
+	items.sort( function( a, b ) {
+		return a.shippingEstimateDays - b.shippingEstimateDays;
+	} );
 
 	return options.fn( context );
 };
