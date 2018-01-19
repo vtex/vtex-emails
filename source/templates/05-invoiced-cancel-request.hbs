@@ -50,26 +50,23 @@
             <!-- Order info -->
 						<tr>
 							<td class="w-100 ph4-ns pt3 pb4">
-                {{#group shippingData.logisticsInfo by="addessId"}}
-                  <div class="cb fn">
-                    {{#compare items.length '==' 1}}
-                      <h3 class="ma0">((i18n.invoice.product))</h3>
-                    {{/compare}}
-                    {{#compare items.length '>' 1}}
-                      <h3 class="ma0">((i18n.invoice.products))</h3>
-                    {{/compare}}
+                {{#withRich shippingData}}
+                  {{#group logisticsInfo by="addessId"}}
+                    <div class="cb fn">
+                      {{#compare items.length '>' 1}}
+                        <h3 class="ma0">((i18n.invoice.products))</h3>
+                      {{else}}
+                        <h3 class="ma0">((i18n.invoice.product))</h3>
+                      {{/compare}}
 
-                    {{#group items by="selectedSla"}}
-                      {{#each items}}
-                        {{#each slas}}
-                          {{#compare ../selectedSla '==' id}}
-                            <!-- partial:partials/items.hbs --><!-- partial -->
-                          {{/compare}}
+                      {{#group items by="packageId"}}
+                        {{#each items}}
+                          <!-- partial:partials/items.hbs --><!-- partial -->
                         {{/each}}
-                      {{/each}}
-                    {{/group}}
-                  </div>
-                {{/group}}
+                      {{/group}}
+                    </div>
+                  {{/group}}
+                {{/withRich}}
 							</td>
 						</tr>
 

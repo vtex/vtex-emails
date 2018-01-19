@@ -219,3 +219,39 @@ helpers.isMoreThanOneDay = function( d, options ) {
 
 	return options.inverse( this );
 };
+
+helpers.withRich = function( context, options ) {
+	'use strict';
+
+	var items = context.logisticsInfo;
+	// var ret = '';
+
+	for ( var i = 0, j = items.length; i < j; i++ ) {
+		var item = items[ i ];
+		for ( var ii = 0, jj = item.slas.length; ii < jj; ii++ ) {
+			var sla = item.slas[ ii ];
+			if ( item.selectedSla === sla.id ) {
+				var d = sla.shippingEstimate;
+				var dType = null;
+				if ( /^(\d)+(?=d)/g.test( d ) ) {
+					d = d.substring( 0, d.length - 1 );
+					dType = 'd';
+				} else if ( /^(\d)+(?=bd)/g.test( d ) ) {
+					d = d.substring( 0, d.length - 2 );
+					dType = 'bd';
+				}
+				item.packageId = sla.id + sla.shippingEstimateDate + sla.shippingEstimate;
+				item.shippingEstimateDays = d;
+				item.shippingEstimateDaysType = dType;
+				item.shippingEstimate = sla.shippingEstimate;
+				item.shippingEstimateDate = sla.shippingEstimateDate;
+				item.deliveryWindow = sla.deliveryWindow;
+				item.availableDeliveryWindows = sla.availableDeliveryWindows;
+			}
+		}
+
+		// ret = ret + options.fn( item );
+	}
+
+	return options.fn( context );
+};

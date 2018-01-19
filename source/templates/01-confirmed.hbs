@@ -52,21 +52,23 @@
 
                 <!-- partial:partials/totals.hbs --><!-- partial -->
 
-                {{#group shippingData.logisticsInfo by="addessId"}}
-                  <div class="cb fn pt3">
+                {{#withRich shippingData}}
+                  {{#group logisticsInfo by="addessId"}}
+                    <div class="cb fn pt3">
 
-                    <!-- Address info -->
-                    <!-- partial:partials/address-delivery-title.hbs --><!-- partial -->
-                    <!-- partial:partials/address-pickup-title.hbs --><!-- partial -->
+                      <!-- Address info -->
+                      <!-- partial:partials/address-delivery-title.hbs --><!-- partial -->
+                      <!-- partial:partials/address-pickup-title.hbs --><!-- partial -->
 
-                    <!-- Packages -->
-                    {{#group items by="selectedSla"}}
-                      <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}}</h3>
+                      <!-- Packages -->
+                      {{#group items by="packageId"}}
+                        <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}}</h3>
 
-                      <!-- partial:partials/package.hbs --><!-- partial -->
-                    {{/group}}
-                  </div>
-                {{/group}}
+                        <!-- partial:partials/package.hbs --><!-- partial -->
+                      {{/group}}
+                    </div>
+                  {{/group}}
+                {{/withRich}}
 							</td>
 						</tr>
             {{/each}}

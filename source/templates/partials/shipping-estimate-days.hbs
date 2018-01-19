@@ -1,21 +1,12 @@
 <div class="bg-light-gray ph3 pv2 mw5-5 mb3 fw5">
-  <div class="f7 gray">{{id}}</div>
+  <div class="f7 gray">{{selectedSla}}</div>
   <!-- Scheduled shipping -->
   {{#if deliveryWindow}}
     ((i18n.shipping.scheduled))
   {{else}}
 
-    <!-- Available Today: business days -->
-    {{#eq shippingEstimate "0bd"}}
-      {{#eq deliveryChannel "pickup-in-point"}}
-        ((i18n.shipping.fromToday))
-      {{else}}
-        ((i18n.shipping.today))
-      {{/eq}}
-    {{else}}
-
-    <!-- Available Today: days -->
-    {{#eq shippingEstimate "0d"}}
+    <!-- Available Today -->
+    {{#eq shippingEstimateDays "0"}}
       {{#eq deliveryChannel "pickup-in-point"}}
         ((i18n.shipping.fromToday))
       {{else}}
@@ -32,23 +23,22 @@
       {{/eq}}
 
       <!-- Single or many days -->
-      {{#isMoreThanOneDay shippingEstimate}}
+      {{#compare shippingEstimateDays ">" "1"}}
         <!-- Running days or Business days -->
-        {{#hasSubStr shippingEstimate 'bd'}}
-          {{replace shippingEstimate 'bd' ''}} ((i18n.shipping.businessDays)).
+        {{#eq shippingEstimateDaysType "bd"}}
+          {{shippingEstimateDays}} ((i18n.shipping.businessDays)).
         {{else}}
-          {{replace shippingEstimate 'd' ''}} ((i18n.shipping.days))
-        {{/hasSubStr}}
+          {{shippingEstimateDays}} ((i18n.shipping.days))
+        {{/eq}}
       {{else}}
         <!-- Running days or Business days -->
-        {{#hasSubStr shippingEstimate 'bd'}}
-          {{replace shippingEstimate 'bd' ''}} ((i18n.shipping.businessDay)).
+        {{#eq shippingEstimateDaysType "bd"}}
+          {{shippingEstimateDays}} ((i18n.shipping.businessDay)).
         {{else}}
-          {{replace shippingEstimate 'd' ''}} ((i18n.shipping.day))
-        {{/hasSubStr}}
-      {{/isMoreThanOneDay}}
+          {{shippingEstimateDays}} ((i18n.shipping.day))
+        {{/eq}}
+      {{/compare}}
 
-    {{/eq}}
     {{/eq}}
   {{/if}}
 </div>

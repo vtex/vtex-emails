@@ -22,11 +22,10 @@
                 <div class="mt4">
                   <p>
                     <!-- partial:partials/messages/hi-order.hbs --><!-- partial -->
-                    {{#compare shippingData.logisticsInfo.length '==' 1}}
-                      ((i18n.payment.preparingShippingOneProduct))
-                    {{/compare}}
                     {{#compare shippingData.logisticsInfo.length '>' 1}}
                       ((i18n.payment.preparingShippingManyProducts))
+                    {{else}}
+                      ((i18n.payment.preparingShippingOneProduct))
                     {{/compare}}
                   </p>
                 </div>

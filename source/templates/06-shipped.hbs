@@ -21,10 +21,9 @@
                   {{/compare}}
 
                   <!-- partial:partials/messages/order-reference.hbs --><!-- partial -->
-                {{/compare}}
 
                 <!-- More than 1 package -->
-                {{#compare items.length '!=' shippingData.logisticsInfo.length}}
+                {{else}}
                   {{#compare shippingData.logisticsInfo.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
                     <h1>((i18n.shipping.manyPackagesPickup))</h1>
                   {{else}}
@@ -56,22 +55,26 @@
             <!-- Order info -->
 						<tr>
               <td class="w-100 ph4-ns pt3 pb4">
-                {{#group shippingData.logisticsInfo by="addessId"}}
-                  <div class="cb fn">
-                    <h3 class="ma0 mb2">((i18n.package.title))</h3>
-                    <!-- Address info -->
-                    <!-- partial:partials/address-delivery-no-title.hbs --><!-- partial -->
-                    <!-- partial:partials/address-pickup-no-title.hbs --><!-- partial -->
+                {{#withRich shippingData}}
+                  {{#group logisticsInfo by="addessId"}}
+                    <div class="cb fn">
+                      <h3 class="ma0 mb2">((i18n.package.title))</h3>
+                      <!-- Address info -->
+                      <!-- partial:partials/address-delivery-no-title.hbs --><!-- partial -->
+                      <!-- partial:partials/address-pickup-no-title.hbs --><!-- partial -->
 
-                    {{#group items by="selectedSla"}}
-                      {{#compare items.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
-                        <!-- partial:partials/package-no-estimate.hbs --><!-- partial -->
-                      {{else}}
-                        <!-- partial:partials/package.hbs --><!-- partial -->
-                      {{/compare}}
-                    {{/group}}
-                  </div>
-                {{/group}}
+                      {{#group items by="packageId"}}
+                        {{#compare items.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
+                          {{#each items}}
+                            <!-- partial:partials/items.hbs --><!-- partial -->
+                          {{/each}}
+                        {{else}}
+                          <!-- partial:partials/package.hbs --><!-- partial -->
+                        {{/compare}}
+                      {{/group}}
+                    </div>
+                  {{/group}}
+                {{/withRich}}
 							</td>
 						</tr>
 

@@ -39,7 +39,11 @@
 								<!-- Intro message -->
                 <p class="mt4">
                   <!-- partial:partials/messages/hi-order.hbs --><!-- partial -->
-                  ((i18n.shipping.trackDelivery))
+                  {{#compare package.courierStatus.data.length '>' 1}}
+                    ((i18n.shipping.trackDelivery))
+                  {{else}}
+                    ((i18n.shipping.deliveryDetails))
+                  {{/compare}}
                 </p>
 
 								<div class="pb3">
@@ -76,18 +80,20 @@
             <!-- Order info -->
 						<tr>
 							<td class="w-100 ph4-ns pv4 bt b--light-gray">
-                {{#group shippingData.logisticsInfo by="addessId"}}
-                  <div class="cb fn">
-                    <h3 class="ma0 mb2">((i18n.package.title))</h3>
-                    <!-- Address info -->
-                    <!-- partial:partials/address-delivery-no-title.hbs --><!-- partial -->
-                    <!-- partial:partials/address-pickup-no-title.hbs --><!-- partial -->
+                {{#withRich shippingData}}
+                  {{#group logisticsInfo by="addessId"}}
+                    <div class="cb fn">
+                      <h3 class="ma0 mb2">((i18n.package.title))</h3>
+                      <!-- Address info -->
+                      <!-- partial:partials/address-delivery-no-title.hbs --><!-- partial -->
+                      <!-- partial:partials/address-pickup-no-title.hbs --><!-- partial -->
 
-                    {{#group items by="selectedSla"}}
-                      <!-- partial:partials/package.hbs --><!-- partial -->
-                    {{/group}}
-                  </div>
-                {{/group}}
+                      {{#group items by="selectedSla"}}
+                        <!-- partial:partials/package.hbs --><!-- partial -->
+                      {{/group}}
+                    </div>
+                  {{/group}}
+                {{/withRich}}
 							</td>
 						</tr>
 
