@@ -22,7 +22,7 @@
 							<td class="w-100 ph4-ns pt2 pb4 bt b--light-gray">
                 <!-- partial:partials/totals.hbs --><!-- partial -->
 
-                {{#withRich shippingData}}
+                {{#richShippingData shippingData}}
                   {{#group logisticsInfo by="addessId"}}
                     <div class="cb fn">
                       {{#compare items.length '>' 1}}
@@ -36,7 +36,7 @@
                       {{/group}}
                     </div>
                   {{/group}}
-                {{/withRich}}
+                {{/richShippingData}}
 							</td>
 						</tr>
 

@@ -80,7 +80,7 @@
             <!-- Order info -->
 						<tr>
 							<td class="w-100 ph4-ns pv4 bt b--light-gray">
-                {{#withRich shippingData}}
+                {{#richShippingData shippingData}}
                   {{#group logisticsInfo by="addessId"}}
                     <div class="cb fn">
                       <h3 class="ma0 mb2">((i18n.package.title))</h3>
@@ -93,7 +93,7 @@
                       {{/group}}
                     </div>
                   {{/group}}
-                {{/withRich}}
+                {{/richShippingData}}
 							</td>
 						</tr>
 

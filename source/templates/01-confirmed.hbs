@@ -52,7 +52,7 @@
 
                 <!-- partial:partials/totals.hbs --><!-- partial -->
 
-                {{#withRich shippingData}}
+                {{#richShippingData shippingData}}
                   {{#group logisticsInfo by="addessId"}}
                     <div class="cb fn pt3">
 
@@ -68,7 +68,7 @@
                       {{/group}}
                     </div>
                   {{/group}}
-                {{/withRich}}
+                {{/richShippingData}}
 							</td>
 						</tr>
             {{/each}}

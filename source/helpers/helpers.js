@@ -220,7 +220,7 @@ helpers.isMoreThanOneDay = function( d, options ) {
 	return options.inverse( this );
 };
 
-helpers.withRich = function( context, options ) {
+helpers.richShippingData = function( context, options ) {
 	'use strict';
 
 	var items = context.logisticsInfo;
