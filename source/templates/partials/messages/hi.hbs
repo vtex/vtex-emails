@@ -1,1 +1,13 @@
-((i18n.common.hi)), {{clientProfileData.firstName}}.
+{{#if orders}}
+  {{#if orders.0.clientProfileData.firstName}}
+    {{#compare orders.0.clientProfileData.firstName '!=' 'isAnonymous'}}
+      ((i18n.common.hi)), {{orders.0.clientProfileData.firstName}}.
+    {{/compare}}
+  {{/if}}
+{{else}}
+  {{#if clientProfileData.firstName}}
+    {{#compare clientProfileData.firstName '!=' 'isAnonymous'}}
+      ((i18n.common.hi)), {{clientProfileData.firstName}}.
+    {{/compare}}
+  {{/if}}
+{{/if}}

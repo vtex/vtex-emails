@@ -1,6 +1,6 @@
 {{#compare items.length '==' shippingData.logisticsInfo.length}}
   <p class="mt4">
-    <!-- partial:hi-order.hbs --><!-- partial -->
+    <!-- partial:hi.hbs --><!-- partial -->
     {{#compare items.length '==' 1}}
       ((i18n.shipping.shippingProduct))
     {{/compare}}
@@ -13,7 +13,7 @@
 <!-- Intro message: Just some items shipped -->
 {{#compare items.length '!=' shippingData.logisticsInfo.length}}
   <p class="mt4">
-    <!-- partial:hi-order.hbs --><!-- partial -->
+    <!-- partial:hi.hbs --><!-- partial -->
     {{#compare items.length '==' 1}}
       ((i18n.shipping.shippingOneProduct))
     {{/compare}}
