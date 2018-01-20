@@ -53,10 +53,10 @@
   },
   "shipping": {
     "onePackageDelivery": "Sua entrega foi iniciada.",
-    "onePackagePickup": "Seu pacote está disponível para retirada.",
+    "onePackagePickup": "Sua encomenda está disponível para retirada.",
     "manyPackagesDelivery": "Uma nova entrega foi iniciada.",
-    "manyPackagesPickup": "Um novo pacote está disponível para retirada.",
-    "manyPackages": "Seu pedido possui mais de um pacote.",
+    "manyPackagesPickup": "Uma nova encomenda está disponível para retirada.",
+    "manyPackages": "Seu pedido possui mais de uma encomenda.",
     "notifications": "Avisaremos sobre o andamento de cada um deles.",
     "estimateMessage": "O prazo de entrega deverá ser considerado somente após a confirmação do pagamento.",
     "delivery": "Receber",
@@ -87,7 +87,7 @@
     "businessDays": "dias úteis"
   },
   "package": {
-    "title": "Pacote",
+    "title": "Encomenda",
     "seller": "Fornecido e entregue por"
   }
 }
