@@ -1,5 +1,10 @@
 var helpers = module.exports;
 
+// Basic formatting datetime
+// Ej: {{#_formatDateTime value 'dd/MM/yyyy' }}
+// value type: datetime
+// Consider using next helpers as well!
+
 helpers._formatDateTime = function( value, format ) {
 	'use strict';
 	value = new Date( value );
@@ -22,25 +27,45 @@ helpers._formatDateTime = function( value, format ) {
 	return format;
 };
 
+// Brazilian formatting date
+// Ej: {{#formatDate value }}
+// value type: datetime
+
 helpers.formatDate = function( value ) {
 	'use strict';
 	return helpers._formatDateTime( value, 'dd/MM/yyyy' );
 };
+
+// Brazilian formatting datetime
+// Ej: {{#formatDateTime value }}
+// value type: datetime
 
 helpers.formatDateTime = function( value ) {
 	'use strict';
 	return helpers._formatDateTime( value, 'dd/MM/yyyy h:mm:ss' );
 };
 
+// US formatting date
+// Ej: {{#formatDate value }}
+// value type: datetime
+
 helpers.formatUSDate = function( value ) {
 	'use strict';
 	return helpers._formatDateTime( value, 'MM/dd/yyyy' );
 };
 
+// US formatting datetime
+// Ej: {{#formatDateTime value }}
+// value type: datetime
+
 helpers.formatUSDateTime = function( value ) {
 	'use strict';
 	return helpers._formatDateTime( value, 'MM/dd/yyyy h:mm:ss' );
 };
+
+// Increase date
+// Ej: {{#addDaysToDate value }}
+// value type: datetime
 
 helpers.addDaysToDate = function( date, days ) {
 	'use strict';
@@ -49,11 +74,21 @@ helpers.addDaysToDate = function( date, days ) {
 	return result;
 };
 
+// Format number with decimals according to some country
+// Ej: {{#formatNumber value 'ar-EG' 2 }}
+// value type: float
+// locale type: compatible locale string
+// decimals type: number
+
 helpers.formatNumber = function( value, locale, decimals ) {
 	'use strict';
 	var num = isNaN( value ) || value === '' || value === null ? 0.00 : value;
 	return num.toLocaleString( locale, { minimumFractionDigits: decimals } );
 };
+
+// Format currency using Brazilian Real format
+// Ej: {{#formatCurrency value }}
+// value type: float
 
 helpers.formatCurrency = function( value ) {
 	'use strict';
@@ -61,11 +96,19 @@ helpers.formatCurrency = function( value ) {
 	return parseFloat( num ).toFixed( 2 ).replace( '.',',' ).toString().replace( /( \d )( ?=( \d\d\d )+( ?!\d ) )/g, '$1.' );
 };
 
+// Format currency without decimals using Brazilian Real format
+// Ej: {{#formatCurrencyWithoutDecimals value }}
+// value type: float
+
 helpers.formatCurrencyWithoutDecimals = function( value ) {
 	'use strict';
 	var num = isNaN( value ) || value === '' || value === null ? 0 : value / 100;
 	return parseFloat( num ).toFixed( 0 ).replace( '.', ',' ).toString().replace( /( d )( ?=( ddd )+( ?!d ) )/g, '$1.' );
 };
+
+// Format currency using Peruvian Sol format
+// Ej: {{#formatPENCurrency value }}
+// value type: float
 
 helpers.formatPENCurrency = function( value ) {
 	'use strict';
@@ -73,11 +116,20 @@ helpers.formatPENCurrency = function( value ) {
 	return parseFloat( num ).toFixed( 2 ).toString().replace( /( \d )( ?=( \d\d\d )+( ?!\d ) )/g, '$1,' );
 };
 
+// Format currency using United States Dollar format
+// Ej: {{#formatUSDCurrency value }}
+// value type: float
+
 helpers.formatUSDCurrency = function( value ) {
 	'use strict';
 	var num = isNaN( value ) || value === '' || value === null ? 0.00 : value / 100;
 	return parseFloat( num ).toFixed( 2 ).toString().replace( /( \d )( ?=( \d\d\d )+( ?!\d ) )/g, '$1,' );
 };
+
+// Compare two variables according to some condition
+// Ej: {{#ifCond value1 '>=' value2 }}
+// value1 type: string, number, float
+// value2 type: string, number, float
 
 helpers.ifCond = function( v1, operator, v2, options ) {
 	'use strict';
