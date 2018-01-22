@@ -21,14 +21,16 @@
 
             <!-- Payment - not splitted -->
             {{#compare split "!=" true}}
-            <tr>
-              <td class="w-100 ph4-ns pv4 bt b--light-gray">
-                <h3 class="ma0">((i18n.payment.title))</h3>
-                {{#each orders.0.paymentData.transactions}}
-                  <!-- partial:partials/payment.hbs --><!-- partial -->
-                {{/each}}
-              </td>
-            </tr>
+              {{#compare orders.0.paymentData.transactions.payments.length '>' 0}}
+                <tr>
+                  <td class="w-100 ph4-ns pv4 bt b--light-gray">
+                    <h3 class="ma0">((i18n.payment.title))</h3>
+                    {{#each orders.0.paymentData.transactions}}
+                      <!-- partial:partials/payment.hbs --><!-- partial -->
+                    {{/each}}
+                  </td>
+                </tr>
+              {{/compare}}
             {{/compare}}
 
             <!-- Order info -->
@@ -40,12 +42,14 @@
 
                 <!-- Payment - splitted -->
                 {{#compare split "==" true}}
-                  <div class="fl w-100 w-50-ns pb3 v-top">
-                    <h3>((i18n.payment.title))</h3>
-                    {{#each paymentData.transactions}}
-                    <!-- partial:partials/payment.hbs --><!-- partial -->
-                    {{/each}}
-                  </div>
+                  {{#compare paymentData.transactions.payments.length '>' 0}}
+                    <div class="fl w-100 w-50-ns pb3 v-top">
+                      <h3>((i18n.payment.title))</h3>
+                      {{#each paymentData.transactions}}
+                      <!-- partial:partials/payment.hbs --><!-- partial -->
+                      {{/each}}
+                    </div>
+                  {{/compare}}
                 {{/compare}}
 
                 <!-- partial:partials/totals.hbs --><!-- partial -->
