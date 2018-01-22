@@ -60,7 +60,9 @@
 
                       <!-- Packages -->
                       {{#group items by="packageId"}}
-                        <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}}</h3>
+                        {{#compare item.length '>' 1}}
+                          <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}}</h3>
+                        {{/compare}}
 
                         <!-- partial:partials/package.hbs --><!-- partial -->
                       {{/group}}
