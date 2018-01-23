@@ -19,6 +19,16 @@
             <!-- Intro message -->
             <!-- partial:partials/messages/intro.hbs --><!-- partial -->
 
+            <!-- Shipping Summary -->
+            <tr>
+              <td class="w-100 ph4-ns pv4 bt bb b--light-gray bw3">
+                <h3 class="mt0">((i18n.shipping.summaryTitle))</h3>
+                {{#each orders}}
+                  <!-- partial:partials/shipping-summary.hbs --><!-- partial -->
+                {{/each}}
+              </td>
+            </tr>
+
             <!-- Payment - not splitted -->
             {{#compare split "!=" true}}
             <tr>

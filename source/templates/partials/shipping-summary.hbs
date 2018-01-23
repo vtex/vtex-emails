@@ -1,0 +1,60 @@
+{{#richShippingData shippingData}}
+  {{#group logisticsInfo by="packageId"}}
+    {{#each items}}
+      {{#compare @index '==' 0}}
+        <div class="mw5-5 pt3 pb2">
+          <div
+            {{#eq selectedDeliveryChannel "pickup-in-point"}}
+              class="ba b--light-silver br2"
+            {{else}}
+              class="ba b--moon-gray br2"
+            {{/eq}}
+          >
+            <div class="ph3 pt3">
+              {{#eq selectedDeliveryChannel "pickup-in-point"}}
+                <h4 class="mb2">((i18n.shipping.pickup))</h4>
+              {{else}}
+                <h4 class="mb2">((i18n.shipping.delivery))</h4>
+              {{/eq}}
+
+              <!-- Quantity of items -->
+              {{../items.length}}
+              {{#eq ../items.length 1}}
+                ((i18n.common.lowercase.item))
+              {{else}}
+                ((i18n.common.lowercase.items))
+              {{/eq}}
+
+              {{#if shippingEstimateDate}}
+                <!-- partial:shipping-summary-estimate-date.hbs --><!-- partial -->
+              {{else}}
+                <!-- partial:shipping-summary-estimate-days.hbs --><!-- partial -->
+              {{/if}}
+            </div>
+            <div
+            {{#eq selectedDeliveryChannel "pickup-in-point"}}
+              class="ph3 pv2 bt b--light-silver"
+            {{else}}
+              class="ph3 pv2 bt b--moon-gray"
+            {{/eq}}
+            >
+              {{#eq selectedDeliveryChannel "pickup-in-point"}}
+                {{slas.0.pickupStoreInfo.friendlyName}}
+              {{else}}
+                {{#if ../../../giftRegistryData}}
+                  {{../../../giftRegistryData.description}}
+                {{else}}
+                  {{#each ../../availableAddresses}}
+                    {{#eq ../addressId addressId}}
+                      {{street}}, {{number}}
+                    {{/eq}}
+                  {{/each}}
+                {{/if}}
+              {{/eq}}
+            </div>
+          </div>
+        </div>
+      {{/compare}}
+    {{/each}}
+  {{/group}}
+{{/richShippingData}}

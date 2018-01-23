@@ -2,12 +2,18 @@
 {{#each items}}
   <!-- print SLA info just one time at the top -->
   {{#compare @index '==' 0}}
-    <!-- show info for estimate days or date -->
-    {{#unless shippingEstimateDate}}
-      <!-- partial:shipping-estimate-days.hbs --><!-- partial -->
-    {{else}}
-      <!-- partial:shipping-estimate-date.hbs --><!-- partial -->
-    {{/unless}}
+    <div class="bg-light-gray ph3 pv2 mw5-5 mb3 fw5">
+      {{#compare selectedDeliveryChannel "!=" "pickup-in-point"}}
+        <div class="f7 gray">{{selectedSla}}</div>
+      {{/compare}}
+
+      <!-- show info for estimate days or date -->
+      {{#unless shippingEstimateDate}}
+        <!-- partial:shipping-estimate-days.hbs --><!-- partial -->
+      {{else}}
+        <!-- partial:shipping-estimate-date.hbs --><!-- partial -->
+      {{/unless}}
+    </div>
   {{/compare}}
   <!-- back to items list -->
 {{/each}}

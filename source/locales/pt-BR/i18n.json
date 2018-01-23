@@ -14,7 +14,11 @@
     "regards": "Atenciosamente,",
     "team": "Equipe",
     "cantCancel": "Não foi possível cancelar seu pedido.",
-    "cancelationInstructions": "Caso queria seguir com o cancelamento, você poderá recusar a entrega e posteriormente seu pagamento será estornado."
+    "cancelationInstructions": "Caso queria seguir com o cancelamento, você poderá recusar a entrega e posteriormente seu pagamento será estornado.",
+    "lowercase": {
+      "item": "item",
+      "items": "itens"
+    }
   },
   "order": {
     "title": "Obrigado pelo seu pedido.",
@@ -58,13 +62,13 @@
     "manyPackagesPickup": "Uma nova encomenda está disponível para retirada.",
     "manyPackages": "Seu pedido possui mais de uma encomenda.",
     "notifications": "Avisaremos sobre o andamento de cada um deles.",
-    "estimateMessage": "O prazo de entrega deverá ser considerado somente após a confirmação do pagamento.",
+    "estimateMessage": "O prazo das encomendas deverá ser considerado somente após a confirmação do pagamento.",
     "delivery": "Receber",
     "pickup": "Retirar",
     "scheduled": "Agendada",
     "inUpTo": "Em até",
     "upTo": "Até",
-    "from": "A partir de",
+    "from": "Após",
     "today": "Hoje",
     "fromToday": "A partir de hoje",
     "updateTitle": "Sua entrega foi atualizada.",
@@ -84,7 +88,15 @@
     "day": "dia",
     "days": "dias",
     "businessDay": "dia útil",
-    "businessDays": "dias úteis"
+    "businessDays": "dias úteis",
+    "summaryTitle": "Resumo de sua(s) encomenda(s)",
+    "lowercase": {
+      "inUpTo": "em até",
+      "upTo": "até",
+      "from": "após",
+      "today": "hoje",
+      "fromToday": "a partir de hoje"
+    }
   },
   "package": {
     "title": "Encomenda",
