@@ -3,6 +3,7 @@
     {{#each items}}
       {{#compare @index '==' 0}}
         <div class="mw5-5 pt3 pb2">
+          <!-- Change border color for each delivery channel -->
           <div
             {{#eq selectedDeliveryChannel "pickup-in-point"}}
               class="ba b--light-silver br2"
@@ -10,6 +11,7 @@
               class="ba b--moon-gray br2"
             {{/eq}}
           >
+            <!-- Title: delivery or pickup -->
             <div class="ph3 pt3">
               {{#eq selectedDeliveryChannel "pickup-in-point"}}
                 <h4 class="mb2">((i18n.shipping.pickup))</h4>
@@ -25,12 +27,15 @@
                 ((i18n.common.lowercase.items))
               {{/eq}}
 
+              <!-- Shipping estimate -->
               {{#if shippingEstimateDate}}
                 <!-- partial:shipping-summary-estimate-date.hbs --><!-- partial -->
               {{else}}
                 <!-- partial:shipping-summary-estimate-days.hbs --><!-- partial -->
               {{/if}}
             </div>
+
+            <!-- Change border color for each delivery channel -->
             <div
             {{#eq selectedDeliveryChannel "pickup-in-point"}}
               class="ph3 pv2 bt b--light-silver"
@@ -38,11 +43,14 @@
               class="ph3 pv2 bt b--moon-gray"
             {{/eq}}
             >
+              <!-- Show Pickup Store name -->
               {{#eq selectedDeliveryChannel "pickup-in-point"}}
                 {{slas.0.pickupStoreInfo.friendlyName}}
               {{else}}
+                <!-- Show gift owner's address info -->
                 {{#if ../../../giftRegistryData}}
                   {{../../../giftRegistryData.description}}
+                <!-- Show consumer's address summary -->
                 {{else}}
                   {{#each ../../availableAddresses}}
                     {{#eq ../addressId addressId}}
