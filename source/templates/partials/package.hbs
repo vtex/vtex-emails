@@ -4,15 +4,24 @@
   {{#compare @index '==' 0}}
     <div class="bg-light-gray ph3 pv2 mw5-5 mb3 fw5">
       {{#compare selectedDeliveryChannel "!=" "pickup-in-point"}}
-        <div class="f7 gray">{{selectedSla}}</div>
+        {{#if deliveryWindow}}
+          <div class="f7 gray">((i18n.shipping.scheduled))</div>
+        {{else}}
+          <div class="f7 gray">{{selectedSla}}</div>
+        {{/if}}
       {{/compare}}
 
-      <!-- show info for estimate days or date -->
-      {{#unless shippingEstimateDate}}
-        <!-- partial:shipping-estimate-days.hbs --><!-- partial -->
+      <!-- Scheduled shipping -->
+      {{#if deliveryWindow}}
+        <!-- partial:shipping-estimate-scheduled.hbs --><!-- partial -->
       {{else}}
-        <!-- partial:shipping-estimate-date.hbs --><!-- partial -->
-      {{/unless}}
+        <!-- show info for estimate days or date -->
+        {{#unless shippingEstimateDate}}
+          <!-- partial:shipping-estimate-days.hbs --><!-- partial -->
+        {{else}}
+          <!-- partial:shipping-estimate-date.hbs --><!-- partial -->
+        {{/unless}}
+      {{/if}}
     </div>
   {{/compare}}
   <!-- back to items list -->

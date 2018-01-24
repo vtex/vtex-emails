@@ -15,9 +15,13 @@
     "team": "Equipe",
     "cantCancel": "Não foi possível cancelar seu pedido.",
     "cancelationInstructions": "Caso queria seguir com o cancelamento, você poderá recusar a entrega e posteriormente seu pagamento será estornado.",
+    "on": "Em",
     "lowercase": {
       "item": "item",
-      "items": "itens"
+      "items": "itens",
+      "on": "em",
+      "between": "entre",
+      "and": "e"
     }
   },
   "order": {
@@ -65,7 +69,7 @@
     "estimateMessage": "O prazo das encomendas deverá ser considerado somente após a confirmação do pagamento.",
     "delivery": "Receber",
     "pickup": "Retirar",
-    "scheduled": "Agendada",
+    "scheduled": "Agendada para",
     "inUpTo": "Em até",
     "upTo": "Até",
     "from": "Após",

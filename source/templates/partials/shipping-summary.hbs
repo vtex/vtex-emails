@@ -27,11 +27,16 @@
                 ((i18n.common.lowercase.items))
               {{/eq}}
 
+              <!-- Scheduled shipping -->
+              {{#if deliveryWindow}}
+                <!-- partial:shipping-summary-estimate-scheduled.hbs --><!-- partial -->
               <!-- Shipping estimate -->
-              {{#if shippingEstimateDate}}
-                <!-- partial:shipping-summary-estimate-date.hbs --><!-- partial -->
               {{else}}
-                <!-- partial:shipping-summary-estimate-days.hbs --><!-- partial -->
+                {{#if shippingEstimateDate}}
+                  <!-- partial:shipping-summary-estimate-date.hbs --><!-- partial -->
+                {{else}}
+                  <!-- partial:shipping-summary-estimate-days.hbs --><!-- partial -->
+                {{/if}}
               {{/if}}
             </div>
 

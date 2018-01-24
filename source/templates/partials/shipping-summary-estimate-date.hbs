@@ -1,13 +1,8 @@
-<!-- Scheduled shipping -->
-{{#if deliveryWindow}}
-  ((i18n.shipping.scheduled))
+<!-- Delivery or Pickup -->
+{{#eq deliveryChannel "pickup-in-point"}}
+  ((i18n.shipping.lowercase.from))
 {{else}}
-  <!-- Delivery or Pickup -->
-  {{#eq deliveryChannel "pickup-in-point"}}
-    ((i18n.shipping.lowercase.from))
-  {{else}}
-    ((i18n.shipping.lowercase.upTo))
-  {{/eq}}
+  ((i18n.shipping.lowercase.upTo))
+{{/eq}}
 
-  {{formatDate shippingEstimateDate}}
-{{/if}}
+{{formatDate shippingEstimateDate}}
