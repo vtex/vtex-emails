@@ -105,5 +105,20 @@
   "package": {
     "title": "Encomenda",
     "seller": "Fornecido e entregue por"
+  },
+  "status": {
+    "confirmed": "Pedido confirmado",
+    "paymentWaiting": "Aprovar pagamento",
+    "paymentCurrent": "Aprovando pagamento",
+    "paymentDone": "Pagamento aprovado",
+    "handlingWaiting": "Preparar Encomenda",
+    "handlingCurrent": "Preparando Encomenda",
+    "handlingDone": "Encomenda pronta",
+    "deliveryStartWaiting": "Iniciar entrega",
+    "deliveryStartCurrent": "Iniciando entrega",
+    "deliveryStartDone": "Entrega iniciada",
+    "deliveryWaiting": "Entregar encomenda",
+    "deliveryCurrent": "Entregando encomenda",
+    "deliveryDone": "Encomenda entregue"
   }
 }
