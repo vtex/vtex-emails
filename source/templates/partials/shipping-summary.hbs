@@ -21,7 +21,7 @@
               {{#eq ../items.length 1}}
                 {{#each ../../../items}}
                   {{#compare id '==' ../../items.0.itemId}}
-                    <strong>{{name}}</strong>
+                    <div class="fw7 w-80">{{name}}</div>
                   {{/compare}}
                 {{/each}}
               {{else}}
