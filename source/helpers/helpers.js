@@ -27,6 +27,11 @@ helpers.formatDate = function( value ) {
 	return helpers._formatDateTime( value, 'dd/MM/yyyy' );
 };
 
+helpers.formatTime = function( value ) {
+	'use strict';
+	return helpers._formatDateTime( value, 'h:mm' );
+};
+
 helpers.formatDateTime = function( value ) {
 	'use strict';
 	return helpers._formatDateTime( value, 'dd/MM/yyyy h:mm:ss' );
@@ -107,7 +112,7 @@ helpers.ifCond = function( v1, operator, v2, options ) {
 
 helpers.hasSubStr = function(value, search, options) { if (value != null && value.toString().indexOf(search) !== -1) { return options.fn(this); } else { return options.inverse(this); }};
 
-helpers._formatDateNoTimezone = function( _baseDate ) {
+helpers.formatDateNoTimezone = function( _baseDate ) {
 	'use strict';
 	var splittedDate = _baseDate.split( '-' );
 	var year = splittedDate[ 0 ];

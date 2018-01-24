@@ -4,7 +4,7 @@
 </div>
 <div class="pb3">
   ((i18n.common.lowercase.between))
-  {{_formatDateTime deliveryWindow.startDateUtc 'h:mm'}}
+  {{formatTime deliveryWindow.startDateUtc}}
   ((i18n.common.lowercase.and))
-  {{_formatDateTime deliveryWindow.endDateUtc 'h:mm'}}
+  {{formatTime deliveryWindow.endDateUtc}}
 </div>
