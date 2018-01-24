@@ -11,8 +11,8 @@
               class="ba b--moon-gray br2"
             {{/eq}}
           >
-            <!-- Title: delivery or pickup -->
             <div class="ph3 pt3">
+              <!-- Title: delivery or pickup -->
               {{#eq selectedDeliveryChannel "pickup-in-point"}}
                 <h4 class="mb2">((i18n.shipping.pickup))</h4>
               {{else}}
@@ -20,10 +20,14 @@
               {{/eq}}
 
               <!-- Quantity of items -->
-              {{../items.length}}
               {{#eq ../items.length 1}}
-                ((i18n.common.lowercase.item))
+                {{#each ../../../items}}
+                  {{#compare id '==' ../../items.0.itemId}}
+                    <strong>{{name}}</strong>
+                  {{/compare}}
+                {{/each}}
               {{else}}
+                {{../items.length}}
                 ((i18n.common.lowercase.items))
               {{/eq}}
 
