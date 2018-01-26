@@ -19,10 +19,9 @@
                 {{#if package.courierStatus.data.0.lastChange}}
   								<div class="bg-light-gray ph3 pv2 mt4 dib w-70-ns center fw5 lh-copy">
   									<div class="mb1 fw7 gray">
-                      {{package.courierStatus.data.0.lastChange}}
   										{{formatDateTime package.courierStatus.data.0.lastChange}}
   									</div>
-  									<div class="f4 fw7 lh-solid">
+  									<div class="f4 fw7 lh-title">
   										{{package.courierStatus.data.0.description}}
   									</div>
   									{{#if package.courierStatus.data.0.city}}
