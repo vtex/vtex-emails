@@ -1,0 +1,32 @@
+<!-- Single or many days -->
+{{#compare shippingEstimateDays ">" "1"}}
+  <!-- Running days or Business days -->
+  {{#eq shippingEstimateDaysType "bd"}}
+    {{shippingEstimateDays}} ((i18n.shipping.businessDays))
+  {{else}}
+    {{#eq shippingEstimateDaysType "d"}}
+      {{shippingEstimateDays}} ((i18n.shipping.days))
+    {{else}}
+      {{#eq shippingEstimateDaysType "h"}}
+        {{shippingEstimateDays}} ((i18n.shipping.hours))
+      {{else}}
+        {{shippingEstimateDays}} ((i18n.shipping.minutes))
+      {{/eq}}
+    {{/eq}}
+  {{/eq}}
+{{else}}
+  <!-- Running days or Business days -->
+  {{#eq shippingEstimateDaysType "bd"}}
+    {{shippingEstimateDays}} ((i18n.shipping.businessDay))
+  {{else}}
+    {{#eq shippingEstimateDaysType "d"}}
+      {{shippingEstimateDays}} ((i18n.shipping.day))
+    {{else}}
+      {{#eq shippingEstimateDaysType "h"}}
+        {{shippingEstimateDays}} ((i18n.shipping.hour))
+      {{else}}
+        {{shippingEstimateDays}} ((i18n.shipping.minute))
+      {{/eq}}
+    {{/eq}}
+  {{/eq}}
+{{/compare}}

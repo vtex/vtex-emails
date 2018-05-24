@@ -237,7 +237,13 @@ helpers.richShippingData = function( context, options ) {
 			if ( item.selectedSla === sla.id ) {
 				var d = sla.shippingEstimate;
 				var dType = null;
-				if ( /^(\d)+(?=d)/g.test( d ) ) {
+				if ( /^(\d)+(?=m)/g.test( d ) ) {
+					d = d.substring( 0, d.length - 1 );
+					dType = 'm';
+				} else if ( /^(\d)+(?=h)/g.test( d ) ) {
+					d = d.substring( 0, d.length - 1 );
+					dType = 'h';
+				} else if ( /^(\d)+(?=d)/g.test( d ) ) {
 					d = d.substring( 0, d.length - 1 );
 					dType = 'd';
 				} else if ( /^(\d)+(?=bd)/g.test( d ) ) {

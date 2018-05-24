@@ -15,9 +15,9 @@
       {{#if deliveryWindow}}
         <!-- partial:shipping-estimate-scheduled.hbs --><!-- partial -->
       {{else}}
-        <!-- show info for estimate days or date -->
+        <!-- show info for estimate range or date -->
         {{#unless shippingEstimateDate}}
-          <!-- partial:shipping-estimate-days.hbs --><!-- partial -->
+          <!-- partial:shipping-estimate-range.hbs --><!-- partial -->
         {{else}}
           <!-- partial:shipping-estimate-date.hbs --><!-- partial -->
         {{/unless}}

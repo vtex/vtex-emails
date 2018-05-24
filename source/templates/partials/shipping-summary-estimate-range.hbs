@@ -1,0 +1,23 @@
+<!-- Available Today -->
+{{#eq shippingEstimateDays "0"}}
+  <div class="f3 mt2 pb3">
+    {{#eq selectedDeliveryChannel "pickup-in-point"}}
+      ((i18n.shipping.lowercase.fromToday))
+    {{else}}
+      ((i18n.shipping.lowercase.today))
+    {{/eq}}
+  </div>
+
+<!-- Available in another day -->
+{{else}}
+  <!-- Delivery or Pickup -->
+  {{#eq selectedDeliveryChannel "pickup-in-point"}}
+    ((i18n.shipping.lowercase.from))
+  {{else}}
+    ((i18n.shipping.lowercase.inUpTo))
+  {{/eq}}
+
+  <div class="f3 mt2 pb3">
+    <!-- partial:shipping-estimate-range-time.hbs --><!-- partial -->
+  </div>
+{{/eq}}
