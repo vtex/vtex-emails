@@ -6,12 +6,11 @@
     {{paymentSystemName}}
     {{#if lastDigits}} ((i18n.payment.lastDigits)) {{lastDigits}} {{/if}}
     <br />((i18n.common.currency)) {{formatCurrency value}}
-    {{#compare ../payments.length "==" 1}}
+    {{#eq installments 1}}
       ((i18n.payment.atSight))
-    {{/compare}}
-    {{#compare ../payments.length "!=" 1}}
+    {{else}}
       ((i18n.payment.in)) {{installments}}x
-    {{/compare}}
+    {{/eq}}
   </div>
   {{/each}}
 {{/compare}}
@@ -25,12 +24,11 @@
     <td class="f5 pv1 bb b--light-gray">
       {{paymentSystemName}}
       {{#if lastDigits}} ((i18n.payment.lastDigits)) {{lastDigits}} {{/if}}
-      {{#compare ../payments.length "==" 1}}
+      {{#eq installments 1}}
         ((i18n.payment.atSight))
-      {{/compare}}
-      {{#compare ../payments.length "!=" 1}}
+      {{else}}
         ((i18n.payment.in)) {{installments}}x
-      {{/compare}}
+      {{/eq}}
     </td>
     <td class="f5 pv1 bb b--light-gray align-right">((i18n.common.currency)) {{formatCurrency value}}</td>
   </tr>
