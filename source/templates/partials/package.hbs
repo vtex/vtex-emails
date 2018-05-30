@@ -2,7 +2,7 @@
 {{#each items}}
   <!-- print SLA info just one time at the top -->
   {{#compare @index '==' 0}}
-    <div class="bg-light-gray ph3 pv2 mw5-5 mb3 fw5">
+    <div class="bg-light-gray ph3 pv2 mw5-5 mv3 fw5">
       {{#compare selectedDeliveryChannel "!=" "pickup-in-point"}}
         {{#if deliveryWindow}}
           <div class="f7 gray">((i18n.shipping.scheduled))</div>
