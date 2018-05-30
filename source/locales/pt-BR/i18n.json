@@ -104,7 +104,8 @@
       "from": "após",
       "today": "hoje",
       "fromToday": "a partir de hoje"
-    }
+    },
+    "postalCode": "CEP"
   },
   "package": {
     "title": "Encomenda",
