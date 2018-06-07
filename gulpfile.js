@@ -42,7 +42,7 @@ gulp.task( 'i18n', function( done ) {
 	'use strict';
 	gulp.src( [ 'temp/*.hbs' ] )
 		.pipe( i18n( {
-			locales: [ 'pt-BR' ],
+			locales: [ 'pt-BR', 'en-US' ],
 			localeDir: 'source/locales',
 			delimeters: [ '((', '))' ]
 		} ) )
