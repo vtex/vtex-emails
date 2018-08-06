@@ -61,18 +61,18 @@
   },
   "shipping": {
     "onePackageDelivery": "Sua entrega foi iniciada.",
-    "onePackagePickup": "Sua encomenda está disponível para retirada.",
+    "onePackagePickup": "Seu pacote está disponível para retirada.",
     "manyPackagesDelivery": "Uma nova entrega foi iniciada.",
-    "manyPackagesPickup": "Uma nova encomenda está disponível para retirada.",
-    "manyPackages": "Seu pedido possui mais de uma encomenda.",
+    "manyPackagesPickup": "Um novo pacote está disponível para retirada.",
+    "manyPackages": "Seu pedido possui mais de um pacote.",
     "notifications": "Avisaremos sobre o andamento de cada uma delas.",
-    "estimateMessage": "O prazo das encomendas deverá ser considerado somente após a confirmação do pagamento.",
+    "estimateMessage": "O prazo dos pacotes deverá ser considerado somente após a confirmação do pagamento.",
     "delivery": "Receber",
     "pickup": "Retirar",
     "scheduled": "Agendada para",
     "inUpTo": "Em até",
     "upTo": "Até",
-    "from": "Após",
+    "from": "A partir de",
     "today": "Hoje",
     "fromToday": "A partir de hoje",
     "updateTitle": "Sua entrega foi atualizada.",
@@ -97,18 +97,18 @@
     "days": "dias",
     "businessDay": "dia útil",
     "businessDays": "dias úteis",
-    "summaryTitle": "Resumo de sua(s) encomenda(s)",
+    "summaryTitle": "Resumo de seu(s) pacote(s)",
     "lowercase": {
       "inUpTo": "em até",
       "upTo": "até",
-      "from": "após",
+      "from": "a partir de",
       "today": "hoje",
       "fromToday": "a partir de hoje"
     },
     "postalCode": "CEP"
   },
   "package": {
-    "title": "Encomenda",
+    "title": "Pacote",
     "seller": "Fornecido e entregue por"
   }
 }
