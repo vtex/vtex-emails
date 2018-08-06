@@ -1,5 +1,9 @@
-<strong>{{items.0.slas.0.pickupStoreInfo.friendlyName}}</strong>
-{{#with items.0.slas.0.pickupStoreInfo.address}}
-  <br />{{street}}, {{number}}{{#if complement}}, {{complement}}{{/if}}
-  <br />{{neighborhood}}
-{{/with}}
+{{#each items.0.slas}}
+  {{#compare ../items.0.selectedSla '==' id}}
+    <strong>{{pickupStoreInfo.friendlyName}}</strong>
+    {{#with pickupStoreInfo.address}}
+      <br />{{street}}, {{number}}{{#if complement}}, {{complement}}{{/if}}
+      <br />{{neighborhood}}
+    {{/with}}
+  {{/compare}}
+{{/each}}

@@ -50,7 +50,11 @@
             {{/eq}}
               <!-- Show Pickup Store name -->
               {{#eq selectedDeliveryChannel "pickup-in-point"}}
-                {{slas.0.pickupStoreInfo.friendlyName}}
+                {{#each slas}}
+                  {{#compare ../selectedSla '==' id}}
+                    {{pickupStoreInfo.friendlyName}}
+                  {{/compare}}
+                {{/each}}
               {{else}}
                 <!-- Show gift owner's address info -->
                 {{#if ../../../giftRegistryData}}
