@@ -1,0 +1,24 @@
+{{#compare items.length '==' shippingData.logisticsInfo.length}}
+  <p class="mt4">
+    <!-- partial:hi.hbs --><!-- partial -->
+    {{#compare items.length '==' 1}}
+      ((i18n.shipping.deliveredProduct))
+    {{/compare}}
+    {{#compare items.length '>' 1}}
+      ((i18n.shipping.deliveredProducts))
+    {{/compare}}
+  </p>
+{{/compare}}
+
+<!-- Intro message: Just some items shipped -->
+{{#compare items.length '!=' shippingData.logisticsInfo.length}}
+  <p class="mt4">
+    <!-- partial:hi.hbs --><!-- partial -->
+    {{#compare items.length '==' 1}}
+      ((i18n.shipping.deliveredOneProduct))
+    {{/compare}}
+    {{#compare items.length '>' 1}}
+      ((i18n.shipping.deliveredSomeProducts))
+    {{/compare}}
+  </p>
+{{/compare}}
