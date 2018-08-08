@@ -1,8 +1,8 @@
 <!-- Delivery or Pickup -->
-{{#eq deliveryChannel "pickup-in-point"}}
+{{#eq ../deliveryChannel "pickup-in-point"}}
   ((i18n.shipping.from))
 {{else}}
   ((i18n.shipping.upTo))
 {{/eq}}
 
-{{formatDate shippingEstimateDate}}
+{{formatDate ../shippingEstimateDate}}

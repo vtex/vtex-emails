@@ -1,6 +1,6 @@
 <!-- Available Today -->
-{{#eq shippingEstimateDays "0"}}
-  {{#eq selectedDeliveryChannel "pickup-in-point"}}
+{{#eq ../shippingEstimateDays "0"}}
+  {{#eq ../selectedDeliveryChannel "pickup-in-point"}}
     ((i18n.shipping.fromToday))
   {{else}}
     ((i18n.shipping.today))
@@ -9,7 +9,7 @@
 <!-- Available in another day -->
 {{else}}
   <!-- Delivery or Pickup -->
-  {{#eq selectedDeliveryChannel "pickup-in-point"}}
+  {{#eq ../selectedDeliveryChannel "pickup-in-point"}}
     ((i18n.shipping.from))
   {{else}}
     ((i18n.shipping.inUpTo))
