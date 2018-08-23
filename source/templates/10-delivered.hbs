@@ -54,14 +54,26 @@
 
             <!-- Order info -->
 						<tr>
-              <td class="w-100 ph4-ns pt3 pb4">
+              <td class="w-100 ph4-ns pv3">
                 {{#richShippingData shippingData}}
                   {{#group logisticsInfo by="addessId"}}
                     <div class="cb fn">
-                      <h3 class="ma0 mb2">((i18n.package.title))</h3>
+                      <h3 class="ma0 mb2">((i18n.shipping.address))</h3>
                       <!-- Address info -->
                       <!-- partial:partials/address-delivery-no-title.hbs --><!-- partial -->
                       <!-- partial:partials/address-pickup-no-title.hbs --><!-- partial -->
+                    </div>
+                  {{/group}}
+                {{/richShippingData}}
+							</td>
+						</tr>
+
+            <tr>
+              <td class="ph4-ns pv3 bt b--light-gray">
+                {{#richShippingData shippingData}}
+                  {{#group logisticsInfo by="addessId"}}
+                    <div class="cb fn">
+                      <h3 class="ma0 mb2">((i18n.order.package))</h3>
 
                       {{#group items by="packageId"}}
                         {{#compare items.0.selectedDeliveryChannel '==' 'pickup-in-point'}}

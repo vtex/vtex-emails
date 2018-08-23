@@ -34,7 +34,9 @@
     "youCan": "You can",
     "track": "track this order on our site",
     "product": "Product",
-    "products": "Products"
+    "products": "Products",
+    "package": "Pacote",
+    "packages": "Pacotes"
   },
   "payment": {
 		"title": "Payment",
@@ -60,6 +62,7 @@
     "products": "Products in the Invoice"
   },
   "shipping": {
+    "address": "Address",
 		"onePackageDelivery": "Your delivery has started.",
     "onePackagePickup": "Your order is available for withdrawal.",
     "onePackageDelivered": "Your order has been delivered.",
@@ -85,10 +88,10 @@
     "carrier": "Shipped by carrier",
     "track": "Tracking",
     "history": "see detailed history",
-    "pickupProduct": "You can already withdraw your product.",
-    "pickupProducts": "You can already withdraw your products.",
-    "pickupOneProduct": "You can already withdraw one of your products.",
-    "pickupSomeProducts": "You may already withdraw some of your products.",
+    "pickupProduct": "You can already withdraw your product. Please check the instructions:",
+    "pickupProducts": "You can already withdraw your products. Please check the instructions:",
+    "pickupOneProduct": "You can already withdraw one of your products. Please check the instructions:",
+    "pickupSomeProducts": "You may already withdraw some of your products. Please check the instructions:",
     "pickedUpProduct": "Your product has been picked up.",
     "pickedUpProducts": "Your products have been picked up.",
     "pickedUpOneProduct": "One of your products has been picked up.",
@@ -118,6 +121,18 @@
       "fromToday": "from today"
     },
     "postalCode": "ZIP code"
+  },
+  "pickupPoint": {
+    "businessHours": "Business Hours",
+    "additionalInfo": "Important info",
+    "weekDay0": "Sunday",
+    "weekDay1": "Monday",
+    "weekDay2": "Tuesday",
+    "weekDay3": "Wednesday",
+    "weekDay4": "Thursday",
+    "weekDay5": "Friday",
+    "weekDay6": "Saturday",
+    "hourTo": "to"
   },
   "package": {
     "title": "Package",

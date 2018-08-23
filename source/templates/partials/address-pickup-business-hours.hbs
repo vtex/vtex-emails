@@ -1,0 +1,38 @@
+{{#eq items.0.selectedDeliveryChannel "pickup-in-point"}}
+  {{#each ../pickupPoints}}
+    {{#hasSubStr ../items.0.selectedSla address.addressId}}
+      {{#compare businessHours.length '>' 0}}
+        <h3 class="ma0 mb0">((i18n.pickupPoint.businessHours))</h3>
+        <table class="w-100 mw5-5 mb3">
+          {{#each businessHours}}
+            {{#compare DayOfWeek '!=' 0}}
+              <tr>
+                <td class="bb b--light-gray pt2 f7">
+                  {{#compare DayOfWeek '==' 1}}((i18n.pickupPoint.weekDay1)){{/compare}}
+                  {{#compare DayOfWeek '==' 2}}((i18n.pickupPoint.weekDay2)){{/compare}}
+                  {{#compare DayOfWeek '==' 3}}((i18n.pickupPoint.weekDay3)){{/compare}}
+                  {{#compare DayOfWeek '==' 4}}((i18n.pickupPoint.weekDay4)){{/compare}}
+                  {{#compare DayOfWeek '==' 5}}((i18n.pickupPoint.weekDay5)){{/compare}}
+                  {{#compare DayOfWeek '==' 6}}((i18n.pickupPoint.weekDay6)){{/compare}}
+                </td>
+                <td class="tr bb b--light-gray pt2 f7">{{OpeningTime}} ((i18n.pickupPoint.hourTo)) {{ClosingTime}}</td>
+              </tr>
+            {{/compare}}
+          {{/each}}
+          {{#each businessHours}}
+            {{#compare DayOfWeek '==' 0}}
+              <tr>
+                <td class="bb b--light-gray pt2 f7">((i18n.pickupPoint.weekDay0))</td>
+                <td class="tr bb b--light-gray pt2 f7">{{OpeningTime}} ((i18n.pickupPoint.hourTo)) {{ClosingTime}}</td>
+              </tr>
+            {{/compare}}
+          {{/each}}
+        </table>
+        {{#compare additionalInfo '!=' ''}}
+          <h3 class="ma0 mb2">((i18n.pickupPoint.additionalInfo))</h3>
+          <div>{{additionalInfo}}</div>
+        {{/compare}}
+      {{/compare}}
+    {{/hasSubStr}}
+  {{/each}}
+{{/eq}}

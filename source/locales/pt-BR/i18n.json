@@ -34,7 +34,9 @@
     "youCan": "Você pode",
     "track": "acompanhar este pedido no nosso site",
     "product": "Produto",
-    "products": "Produtos"
+    "products": "Produtos",
+    "package": "Pacote",
+    "packages": "Pacotes"
   },
   "payment": {
     "title": "Pagamento",
@@ -60,6 +62,7 @@
     "products": "Produtos na Nota Fiscal"
   },
   "shipping": {
+    "address": "Endereço",
     "onePackageDelivery": "Sua entrega foi iniciada.",
     "onePackagePickup": "Seu pacote está disponível para retirada.",
     "onePackageDelivered": "Sua entrega foi concluída.",
@@ -85,10 +88,10 @@
     "carrier": "Transporte via",
     "track": "Rastreio",
     "history": "ver histórico detalhado",
-    "pickupProduct": "Você já pode retirar seu produto.",
-    "pickupProducts": "Você já pode retirar seus produtos.",
-    "pickupOneProduct": "Você já pode retirar um dos seus produtos.",
-    "pickupSomeProducts": "Você já pode retirar alguns dos seus produtos.",
+    "pickupProduct": "Você já pode retirar seu produto. Confira as instruções:",
+    "pickupProducts": "Você já pode retirar seus produtos. Confira as instruções:",
+    "pickupOneProduct": "Você já pode retirar um dos seus produtos. Confira as instruções:",
+    "pickupSomeProducts": "Você já pode retirar alguns dos seus produtos. Confira as instruções:",
     "pickedUpProduct": "Seu produto foi retirado.",
     "pickedUpProducts": "Seus produtos foram retirados.",
     "pickedUpOneProduct": "Um de seus produtos foi retirado.",
@@ -118,6 +121,18 @@
       "fromToday": "a partir de hoje"
     },
     "postalCode": "CEP"
+  },
+  "pickupPoint": {
+    "businessHours": "Horário de funcionamento",
+    "additionalInfo": "Informações importantes",
+    "weekDay0": "Domingo",
+    "weekDay1": "Segunda-feira",
+    "weekDay2": "Terça-feira",
+    "weekDay3": "Quarta-feira",
+    "weekDay4": "Quinta-feira",
+    "weekDay5": "Sexta-feira",
+    "weekDay6": "Sábado",
+    "hourTo": "às"
   },
   "package": {
     "title": "Pacote",
