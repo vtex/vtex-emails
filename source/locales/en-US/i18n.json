@@ -1,6 +1,6 @@
 {
   "common": {
-    "products": "Produtos",
+    "products": "Products",
 		"currency": "$",
 		"order": "Order",
 		"hi": "Hi",
@@ -45,6 +45,7 @@
     "pending": "Waiting for payment approval",
     "approved": "Your payment has been approved.",
     "lastDigits": "last digits",
+    "lastDigitsCap": "Last digits",
     "atSight": "at sight",
     "in": "in",
     "bankInvoiceReminder": "Do not forget to pay your bank bill if you have not already done so.",
