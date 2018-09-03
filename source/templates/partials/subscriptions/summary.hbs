@@ -1,0 +1,74 @@
+<tr>
+  <td class="w-100 ph4-ns pv4 bt b--light-gray bw3">
+    <div class="cb fn">
+      <h3 class="ma0 mb2">((i18n.subscription.summary))</h3>
+      <table class="w-100">
+        <tr>
+          <td class="w-50 pb3">
+            <div class="mb1"><strong>((i18n.subscription.total))</strong></div>
+            <div>{{purchaseSettings.currencySymbol}} {{formatCurrency totalValue}}</div>
+          </td>
+          <td class="w-50 pb3">
+            <div class="mb1"><strong>((i18n.subscription.period))</strong></div>
+            <div>
+            {{#compare plan.frequency.periodicity '==' 'DAILY'}}
+              ((i18n.subscription.daily))
+            {{/compare}}
+            {{#compare plan.frequency.periodicity '==' 'WEEKLY'}}
+              ((i18n.subscription.weekly))
+            {{/compare}}
+            {{#compare plan.frequency.periodicity '==' 'MONTHLY'}}
+              ((i18n.subscription.monthly))
+            {{/compare}}
+            {{#compare plan.frequency.periodicity '==' 'YEARLY'}}
+              ((i18n.subscription.yearly))
+            {{/compare}}
+          </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="w-50">
+            <div class="mb1"><strong>((i18n.subscription.billingDay))</strong></div>
+            <div>
+              {{#compare purchaseSettings.purchaseDay '==' 'Sunday'}}
+                ((i18n.subscription.sunday))
+              {{else}}
+                {{#compare purchaseSettings.purchaseDay '==' 'Monday'}}
+                  ((i18n.subscription.monday))
+                {{else}}
+                  {{#compare purchaseSettings.purchaseDay '==' 'Tuesday'}}
+                    ((i18n.subscription.tuesday))
+                  {{else}}
+                    {{#compare purchaseSettings.purchaseDay '==' 'Wednesday'}}
+                      ((i18n.subscription.wednesday))
+                    {{else}}
+                      {{#compare purchaseSettings.purchaseDay '==' 'Thursday'}}
+                        ((i18n.subscription.thursday))
+                      {{else}}
+                        {{#compare purchaseSettings.purchaseDay '==' 'Friday'}}
+                          ((i18n.subscription.friday))
+                        {{else}}
+                          {{#compare purchaseSettings.purchaseDay '==' 'Saturday'}}
+                            ((i18n.subscription.saturday))
+                          {{else}}
+                            {{purchaseSettings.purchaseDay}}
+                          {{/compare}}
+                        {{/compare}}
+                      {{/compare}}
+                    {{/compare}}
+                  {{/compare}}
+                {{/compare}}
+              {{/compare}}
+            </div>
+          </td>
+          <td class="w-50">
+            <div class="mb1"><strong>((i18n.subscription.nextOrder))</strong></div>
+            <div>
+              {{formatDate schedule.nextExecution}}
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </td>
+</tr>

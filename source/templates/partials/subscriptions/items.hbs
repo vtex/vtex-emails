@@ -1,0 +1,20 @@
+<tr>
+  <td class="ph4-ns pv3 bt b--light-gray">
+    <div class="cb fn">
+      <h3 class="ma0 mb2">((i18n.common.products))</h3>
+      <table class="" width="100%" border="0" cellpadding="0" cellspacing="0">
+        {{#each items}}
+        <tr>
+          <td class="v-top pv2 w3 pr2"><img alt="" src="{{sku.imageUrl}}" /></td>
+          <td class="v-top pv2">
+            <div class="f5 lh-title mv1-ns">{{sku.nameComplete}}</div>
+            <div class="gray">
+              {{quantity}} ((i18n.common.units))
+            </div>
+          </td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
+  </td>
+</tr>

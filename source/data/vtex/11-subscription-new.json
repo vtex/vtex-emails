@@ -1,0 +1,130 @@
+{
+	"customerId": "fred.santos@bol.com.br",
+	"orderGroup": "AC0B1C7AE6C0CA979B2FB87D921F7145",
+	"items": [
+		{
+			"sku": {
+				"id": "18",
+				"name": "Ração para peixe",
+				"productName": "Ração para peixe",
+				"imageUrl": "http://recorrenciaqa.vteximg.com.br/arquivos/ids/155392-55-55/AlconKOI.jpg?v=635918402228600000",
+				"detailUrl": "/racaoparapeixe/p",
+				"nameComplete": "Ração para peixe"
+			},
+			"quantity": 20,
+			"endpoint": null,
+			"priceAtSubscriptionDate": 0,
+			"sellingPrice": 100,
+			"SubscriptionId": "B438AE9504A447998DBED14F6BB6F1DD",
+			"cycleCount": 0,
+			"status": 0,
+			"createdAt": "2018-08-31T18:43:21.8937938Z",
+			"lastUpdate": "2018-08-31T18:43:21.8937938Z",
+			"originalOrderId": null,
+			"metadata": [],
+			"isSkipped": false
+		}
+	],
+	"plan": {
+		"frequency": {
+			"periodicity": "MONTHLY",
+			"interval": 6
+		},
+		"validity": {
+			"begin": "2018-08-31T00:00:00",
+			"end": "2021-08-31T00:00:00"
+		},
+		"type": "RECURRING_PAYMENT"
+	},
+	"customerProfile": {
+		"userId": "965ae4f7-8b8f-4d91-9dc9-9d8a82941ea8",
+		"profileId": "b0c4ad31-a28f-11e5-948e-0a3a1a75213f",
+		"name": "Freds Da Bahia",
+		"email": "fred.santos@bol.com.br",
+		"phone": null
+	},
+	"shippingAddress": {
+		"addressId": "-1467124378847",
+		"street": "Avenida Brigadeiro Faria Lima",
+		"number": "1016",
+		"complement": null,
+		"neighborhood": "Pinheiros",
+		"city": "São Paulo",
+		"state": "SP",
+		"country": "BRA",
+		"postalCode": "05426-200",
+		"reference": null,
+		"formattedAddress": null,
+		"additionalComponents": null,
+		"geoCoordinate": null,
+		"receiverName": "Office Sampa",
+		"addressType": "residential",
+		"addressName": null
+	},
+	"accountName": "recorrenciaqa",
+	"purchaseSettings": {
+		"purchaseDay": "10",
+		"paymentMethod": {
+			"paymentSystem": "2",
+			"paymentSystemName": "Visa",
+			"paymentSystemGroup": "creditCard",
+			"paymentAccount": {
+				"accountId": "F6C577CC102249F0BB171360BF02E0E1",
+				"cardNumber": "************1111",
+				"bin": "444433"
+			}
+		},
+		"seller": "1",
+		"salesChannel": "1",
+		"selectedSla": "PAC",
+		"currencySymbol": "R$",
+		"cycleCount": 0
+	},
+	"schedule": {
+		"scheduleId": "AC0B1C7AE6C0CA979B2FB87D921F7145",
+		"cronExpression": "0 0 10 Aug,Feb *",
+		"workspace": "beta",
+		"nextExecution": "2019-02-10T00:00:01+00:00"
+	},
+	"nextPurchaseDate": "2019-02-10T00:00:01+00:00",
+	"totals": [
+		{
+			"id": "Items",
+			"value": 1000
+		},
+		{
+			"id": "Shipping",
+			"value": 0
+		}
+	],
+	"totalValue": 1000,
+	"instances": [],
+	"_accountInfo": {
+		"HostName": "recorrenciaqa",
+		"MainAccountName": "recorrenciaqa",
+		"IsPersisted": true,
+		"IsRemoved": false,
+		"Id": "9ddcfba5-3855-49ec-b61e-b2847b9314cc",
+		"Cnpj": "05314972000174",
+		"CompanyName": "recorrenciaqa",
+		"TradingName": "recorrenciaqa",
+		"AccountName": "recorrenciaqa",
+		"DefaultUrl": null,
+		"Address": null,
+		"Number": null,
+		"Complement": null,
+		"District": null,
+		"City": null,
+		"State": null,
+		"PostalCode": null,
+		"Country": "Brasil",
+		"Telephone": "967667300",
+		"IsActive": true,
+		"Sponsor": "3f0c0d99-9188-46ad-a600-5397fc8b4db9",
+		"Logo": "logo_vtex.png",
+		"AppId": "2da8cffa-2fcb-4632-8882-2e9e532e247e",
+		"IsOperating": false,
+		"LV": "LV-1000150",
+		"Sigla": null
+	}
+}

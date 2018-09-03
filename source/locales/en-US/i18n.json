@@ -1,11 +1,13 @@
 {
   "common": {
+    "products": "Produtos",
 		"currency": "$",
 		"order": "Order",
 		"hi": "Hi",
 		"summary": "Summary",
 		"items": "Items",
 		"shipping": "Delivery",
+    "shippingMethod": "Delivery method",
 		"discounts": "Discounts",
 		"taxes": "Taxes",
 		"total": "Total",
@@ -137,5 +139,26 @@
   "package": {
     "title": "Package",
     "seller": "Provided and delivered by"
+  },
+  "subscription": {
+    "newTitle": "Sua assinatura foi confirmada.",
+    "newIntroMessage": "Obrigado por registrar uma assinatura em nossa loja. Você pode",
+    "newIntroMessageLink": "acompanhá-la e reconfigurá-la através do nosso site",
+    "summary": "Resumo da sua assinatura",
+    "total": "Valor total",
+    "period": "Refazer este pedido",
+    "billingDay": "Dia de cobrança",
+    "daily": "Diária",
+    "weekly": "Semanal",
+    "monthly": "Mensal",
+    "yearly": "Anual",
+    "sunday": "Domingo",
+    "monday": "Segunda-feira",
+    "tuesday": "Terça-feira",
+    "wednesday": "Quarta-feira",
+    "thursday": "Quinta-feira",
+    "friday": "Sexta-feira",
+    "saturday": "Sábado",
+    "nextOrder": "Próxima compra"
   }
 }

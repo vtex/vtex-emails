@@ -1,11 +1,13 @@
 {
   "common": {
+    "products": "Produtos",
     "currency": "R$",
     "order": "Pedido",
     "hi": "Olá",
     "summary": "Resumo",
     "items": "Itens",
     "shipping": "Entrega",
+    "shippingMethod": "Entrega",
     "discounts": "Descontos",
     "taxes": "Taxas",
     "total": "Total",
@@ -43,6 +45,7 @@
     "pending": "Aguardando aprovação",
     "approved": "Seu pagamento foi aprovado.",
     "lastDigits": "final",
+    "lastDigitsCap": "Final",
     "atSight": "à vista",
     "in": "em",
     "bankInvoiceReminder": "Não se esqueça de fazer o pagamento do boleto bancário, caso ainda não o tenha feito.",
@@ -137,5 +140,26 @@
   "package": {
     "title": "Pacote",
     "seller": "Fornecido e entregue por"
+  },
+  "subscription": {
+    "newTitle": "Sua assinatura foi confirmada.",
+    "newIntroMessage": "Obrigado por registrar uma assinatura em nossa loja. Você pode",
+    "newIntroMessageLink": "acompanhá-la e reconfigurá-la através do nosso site",
+    "summary": "Resumo da sua assinatura",
+    "total": "Valor total",
+    "period": "Refazer este pedido",
+    "billingDay": "Dia de cobrança",
+    "daily": "Diária",
+    "weekly": "Semanal",
+    "monthly": "Mensal",
+    "yearly": "Anual",
+    "sunday": "Domingo",
+    "monday": "Segunda-feira",
+    "tuesday": "Terça-feira",
+    "wednesday": "Quarta-feira",
+    "thursday": "Quinta-feira",
+    "friday": "Sexta-feira",
+    "saturday": "Sábado",
+    "nextOrder": "Próxima compra",
   }
 }
