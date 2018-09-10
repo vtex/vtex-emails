@@ -8,6 +8,7 @@
 *.bak
 *.swp
 Thumbs.db
+package-lock.json
 
 # -----------------------
 # Local Development Tools

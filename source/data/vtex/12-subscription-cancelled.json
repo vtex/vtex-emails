@@ -1,0 +1,443 @@
+{
+	"customerId": "fulano@mailinator.com",
+	"orderGroup": "A235D780C91BFB545BF2EC292DB7B026",
+	"items": [
+		{
+			"sku": {
+				"id": "18",
+				"name": "Ração para peixe",
+				"productName": "Ração para peixe",
+				"imageUrl": "http://recorrenciaqa.vteximg.com.br/arquivos/ids/155392-55-55/AlconKOI.jpg?v=635918402228600000",
+				"detailUrl": "/racaoparapeixe/p",
+				"nameComplete": "Ração para peixe"
+			},
+			"quantity": 1,
+			"endpoint": null,
+			"priceAtSubscriptionDate": 0,
+			"sellingPrice": null,
+			"SubscriptionId": "1C78CEFA7E2F4CD1865CCF099362BE51",
+			"cycleCount": 16,
+			"status": 0,
+			"createdAt": "2018-08-29T03:27:21.147024Z",
+			"lastUpdate": "2018-09-09T01:10:26.623687Z",
+			"originalOrderId": null,
+			"metadata": [],
+			"isSkipped": false
+		},
+		{
+			"sku": {
+				"id": "20",
+				"name": "Biscoito para cães",
+				"productName": "Biscoito para cães",
+				"imageUrl": "http://recorrenciaqa.vteximg.com.br/arquivos/ids/155391-55-55/doguitos-bifinho-frango-65g.jpg?v=635918401104470000",
+				"detailUrl": "/biscoitoparacaes/p",
+				"nameComplete": "Biscoito para cães"
+			},
+			"quantity": 1,
+			"endpoint": null,
+			"priceAtSubscriptionDate": 0,
+			"sellingPrice": null,
+			"SubscriptionId": "786A0C64C3D64C54A2EEEDAB45CB53F0",
+			"cycleCount": 21,
+			"status": 0,
+			"createdAt": "2018-08-29T03:21:29.428485Z",
+			"lastUpdate": "2018-09-09T01:10:27.2201416Z",
+			"originalOrderId": null,
+			"metadata": [],
+			"isSkipped": false
+		}
+	],
+	"plan": {
+		"frequency": {
+			"periodicity": "WEEKLY",
+			"interval": 1
+		},
+		"validity": {
+			"begin": "2018-08-28T00:00:00Z",
+			"end": "2018-09-20T00:00:00Z"
+		},
+		"type": "RECURRING_PAYMENT"
+	},
+	"customerProfile": {
+		"userId": "1d94e529-be56-4f1e-a2f4-1c8634a6e35c",
+		"profileId": "bc6a8fae-539b-11e8-81e8-f86d4e5337e6",
+		"name": "fulanjo full",
+		"email": "fulano@mailinator.com",
+		"phone": null
+	},
+	"shippingAddress": {
+		"addressId": "239d1fa6255e4173884601112c07e9a2",
+		"street": "Rua Conde de Irajá",
+		"number": "1",
+		"complement": null,
+		"neighborhood": "Botafogo",
+		"city": "Rio de Janeiro",
+		"state": "RJ",
+		"country": "BRA",
+		"postalCode": "22271-020",
+		"reference": null,
+		"formattedAddress": null,
+		"additionalComponents": null,
+		"geoCoordinate": null,
+		"receiverName": "fulanjo full",
+		"addressType": "residential",
+		"addressName": null
+	},
+	"accountName": "recorrenciaqa",
+	"purchaseSettings": {
+		"purchaseDay": "Sunday",
+		"paymentMethod": {
+			"paymentSystem": "6",
+			"paymentSystemName": "Boleto Bancário",
+			"paymentSystemGroup": "bankInvoice",
+			"paymentAccount": null
+		},
+		"seller": "1",
+		"salesChannel": "1",
+		"selectedSla": null,
+		"currencySymbol": "BRL",
+		"cycleCount": 16
+	},
+	"schedule": {
+		"scheduleId": "A235D780C91BFB545BF2EC292DB7B026",
+		"cronExpression": "0 0 * * 0",
+		"workspace": "beta",
+		"startAt": "2018-09-04T00:00:00Z",
+		"nextExecution": "2018-09-09T00:00:46Z"
+	},
+	"nextPurchaseDate": "2018-09-09T00:00:46Z",
+	"totals": [],
+	"totalValue": 0,
+	"instances": [
+		{
+			"date": "2018-09-09T01:00:49.1617961Z",
+			"workflowId": "5C00A35B8D5149D8864E68B6D7A199CE",
+			"orderInfo": {
+				"orderId": "860250182824-01",
+				"orderGroup": "860250182824",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/70BED47E640141EEBFBD915AD9379D8F/Payment/EF49906D2B804434AFDE9C7081BD5787/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 21,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:58:55.5873592Z",
+			"workflowId": "F430A06819BF478B82F2BF13B7A9F340",
+			"orderInfo": {
+				"orderId": "860250045374-01",
+				"orderGroup": "860250045374",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/4C6996DC56BD452D8C12A73289E6C719/Payment/DC0E1D1D844542DDBC6FD7F1B983DCD7/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 20,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:58:11.7897659Z",
+			"workflowId": "A6C0BB0C7BE74F9287D67280D4CF8026",
+			"orderInfo": {
+				"orderId": "860250024398-01",
+				"orderGroup": "860250024398",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/D8426215E60D48E3AE19AA2A9E14CDE2/Payment/975F0CBB8DC5491FABFB193D285DA527/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 19,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:56:26.3892965Z",
+			"workflowId": "DED6C4AF703E40F092281B30910A2F8E",
+			"orderInfo": {
+				"orderId": "860253492487-01",
+				"orderGroup": "860253492487",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/FB25A96F591043FA94B8E2B10EFAE3EE/Payment/AF1A39BB65B444A5B86B59E1DF9AC057/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 18,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:56:13.9109858Z",
+			"workflowId": "59E0A154576745B1BEFD486E8491B68A",
+			"orderInfo": {
+				"orderId": "860253509035-01",
+				"orderGroup": "860253509035",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/D947531B521243E48DF84B4B3E5A2789/Payment/BC4F63AC764247A4A79A01777D550530/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 17,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:55:39.4730403Z",
+			"workflowId": "DFF9873343F049BA99ADCA5A4510CF69",
+			"orderInfo": {
+				"orderId": "860253446456-01",
+				"orderGroup": "860253446456",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/6453F21747AB48A5A2FC1F3505087878/Payment/D74BF5C5DD3E4CBFAAF22DB8577374FA/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 16,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:53:52.7469373Z",
+			"workflowId": "11A3CF891DB049E58B904FD6B92C5851",
+			"orderInfo": {
+				"orderId": "860253336947-01",
+				"orderGroup": "860253336947",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/DE60CF6EFEBE46399565E8421056647D/Payment/7DEF8F3C7CFE42229CE7D9E508985409/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 15,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:53:10.1573436Z",
+			"workflowId": "A95642A4DC0D4B5FB4D6030878FDBC4B",
+			"orderInfo": {
+				"orderId": "860253324914-01",
+				"orderGroup": "860253324914",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/D8CE8AAE1C784521AEC506D0BC60DD27/Payment/75F4C7B7B3714666A3BBED462C7C0262/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 14,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:52:48.629892Z",
+			"workflowId": "6427271F437D410F9F0B746F8FCA6DA9",
+			"orderInfo": {
+				"orderId": "860250614425-01",
+				"orderGroup": "860250614425",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/DCBC5F8F7C3A48FEBA8575C5C88638AF/Payment/344001B21A484637A260B569F687D387/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 13,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:51:27.0667169Z",
+			"workflowId": "DEC4A2C3BB264468A98DD21B68F44B27",
+			"orderInfo": {
+				"orderId": "860253219054-01",
+				"orderGroup": "860253219054",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/3580CB1810504FF99B36C317102E4865/Payment/5567BD3465824CB6BB8C6BA7316D7FB2/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 12,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:45:09.3152482Z",
+			"workflowId": null,
+			"orderInfo": null,
+			"message": "Unable to create workflow intance {\"error\":{\"code\":\"1\",\"message\":\"WorkflowSurrogateKey\",\"exception\":{\"ClassName\":\"Vtex.Practices.ServiceModel.Client.Exceptions.InternalServerErrorException\",\"Message\":\"WorkflowSurrogateKey\",\"Data\":null,\"InnerException\":{\"ClassName\":\"Vtex.SimpleDb.Exceptions.VtexSimpleDbDuplicateEntryException\",\"Message\":\"WorkflowSurrogateKey\",\"Data\":null,\"InnerException\":null,\"HelpURL\":null,\"StackTraceString\":\"   at Vtex.SimpleDb.DbConnector.<SaveAsync>d__57`1.MoveNext()\\r\\n--- End of stack ",
+			"messageCode": null,
+			"cycleCount": 11,
+			"status": 2
+		},
+		{
+			"date": "2018-09-09T00:34:09.5470463Z",
+			"workflowId": null,
+			"orderInfo": null,
+			"message": "Unable to create workflow intance {\"error\":{\"code\":\"1\",\"message\":\"WorkflowSurrogateKey\",\"exception\":{\"ClassName\":\"Vtex.Practices.ServiceModel.Client.Exceptions.InternalServerErrorException\",\"Message\":\"WorkflowSurrogateKey\",\"Data\":null,\"InnerException\":{\"ClassName\":\"Vtex.SimpleDb.Exceptions.VtexSimpleDbDuplicateEntryException\",\"Message\":\"WorkflowSurrogateKey\",\"Data\":null,\"InnerException\":null,\"HelpURL\":null,\"StackTraceString\":\"   at Vtex.SimpleDb.DbConnector.<SaveAsync>d__57`1.MoveNext()\\r\\n--- End of stack ",
+			"messageCode": null,
+			"cycleCount": 11,
+			"status": 2
+		},
+		{
+			"date": "2018-09-09T00:05:16.3672814Z",
+			"workflowId": "20B1A5585CAC43E9931E62DF56A5C979",
+			"orderInfo": {
+				"orderId": "860253149499-01",
+				"orderGroup": "860253149499",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/22FE42F1781C450DA6CE018C135F0721/Payment/E1E8D69AAAA446AFB14CC8E8CEF2C303/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 11,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:05:00.8643788Z",
+			"workflowId": "0DF3BC2CDC5E4423A5C535FCEBE5A46D",
+			"orderInfo": {
+				"orderId": "860253157538-01",
+				"orderGroup": "860253157538",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/559A6B62E54D4D048AAEE1CE6109DE48/Payment/6DF81C3F41454CB1A97A4F208095307C/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 10,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:00:14.1701604Z",
+			"workflowId": "D56F6364DC214CF7ACE5C650D7342029",
+			"orderInfo": null,
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 2,
+			"status": 1
+		},
+		{
+			"date": "2018-09-02T00:00:05.5499933Z",
+			"workflowId": "A01A13D22ACB4E44A665B1CB345326F6",
+			"orderInfo": {
+				"orderId": "858560132644-01",
+				"orderGroup": "858560132644",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/70F839AF421045AC8467050E9B3FA334/Payment/AE0F5CCED4DB45B78AED41AA9B4800CB/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 1,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:03:38.3017221Z",
+			"workflowId": "B26DD32B8889409BB3D7E962679345E3",
+			"orderInfo": {
+				"orderId": "860253078469-01",
+				"orderGroup": "860253078469",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/BA5E1C93549844329D6AB132F69096B9/Payment/D705456785354DF0A3D6609B289D24BF/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 9,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:03:31.8560803Z",
+			"workflowId": "C54CC31140494569920D15E26108A8F4",
+			"orderInfo": null,
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 8,
+			"status": 1
+		},
+		{
+			"date": "2018-09-09T00:02:46.2804546Z",
+			"workflowId": "CD958B4044D146BAB1967BA01D255834",
+			"orderInfo": {
+				"orderId": "860240274529-01",
+				"orderGroup": "860240274529",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/5EBD928BDA734658AAAEF6B683541ED0/Payment/E35582D3044C4AC6BEB3283F3A5B109A/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 7,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:02:40.5677036Z",
+			"workflowId": "E204EE2914B1451EAD9B1ED3FCCE4D5A",
+			"orderInfo": {
+				"orderId": "860240293681-01",
+				"orderGroup": "860240293681",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/23CF80CD241D4D61A4EC425E05846E6C/Payment/63584A5290FE4EDE8D270E8849080506/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 6,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:01:14.4106065Z",
+			"workflowId": "6FD372CC144A4FEEACBA7FD0208E2558",
+			"orderInfo": {
+				"orderId": "860240208190-01",
+				"orderGroup": "860240208190",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/CE67E134C10D4D2CAB3D8634B33688D4/Payment/EBD72F4486C4455693AFFFF5750E93E5/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 5,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:01:08.3756601Z",
+			"workflowId": "EBA67A08F9C448E69F2297E57D623DD7",
+			"orderInfo": {
+				"orderId": "860240201796-01",
+				"orderGroup": "860240201796",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/8D7E89F96F4A49308985596ACFAB52DA/Payment/C52DDF2BC04C437DA3E89696A000918E/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 4,
+			"status": 3
+		},
+		{
+			"date": "2018-09-09T00:00:21.0384335Z",
+			"workflowId": "20EC4C95066F4350B8D4F78E69323084",
+			"orderInfo": {
+				"orderId": "860240126323-01",
+				"orderGroup": "860240126323",
+				"paymentUrl": "https://recorrenciaqa.vtexpayments.com.br:443/BankIssuedInvoice/Transaction/55D2FABB93DA41D4968FA1F3DB064D77/Payment/BE58E91428134CC98570207E65E0C279/Installment/1",
+				"value": 128
+			},
+			"message": null,
+			"messageCode": null,
+			"cycleCount": 3,
+			"status": 3
+		}
+	],
+	"_accountInfo": {
+		"HostName": "recorrenciaqa",
+		"MainAccountName": "recorrenciaqa",
+		"IsPersisted": true,
+		"IsRemoved": false,
+		"Id": "9ddcfba5-3855-49ec-b61e-b2847b9314cc",
+		"Cnpj": "05314972000174",
+		"CompanyName": "recorrenciaqa",
+		"TradingName": "recorrenciaqa",
+		"AccountName": "recorrenciaqa",
+		"DefaultUrl": null,
+		"Address": null,
+		"Number": null,
+		"Complement": null,
+		"District": null,
+		"City": null,
+		"State": null,
+		"PostalCode": null,
+		"Country": "Brasil",
+		"Telephone": "967667300",
+		"IsActive": true,
+		"Sponsor": "3f0c0d99-9188-46ad-a600-5397fc8b4db9",
+		"Logo": "logo_vtex.png",
+		"AppId": "2da8cffa-2fcb-4632-8882-2e9e532e247e",
+		"IsOperating": false,
+		"LV": "LV-1000150",
+		"Sigla": null
+	}
+}

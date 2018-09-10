@@ -142,9 +142,12 @@
     "seller": "Fornecido e entregue por"
   },
   "subscription": {
-    "newTitle": "Sua assinatura foi confirmada.",
-    "newIntroMessage": "Obrigado por registrar uma assinatura em nossa loja. Você pode",
-    "newIntroMessageLink": "acompanhá-la e reconfigurá-la através do nosso site",
+    "newTitle": "Sua assinatura foi confirmada",
+    "newIntroMessage": "Após a aprovação de pagamento de cada pedido, te enviaremos um novo e-mail com o rastreamento da sua compra. Você pode acompanhar sua assinatura e editar suas configurações ",
+    "newIntroMessageLink": "através do nosso site",
+    "cancelledTitle": "Sua assinatura foi cancelada",
+    "cancelledIntroMessage": "Sua assinatura em nossa loja foi cancelada. Você ainda pode retomá-la a qualquer momento",
+    "cancelledIntroMessageLink": "através do nosso site",
     "summary": "Resumo da sua assinatura",
     "total": "Valor total",
     "period": "Refazer este pedido",
