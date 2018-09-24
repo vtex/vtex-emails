@@ -24,6 +24,19 @@
       "and": "e"
     }
   },
+  "creditControl": {
+    "newCreditLimit": {
+      "title": "Novo limite de crédito definido",
+      "line1": "Definimos um novo limite de crédito para suas compras a prazo na loja. A partir de agora, seu limite máximo é de",
+      "line2": "Você pode acompanhar seu crédito disponível e pagamentos em aberto através do <a href=\"#\">nosso site</a>."
+    },
+    "invoicePaid": {
+      "title": "Pagamento recebido",
+      "line1": " Recebemos seu pagamento de",
+      "line2": "O crédito disponível para compras foi atualizado",
+      "line3": "Você pode acompanhar seu crédito disponível e pagamentos em aberto através do <a href=\"#\">nosso site</a>."
+    }
+  },
   "order": {
     "title": "Obrigado pelo seu pedido.",
     "titleReplaced": "Seu pedido foi substituído.",
