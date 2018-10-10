@@ -24,19 +24,6 @@
       "and": "and"
     }
   },
-  "creditControl": {
-    "newCreditLimit": {
-      "title": "New credit limit defined",
-      "line1": "We've set a new credit limit for your on-time purchases at the store. From now on, your ceiling is",
-      "line2": "You can track your available credit and outstanding payments through <a href=\"#\">our site</a>."
-    },
-    "invoicePaid": {
-      "title": "Payment received",
-      "line1": "We received your payment from",
-      "line2": "Credit available for purchases has been updated",
-      "line3": "You can track your available credit and outstanding payments through <a href=\"#\">our site</a>."
-    }
-  },
   "order": {
     "title": "Thanks for your order.",
     "titleReplaced": "Your order has been replaced.",

@@ -1,11 +1,63 @@
 {
-  "creditLimit": 420000,
-  "clientProfileData": {
-    "firstName": "Lucas"
+  "destination": "marcos.candeia@vtex.com.br",
+  "account": {
+    "account": "ambienteqa",
+    "id": "091111111111_CPF",
+    "lastUpdate": "2018-10-04T14:53:26.2698127Z",
+    "createdAt": "2018-10-04T13:47:51.6408945Z",
+    "description": "",
+    "holders": [
+      {
+        "id": "e09f931bafe85eeb6483256194c87818",
+        "claims": [
+          {
+            "name": "email",
+            "value": "marcos.candeia@vtex.com.br"
+          }
+        ],
+        "number": 0,
+        "createdDate": "2018-10-04T13:47:51.6408945Z",
+        "level": 1
+      }
+    ],
+    "document": "091111111111",
+    "documentType": "CPF",
+    "balance": 0,
+    "creditLimit": 850000,
+    "preAuthorized": 0,
+    "status": "Open",
+    "availableCredit": 500000,
+    "email": "marcos.candeia@vtex.com.br",
+    "tolerance": 0
   },
   "_accountInfo": {
-    "TradingName": "Staples",
-    "HostName": "staples",
-    "Id": "e39d05f9-0c54-4469-a626-8bb5cff169f8"
-  }
+    "HostName": "ambienteqa",
+    "MainAccountName": "ambienteqa",
+    "IsPersisted": true,
+    "IsRemoved": false,
+    "Id": "e39d05f9-0c54-4469-a626-8bb5cff169f8",
+    "Cnpj": "11111111111111",
+    "CompanyName": "AmbienteQA",
+    "TradingName": "fantasiablackbox",
+    "AccountName": "ambienteqa",
+    "DefaultUrl": null,
+    "Address": "",
+    "Number": "",
+    "Complement": "",
+    "District": "",
+    "City": "",
+    "State": "",
+    "PostalCode": "",
+    "Country": "",
+    "Telephone": "",
+    "IsActive": true,
+    "Sponsor": "ca6a8c2d-90c9-4a4e-86e5-acdb7af60ba3",
+    "Logo": "logo.png",
+    "AppId": "279fd8db-0073-4195-a72a-e2af24e1b1c9",
+    "IsOperating": false,
+    "LV": "",
+    "Sigla": null,
+    "language": "pt"
+  },
+  "clientProfileData": {}
 }
