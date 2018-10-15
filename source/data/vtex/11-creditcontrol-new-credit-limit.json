@@ -1,5 +1,9 @@
 {
   "destination": "marcos.candeia@vtex.com.br",
+  "metadata": {
+    "language": "en",
+    "currency": "R$"
+  },
   "account": {
     "account": "ambienteqa",
     "id": "091111111111_CPF",
@@ -56,8 +60,7 @@
     "AppId": "279fd8db-0073-4195-a72a-e2af24e1b1c9",
     "IsOperating": false,
     "LV": "",
-    "Sigla": null,
-    "language": "pt"
+    "Sigla": null
   },
   "clientProfileData": {}
 }

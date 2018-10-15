@@ -2,6 +2,10 @@
   "invoice": {
     "value": 10000
   },
+  "metadata": {
+    "language": "pt",
+    "currency": "R$"
+  },
   "_accountInfo": {
     "HostName": "ambienteqa",
     "MainAccountName": "ambienteqa",
@@ -28,8 +32,7 @@
     "AppId": "279fd8db-0073-4195-a72a-e2af24e1b1c9",
     "IsOperating": false,
     "LV": "",
-    "Sigla": null,
-    "language": "en"
+    "Sigla": null
   },
   "clientProfileData": {},
   "recipient": "marcos.candeia@vtex.com.br"

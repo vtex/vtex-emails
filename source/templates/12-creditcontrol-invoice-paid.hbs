@@ -15,13 +15,13 @@
               <!-- partial:partials/logo.hbs -->
               <!-- partial -->
 
-              {{#eq _accountInfo.language "pt"}}
+              {{#eq metadata.language "pt"}}
               <h1>Pagamento recebido</h1>
               {{/eq}}
-              {{#eq _accountInfo.language "en"}}
+              {{#eq metadata.language "en"}}
               <h1>Payment received</h1>
               {{/eq}}
-              {{#eq _accountInfo.language null}}
+              {{#eq metadata.language null}}
               <h1>Payment received</h1>
               {{/eq}}
             </td>
@@ -34,19 +34,19 @@
                   <!-- partial:partials/messages/hi.hbs -->
                   <!-- partial -->
 
-                  {{#eq _accountInfo.language "pt"}}
-                  <p>Recebemos seu pagamento de <strong>{{_accountInfo.currency}} {{formatCurrency
+                  {{#eq metadata.language "pt"}}
+                  <p>Recebemos seu pagamento de <strong>{{metadata.currency}} {{formatCurrency
                       invoice.value}}</strong>. O crédito disponível para compras foi atualizado</p>
                   <p>Você pode acompanhar seu crédito disponível e pagamentos em aberto através do <a href="#">nosso
                       site</a>.</p>
                   {{/eq}}
-                  {{#eq _accountInfo.language "en"}}
-                  <p>We received your payment from <strong>{{_accountInfo.currency}} {{formatCurrency
+                  {{#eq metadata.language "en"}}
+                  <p>We received your payment from <strong>{{metadata.currency}} {{formatCurrency
                       invoice.value}}</strong>. Credit available for purchases has been updated</p>
                   <p>You can track your available credit and outstanding payments through <a href="#">our site</a>.</p>
                   {{/eq}}
-                  {{#eq _accountInfo.language null}}
-                  <p>We received your payment from <strong>{{_accountInfo.currency}} {{formatCurrency
+                  {{#eq metadata.language null}}
+                  <p>We received your payment from <strong>{{metadata.currency}} {{formatCurrency
                       invoice.value}}</strong>. Credit available for purchases has been updated</p>
                   <p>You can track your available credit and outstanding payments through <a href="#">our site</a>.</p>
                   {{/eq}}
@@ -58,9 +58,9 @@
           <tr>
             <td class="ph4-ns pv3 bt b--light-gray">
               <p>
-                {{#eq _accountInfo.language "pt"}}Atenciosamente{{/eq}}
-                {{#eq _accountInfo.language "en"}}Regards{{/eq}}
-                {{#eq _accountInfo.language null}}Regards{{/eq}}
+                {{#eq metadata.language "pt"}}Atenciosamente{{/eq}}
+                {{#eq metadata.language "en"}}Regards{{/eq}}
+                {{#eq metadata.language null}}Regards{{/eq}}
                 <br />((i18n.common.team)) {{_accountInfo.TradingName}}
               </p>
             </td>
