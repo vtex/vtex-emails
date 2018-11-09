@@ -4,11 +4,9 @@
       {{#compare @index '==' 0}}
         <div class="mw5-5 pt3 pb2">
           <!-- Change border color for each delivery channel -->
-          {{#eq selectedDeliveryChannel "pickup-in-point"}}
-          <div class="ba b--light-silver br2">
-          {{else}}
-          <div class="ba b--moon-gray br2">
-          {{/eq}}
+
+          <div class="ba br2 b--light-silver">
+
             <div class="ph3 pt3">
               <!-- Title: delivery or pickup -->
               {{#eq selectedDeliveryChannel "pickup-in-point"}}
@@ -43,11 +41,7 @@
             </div>
 
             <!-- Change border color for each delivery channel -->
-            {{#eq selectedDeliveryChannel "pickup-in-point"}}
             <div class="ph3 pv2 bt b--light-silver">
-            {{else}}
-            <div class="ph3 pv2 bt b--moon-gray">
-            {{/eq}}
               <!-- Show Pickup Store name -->
               {{#eq selectedDeliveryChannel "pickup-in-point"}}
                 {{#each slas}}
