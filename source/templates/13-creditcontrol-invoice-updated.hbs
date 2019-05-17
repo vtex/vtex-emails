@@ -1,0 +1,111 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
+<!-- partial:partials/html-head.hbs -->
+<!-- partial -->
+
+<body>
+  <table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" valign="top">
+        <table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0"
+          cellspacing="0">
+
+          <!-- Header -->
+          <tr>
+            <td class="w-100 ph4-ns pb4 bb b--light-gray tc">
+              <!-- partial:partials/logo.hbs -->
+              <!-- partial -->
+
+              {{#eq metadata.language "pt"}}
+              <h1>Títulos de cobrança atualizados</h1>
+              <p class="gray f5">Referente ao Pedido {{invoice.order}}</p>
+              {{/eq}}
+              {{#eq metadata.language "en"}}
+              <h1>Invoice updated</h1>
+              <p class="gray f5">Order reference {{invoice.order}}</p>
+              {{/eq}}
+              {{#eq metadata.language null}}
+              <h1>Invoice updated</h1>
+              <p class="gray f5">Order reference {{invoice.order}}</p>
+              {{/eq}}
+            </td>
+          </tr>
+
+          <tr>
+            <td class="w-100 ph4-ns">
+              <div class="mt4">
+                <p>
+                  {{#eq metadata.language "pt"}}
+                  <p>Olá, {{invoice.userName}}.</p>
+                  <p>
+                    Atualizamos os valores e reemitimos os títulos do seu pedido:</p>
+                  {{/eq}}
+                  {{#eq metadata.language "en"}}
+                  <p>Hello, {{invoice.userName}}.</p>
+                  <p>
+                    We have updated the values and reissued the titles of your order:</p>
+                  {{/eq}}
+                  {{#eq metadata.language null}}
+                  <p>Hello, {{invoice.userName}}.</p>
+                  <p>
+                    We have updated the values and reissued the titles of your order:</p>
+                  {{/eq}}
+
+                  <table width="100%">
+                    <thead>
+                      <tr>
+                        <th class="bb b--light-gray pv2">
+                          {{#eq metadata.language "pt"}}Vencimento{{/eq}}{{#eq metadata.language "en"}}Due
+                          date{{/eq}}{{#eq metadata.language null}}Due date{{/eq}}</th>
+                        <th class="bb b--light-gray pv2">
+                          {{#eq metadata.language "pt"}}Observação{{/eq}}{{#eq metadata.language "en"}}Observation{{/eq}}{{#eq metadata.language null}}Observation{{/eq}}
+                        </th>
+                        <th class="tr bb b--light-gray pv2">
+                          {{#eq metadata.language "pt"}}Valor{{/eq}}{{#eq metadata.language "en"}}Value{{/eq}}{{#eq metadata.language null}}Value{{/eq}}
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {{#each invoice.updatedInvoices}}
+                      <tr>
+                        <td class="bb b--light-gray pv2">{{formatDate dueDate}}</td>
+                        <td class="bb b--light-gray pv2">{{observation}}</td>
+                        <td class="tr bb b--light-gray pv2">{{../metadata.currency}} {{formatCurrency value}}</td>
+                      </tr>
+                      {{/each}}
+                    </tbody>
+                  </table>
+
+                  {{#eq metadata.language "pt"}}
+                  <p>Você pode acompanhar seu crédito disponível e títulos de cobrança em aberto pelo <a href="#">nosso
+                      site</a>.</p>
+                  {{/eq}}
+                  {{#eq metadata.language "en"}}
+                  <p>You can track your available credit and billing titles through <a href="#">our website</a>.</p>
+                  {{/eq}}
+                  {{#eq metadata.language null}}
+                  <p>You can track your available credit and billing titles through <a href="#">our website</a>.</p>
+                  {{/eq}}
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="ph4-ns pv3 bt b--light-gray">
+              <p>
+                {{#eq metadata.language "pt"}}Atenciosamente{{/eq}}
+                {{#eq metadata.language "en"}}Regards{{/eq}}
+                {{#eq metadata.language null}}Regards{{/eq}}
+                <br />((i18n.common.team)) {{_accountInfo.TradingName}}
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

@@ -92,4 +92,8 @@ And it has other important features:
 
 If you find a bug or need new feature please open a new issue and we will discuss about it.
 
+## Troubleshoot
+
+Does not seem to work on node above 8.
+
 **Thank you! :)**

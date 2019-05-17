@@ -1,0 +1,53 @@
+{
+  "invoice": {
+    "value": 10000,
+    "order": "#23498",
+    "userName": "Ana",
+    "updatedInvoices": [
+      {
+        "dueDate": "2018-09-28T15:41:17.9276581Z",
+        "observation": "",
+        "value": 42100
+      },
+      {
+        "dueDate": "2018-09-28T15:41:17.9276581Z",
+        "observation": "Something",
+        "value": 10000
+      }
+    ]
+  },
+  "metadata": {
+    "language": "pt",
+    "currency": "R$"
+  },
+  "_accountInfo": {
+    "HostName": "ambienteqa",
+    "MainAccountName": "ambienteqa",
+    "IsPersisted": true,
+    "IsRemoved": false,
+    "Id": "e39d05f9-0c54-4469-a626-8bb5cff169f8",
+    "Cnpj": "11111111111111",
+    "CompanyName": "AmbienteQA",
+    "TradingName": "fantasiablackbox",
+    "AccountName": "ambienteqa",
+    "DefaultUrl": null,
+    "Address": "",
+    "Number": "",
+    "Complement": "",
+    "District": "",
+    "City": "",
+    "State": "",
+    "PostalCode": "",
+    "Country": "",
+    "Telephone": "",
+    "IsActive": true,
+    "Sponsor": "ca6a8c2d-90c9-4a4e-86e5-acdb7af60ba3",
+    "Logo": "logo.png",
+    "AppId": "279fd8db-0073-4195-a72a-e2af24e1b1c9",
+    "IsOperating": false,
+    "LV": "",
+    "Sigla": null
+  },
+  "clientProfileData": {},
+  "recipient": "marcos.candeia@vtex.com.br"
+}
