@@ -3,7 +3,7 @@
     "value": 10000,
     "order": "#23498",
     "userName": "Ana",
-    "updatedInvoices": [
+    "invoices": [
       {
         "dueDate": "2018-09-28T15:41:17.9276581Z",
         "observation": "",

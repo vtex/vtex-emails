@@ -19,15 +19,15 @@
               <!-- partial -->
 
               {{#eq metadata.language "pt"}}
-              <h1>Títulos de cobrança atualizados</h1>
+              <h1>Título de cobrança vencido</h1>
               <p class="gray f5">Referente ao pedido {{invoice.order}}</p>
               {{/eq}}
               {{#eq metadata.language "en"}}
-              <h1>Invoice updated</h1>
+              <h1>Invoice overdue</h1>
               <p class="gray f5">Order reference {{invoice.order}}</p>
               {{/eq}}
               {{#eq metadata.language null}}
-              <h1>Invoice updated</h1>
+              <h1>Invoice overdue</h1>
               <p class="gray f5">Order reference {{invoice.order}}</p>
               {{/eq}}
             </td>
@@ -39,18 +39,20 @@
                 <p>
                   {{#eq metadata.language "pt"}}
                   <p>Olá, {{invoice.userName}}.</p>
-                  <p>
-                    Atualizamos os valores e reemitimos os títulos do seu pedido:</p>
+                  <p>O título abaixo está atrasado e ainda não registramos seu pagamento. Por favor, regularize sua
+                    situação.</p>
                   {{/eq}}
                   {{#eq metadata.language "en"}}
                   <p>Hello, {{invoice.userName}}.</p>
                   <p>
-                    We have updated the values and reissued the invoices of your order:</p>
+                    The invoice below is delayed and we have not yet registered your payment. Please regularize your
+                    situation.</p>
                   {{/eq}}
                   {{#eq metadata.language null}}
                   <p>Hello, {{invoice.userName}}.</p>
                   <p>
-                    We have updated the values and reissued the invoices of your order:</p>
+                    The invoice below is delayed and we have not yet registered your payment. Please regularize your
+                    situation.</p>
                   {{/eq}}
 
                   <table width="100%">
@@ -79,14 +81,16 @@
                   </table>
 
                   {{#eq metadata.language "pt"}}
-                  <p>Você pode acompanhar seu crédito disponível e títulos de cobrança em aberto pelo <a href="#">nosso
-                      site</a>.</p>
+                  <p>Se você já fez o pagamento, desconsidere essa mensagem. Você pode acompanhar seu crédito disponível
+                    e títulos de cobrança em aberto pelo nosso site.</p>
                   {{/eq}}
                   {{#eq metadata.language "en"}}
-                  <p>You can track your available credit and billing titles through <a href="#">our website</a>.</p>
+                  <p>If you have already made the payment, disregard this message. You can track your available credit
+                    and outstanding billing titles through our website.</p>
                   {{/eq}}
                   {{#eq metadata.language null}}
-                  <p>You can track your available credit and billing titles through <a href="#">our website</a>.</p>
+                  <p>If you have already made the payment, disregard this message. You can track your available credit
+                    and outstanding billing titles through our website.</p>
                   {{/eq}}
               </div>
             </td>
