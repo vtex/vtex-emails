@@ -1,5 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
 <!-- partial:partials/html-head.hbs -->
 <!-- partial -->
 
@@ -7,7 +9,8 @@
   <table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
     <tr>
       <td align="center" valign="top">
-        <table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0"
+          cellspacing="0">
 
           <!-- Header -->
           <tr>
@@ -30,48 +33,33 @@
           <tr>
             <td class="w-100 ph4-ns">
               <div class="mt4">
-                <p>
-                  <!-- partial:partials/messages/hi.hbs -->
-                  <!-- partial -->
+                {{#eq metadata.language "pt"}}
+                <p>Olá, {{userName}}.</p>
+                <p>Agora, você tem um novo limite para fazer suas compras a prazo. Conte com até
+                  <strong>{{metadata.currency}} {{formatCurrency account.creditLimit}}</strong> de crédito para usar
+                  aqui na loja.</p>
+                {{/eq}}
+                {{#eq metadata.language "en"}}
+                <p>Hello, {{userName}}.</p>
+                <p>Now, you have a new limit to make your purchases on time. Count up to <strong>{{metadata.currency}}
+                    {{formatCurrency account.creditLimit}}</strong> of credit to use here in the store.</p>
+                {{/eq}}
+                {{#eq metadata.language null}}
+                <p>Hello, {{userName}}.</p>
+                <p>Now, you have a new limit to make your purchases on time. Count up to <strong>{{metadata.currency}}
+                    {{formatCurrency account.creditLimit}}</strong> of credit to use here in the store.</p>
+                {{/eq}}
 
-                  {{#eq metadata.language "pt"}}
-                  <p>Definimos um novo limite de crédito para suas compras a prazo na loja. A partir de agora, seu
-                    limite máximo é de <strong>{{metadata.currency}} {{formatCurrency account.creditLimit}}</strong>.</p>
-                  {{/eq}}
-                  {{#eq metadata.language "en"}}
-                  <p>We've set a new credit limit for your on-time purchases at the store. From now on, your ceiling is
-                    <strong>{{metadata.currency}} {{formatCurrency account.creditLimit}}</strong>.</p>
-                  {{/eq}}
-                  {{#eq metadata.language null}}
-                  <p>We've set a new credit limit for your on-time purchases at the store. From now on, your ceiling is
-                    <strong>{{metadata.currency}} {{formatCurrency account.creditLimit}}</strong>.</p>
-                  {{/eq}}
-
-
-                  {{#eq metadata.language "pt"}}
-                  <p>Você pode acompanhar seu crédito disponível e pagamentos em aberto através do <a href="#">nosso
-                      site</a>.</p>
-                  {{/eq}}
-                  {{#eq metadata.language "en"}}
-                  <p>You can track your available credit and outstanding payments through <a href="#">our site</a>.</p>
-                  {{/eq}}
-                  {{#eq metadata.language null}}
-                  <p>You can track your available credit and outstanding payments through <a href="#">our site</a>.</p>
-                  {{/eq}}
-
-                </p>
+                <!-- partial:partials/customerCredit/follow.hbs -->
+                <!-- partial -->
               </div>
             </td>
           </tr>
 
           <tr>
             <td class="ph4-ns pv3 bt b--light-gray">
-              <p>
-                {{#eq metadata.language "pt"}}Atenciosamente{{/eq}}
-                {{#eq metadata.language "en"}}Regards{{/eq}}
-                {{#eq metadata.language null}}Regards{{/eq}}
-                <br />((i18n.common.team)) {{_accountInfo.TradingName}}
-              </p>
+              <!-- partial:partials/customerCredit/footer.hbs -->
+              <!-- partial -->
             </td>
           </tr>
         </table>

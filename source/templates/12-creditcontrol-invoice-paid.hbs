@@ -1,5 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
 <!-- partial:partials/html-head.hbs -->
 <!-- partial -->
 
@@ -7,7 +9,8 @@
   <table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
     <tr>
       <td align="center" valign="top">
-        <table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0"
+          cellspacing="0">
 
           <!-- Header -->
           <tr>
@@ -30,39 +33,56 @@
           <tr>
             <td class="w-100 ph4-ns">
               <div class="mt4">
-                <p>
-                  <!-- partial:partials/messages/hi.hbs -->
-                  <!-- partial -->
+                {{#eq metadata.language "pt"}}
+                <p>Olá, {{userName}}.</p>
+                <p>Obrigado pelo pagamento do título abaixo:</p>
+                {{/eq}}
+                {{#eq metadata.language "en"}}
+                <p>Hello, {{userName}}.</p>
+                <p>Thanks for paying the invoice below:</p>
+                {{/eq}}
+                {{#eq metadata.language null}}
+                <p>Hello, {{userName}}.</p>
+                <p>Thanks for paying the invoice below:</p>
+                {{/eq}}
 
-                  {{#eq metadata.language "pt"}}
-                  <p>Recebemos seu pagamento de <strong>{{metadata.currency}} {{formatCurrency
-                      invoice.value}}</strong>. O crédito disponível para compras foi atualizado</p>
-                  <p>Você pode acompanhar seu crédito disponível e pagamentos em aberto através do <a href="#">nosso
-                      site</a>.</p>
-                  {{/eq}}
-                  {{#eq metadata.language "en"}}
-                  <p>We received your payment from <strong>{{metadata.currency}} {{formatCurrency
-                      invoice.value}}</strong>. Credit available for purchases has been updated</p>
-                  <p>You can track your available credit and outstanding payments through <a href="#">our site</a>.</p>
-                  {{/eq}}
-                  {{#eq metadata.language null}}
-                  <p>We received your payment from <strong>{{metadata.currency}} {{formatCurrency
-                      invoice.value}}</strong>. Credit available for purchases has been updated</p>
-                  <p>You can track your available credit and outstanding payments through <a href="#">our site</a>.</p>
-                  {{/eq}}
-                </p>
+                <table width="100%">
+                  <thead>
+                    <tr>
+                      <th class="bb b--light-gray pv2">
+                        {{#eq metadata.language "pt"}}Vencimento{{/eq}}{{#eq metadata.language "en"}}Due
+                        date{{/eq}}{{#eq metadata.language null}}Due date{{/eq}}</th>
+                      <th class="bb b--light-gray pv2">
+                        {{#eq metadata.language "pt"}}Observação{{/eq}}{{#eq metadata.language "en"}}Observation{{/eq}}{{#eq metadata.language null}}Observation{{/eq}}
+                      </th>
+                      <th class="tr bb b--light-gray pv2">
+                        {{#eq metadata.language "pt"}}Valor{{/eq}}{{#eq metadata.language "en"}}Value{{/eq}}{{#eq metadata.language null}}Value{{/eq}}
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="bb b--light-gray pv2">{{formatDate invoice.dueDate}}</td>
+                      <td class="bb b--light-gray pv2">{{invoice.observation}}</td>
+                      <td class="tr bb b--light-gray pv2">{{metadata.currency}} {{formatCurrency invoice.value}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                {{#eq metadata.language "pt"}}<p>Com isso, seu limite disponível para compras foi atualizado.</p>{{/eq}}
+                {{#eq metadata.language "en"}}<p>As a result, your purchase limit has been updated.</p>{{/eq}}
+                {{#eq metadata.language null}}<p>As a result, your purchase limit has been updated.</p>{{/eq}}
+
+                <!-- partial:partials/customerCredit/follow.hbs -->
+                <!-- partial -->
               </div>
             </td>
           </tr>
 
           <tr>
             <td class="ph4-ns pv3 bt b--light-gray">
-              <p>
-                {{#eq metadata.language "pt"}}Atenciosamente{{/eq}}
-                {{#eq metadata.language "en"}}Regards{{/eq}}
-                {{#eq metadata.language null}}Regards{{/eq}}
-                <br />((i18n.common.team)) {{_accountInfo.TradingName}}
-              </p>
+              <!-- partial:partials/customerCredit/footer.hbs -->
+              <!-- partial -->
             </td>
           </tr>
         </table>

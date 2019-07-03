@@ -36,70 +36,57 @@
           <tr>
             <td class="w-100 ph4-ns">
               <div class="mt4">
+                {{#eq metadata.language "pt"}}
+                <p>Olá, {{userName}}.</p>
                 <p>
-                  {{#eq metadata.language "pt"}}
-                  <p>Olá, {{invoice.userName}}.</p>
-                  <p>
-                    Já fizemos a emissão dos seguintes títulos do seu pedido:</p>
-                  {{/eq}}
-                  {{#eq metadata.language "en"}}
-                  <p>Hello, {{invoice.userName}}.</p>
-                  <p>
-                    We have already issued the following invoices of your order:</p>
-                  {{/eq}}
-                  {{#eq metadata.language null}}
-                  <p>Hello, {{invoice.userName}}.</p>
-                  <p>
-                    We have already issued the following invoices of your order:</p>
-                  {{/eq}}
+                  Já fizemos a emissão dos seguintes títulos do seu pedido:</p>
+                {{/eq}}
+                {{#eq metadata.language "en"}}
+                <p>Hello, {{userName}}.</p>
+                <p>
+                  We have already issued the following invoices of your order:</p>
+                {{/eq}}
+                {{#eq metadata.language null}}
+                <p>Hello, {{userName}}.</p>
+                <p>
+                  We have already issued the following invoices of your order:</p>
+                {{/eq}}
 
-                  <table width="100%">
-                    <thead>
-                      <tr>
-                        <th class="bb b--light-gray pv2">
-                          {{#eq metadata.language "pt"}}Vencimento{{/eq}}{{#eq metadata.language "en"}}Due
-                          date{{/eq}}{{#eq metadata.language null}}Due date{{/eq}}</th>
-                        <th class="bb b--light-gray pv2">
-                          {{#eq metadata.language "pt"}}Observação{{/eq}}{{#eq metadata.language "en"}}Observation{{/eq}}{{#eq metadata.language null}}Observation{{/eq}}
-                        </th>
-                        <th class="tr bb b--light-gray pv2">
-                          {{#eq metadata.language "pt"}}Valor{{/eq}}{{#eq metadata.language "en"}}Value{{/eq}}{{#eq metadata.language null}}Value{{/eq}}
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {{#each invoice.invoices}}
-                      <tr>
-                        <td class="bb b--light-gray pv2">{{formatDate dueDate}}</td>
-                        <td class="bb b--light-gray pv2">{{observation}}</td>
-                        <td class="tr bb b--light-gray pv2">{{../metadata.currency}} {{formatCurrency value}}</td>
-                      </tr>
-                      {{/each}}
-                    </tbody>
-                  </table>
+                <table width="100%">
+                  <thead>
+                    <tr>
+                      <th class="bb b--light-gray pv2">
+                        {{#eq metadata.language "pt"}}Vencimento{{/eq}}{{#eq metadata.language "en"}}Due
+                        date{{/eq}}{{#eq metadata.language null}}Due date{{/eq}}</th>
+                      <th class="bb b--light-gray pv2">
+                        {{#eq metadata.language "pt"}}Observação{{/eq}}{{#eq metadata.language "en"}}Observation{{/eq}}{{#eq metadata.language null}}Observation{{/eq}}
+                      </th>
+                      <th class="tr bb b--light-gray pv2">
+                        {{#eq metadata.language "pt"}}Valor{{/eq}}{{#eq metadata.language "en"}}Value{{/eq}}{{#eq metadata.language null}}Value{{/eq}}
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {{#each invoice.invoices}}
+                    <tr>
+                      <td class="bb b--light-gray pv2">{{formatDate dueDate}}</td>
+                      <td class="bb b--light-gray pv2">{{observation}}</td>
+                      <td class="tr bb b--light-gray pv2">{{../metadata.currency}} {{formatCurrency value}}</td>
+                    </tr>
+                    {{/each}}
+                  </tbody>
+                </table>
 
-                  {{#eq metadata.language "pt"}}
-                  <p>Você pode acompanhar seu crédito disponível e títulos de cobrança em aberto pelo <a href="#">nosso
-                      site</a>.</p>
-                  {{/eq}}
-                  {{#eq metadata.language "en"}}
-                  <p>You can track your available credit and billing titles through <a href="#">our website</a>.</p>
-                  {{/eq}}
-                  {{#eq metadata.language null}}
-                  <p>You can track your available credit and billing titles through <a href="#">our website</a>.</p>
-                  {{/eq}}
+                <!-- partial:partials/customerCredit/follow.hbs -->
+                <!-- partial -->
               </div>
             </td>
           </tr>
 
           <tr>
             <td class="ph4-ns pv3 bt b--light-gray">
-              <p>
-                {{#eq metadata.language "pt"}}Atenciosamente{{/eq}}
-                {{#eq metadata.language "en"}}Regards{{/eq}}
-                {{#eq metadata.language null}}Regards{{/eq}}
-                <br />((i18n.common.team)) {{_accountInfo.TradingName}}
-              </p>
+              <!-- partial:partials/customerCredit/footer.hbs -->
+              <!-- partial -->
             </td>
           </tr>
         </table>
