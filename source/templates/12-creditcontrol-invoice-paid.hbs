@@ -61,11 +61,13 @@
                     </tr>
                   </thead>
                   <tbody>
+                    {{#each invoice.invoices}}
                     <tr>
-                      <td class="bb b--light-gray pv2">{{formatDate invoice.dueDate}}</td>
-                      <td class="bb b--light-gray pv2">{{invoice.observation}}</td>
-                      <td class="tr bb b--light-gray pv2">{{metadata.currency}} {{formatCurrency invoice.value}}</td>
+                      <td class="bb b--light-gray pv2">{{formatDate dueDate}}</td>
+                      <td class="bb b--light-gray pv2">{{observation}}</td>
+                      <td class="tr bb b--light-gray pv2">{{../metadata.currency}} {{formatCurrency value}}</td>
                     </tr>
+                    {{/each}}
                   </tbody>
                 </table>
 

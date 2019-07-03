@@ -2,8 +2,14 @@
   "userName": "Ana",
   "invoice": {
     "value": 10000,
-    "dueDate": "2018-09-28T15:41:17.9276581Z",
-    "observation": "Some obs"
+    "order": "#23498",
+    "invoices": [
+      {
+        "dueDate": "2018-09-28T15:41:17.9276581Z",
+        "observation": "",
+        "value": 42100
+      }
+    ]
   },
   "metadata": {
     "language": "pt",
