@@ -1,0 +1,204 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
+<!-- partial:partials/html-head.hbs -->
+<!-- partial -->
+<style>
+  .box {
+    max-width: 40rem;
+    margin: auto;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e3e4e6;
+    color: #3f3f40;
+  }
+
+  .wrapper-table {
+    width: 100%;
+    max-width: 40rem;
+    margin: auto;
+  }
+
+  .content-table {
+    width: 100%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .img {
+    margin: auto;
+    width: 36px;
+    display: block;
+  }
+
+  .img-visa {
+    margin: auto;
+    width: 49px;
+    display: block;
+  }
+
+  .account {
+    color: #727273;
+  }
+
+  .logo-container {
+    width: 20%;
+  }
+
+  .pb7 {
+    padding-bottom: 2rem;
+  }
+
+  .pb8 {
+    padding-bottom: 2.5rem;
+  }
+
+  .amount {
+    color: #8bc34a;
+  }
+
+  .emphasis {
+    color: #ed1260;
+  }
+
+  .line {
+    width: 100%;
+    border: none;
+    height: 1px;
+    margin-bottom: 1rem;
+    background-color: #cacbcc;
+  }
+
+  .footer-text {
+    font-size: 0.75rem;
+    color: #727273;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .svg-container {
+    width: 20%;
+  }
+
+  .svg-wrapper {
+    width: 100%;
+  }
+
+  .muted-2 {
+    color: #979899;
+  }
+</style>
+
+<body>
+  <table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" valign="top">
+        <table class="wrapper-table">
+          <tr>
+            <td class="box">
+              <table class="content-table">
+                <tbody>
+                  <tr>
+                    <td class="logo-container pb7" colspan="3">
+                      <img class="logo" src="http://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg" />
+                    </td>
+                    <td class="tr account pb7" colspan="3">
+                      {{account}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pb7" colspan="6">
+                      <h1 class="f3 lh-title">Pronto, veja abaixo tudo que seu novo cartão pode fazer por você.</h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="svg-container pb8" colspan="2">
+                      <div class="svg-wrapper">
+                        <img class="img"
+                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMzIDBIOVY2SDMzVjBaIiBmaWxsPSIjRjcxOTYzIi8+CjxwYXRoIGQ9Ik0zNC41IDlINC41QzMuNjczNSA5IDMgOC4zMjY1IDMgNy41QzMgNi42NzM1IDMuNjczNSA2IDQuNSA2SDZWM0g0LjVDMi4wMTQ1IDMgMCA1LjAxNDUgMCA3LjVWMzBDMCAzMy4zMTM1IDIuNjg2NSAzNiA2IDM2SDM0LjVDMzUuMzI4IDM2IDM2IDM1LjMyOCAzNiAzNC41VjEwLjVDMzYgOS42NzIgMzUuMzI4IDkgMzQuNSA5Wk0yNyAyNS41QzI1LjM0MjUgMjUuNSAyNCAyNC4xNTc1IDI0IDIyLjVDMjQgMjAuODQyNSAyNS4zNDI1IDE5LjUgMjcgMTkuNUMyOC42NTc1IDE5LjUgMzAgMjAuODQyNSAzMCAyMi41QzMwIDI0LjE1NzUgMjguNjU3NSAyNS41IDI3IDI1LjVaIiBmaWxsPSIjM0YzRjQwIi8+Cjwvc3ZnPgo=" />
+                      </div>
+                    </td>
+                    <td class="pb8" colspan="4">
+                      Faça compras usando seu saldo disponível.
+                      Sem faturas e sem precisar recarregar o cartão.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="svg-container pb8" colspan="2">
+                      <div class="svg-wrapper">
+                        <img class="img-visa"
+                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCA0OCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2Ljg3NSAxNC40NThMMTkuMzA4OSAwLjI4OTUwNEgyMy4yMDE5TDIwLjc2NjIgMTQuNDU4SDE2Ljg3NVpNMzQuODMxMSAwLjU5NTA3NUMzNC4wNTk5IDAuMzA4MDMyIDMyLjg1MTMgMCAzMS4zNDIgMEMyNy40OTUyIDAgMjQuNzg1NiAxLjkyMTY1IDI0Ljc2MjUgNC42NzU3N0MyNC43NDA4IDYuNzExNjQgMjYuNjk2OSA3Ljg0NzM2IDI4LjE3MzYgOC41MjUwOUMyOS42ODkgOS4yMTk2OCAzMC4xOTg0IDkuNjYyNTUgMzAuMTkxMSAxMC4yODI2QzMwLjE4MTQgMTEuMjMyNCAyOC45ODEgMTEuNjY2MSAyNy44NjE5IDExLjY2NjFDMjYuMzAzOSAxMS42NjYxIDI1LjQ3NjEgMTEuNDUxNCAyNC4xOTc1IDEwLjkyMjVMMjMuNjk1OCAxMC42OTczTDIzLjE0OTUgMTMuODY5QzI0LjA1ODggMTQuMjY0NiAyNS43NDAxIDE0LjYwNzIgMjcuNDg2MSAxNC42MjVDMzEuNTc4NCAxNC42MjUgMzQuMjM1IDEyLjcyNTMgMzQuMjY1MiA5Ljc4NDIxQzM0LjI3OTcgOC4xNzI0IDMzLjI0MjYgNi45NDU5MiAzMC45OTY1IDUuOTM0NjhDMjkuNjM1OCA1LjI3OTI0IDI4LjgwMjUgNC44NDE4OCAyOC44MTEzIDQuMTc4MTlDMjguODExMyAzLjU4OTI3IDI5LjUxNjcgMi45NTk1MiAzMS4wNDA5IDIuOTU5NTJDMzIuMzEzOCAyLjkzOTkxIDMzLjIzNjEgMy4yMTUzIDMzLjk1NDYgMy41MDIzNEwzNC4zMDM0IDMuNjY1ODRMMzQuODMxMSAwLjU5NTA3NVpNNDQuODQ5IDAuMjg5NDMySDQxLjg0MDlDNDAuOTA5IDAuMjg5NDMyIDQwLjIxMTUgMC41NDE3MzQgMzkuODAyMyAxLjQ2NDM4TDM0LjAyMDcgMTQuNDQ4OEgzOC4xMDg3QzM4LjEwODcgMTQuNDQ4OCAzOC43NzcgMTIuNzAzIDM4LjkyODIgMTIuMzE5NkMzOS4zNzQ5IDEyLjMxOTYgNDMuMzQ2MyAxMi4zMjU3IDQzLjkxNCAxMi4zMjU3QzQ0LjAzMDQgMTIuODIxOCA0NC4zODc2IDE0LjQ0ODggNDQuMzg3NiAxNC40NDg4SDQ4TDQ0Ljg0OSAwLjI4OTQzMlpNNDAuMDc2MiA5LjQzODMzQzQwLjM5ODMgOC42MjIgNDEuNjI3MyA1LjQ3NzYzIDQxLjYyNzMgNS40Nzc2M0M0MS42MDQ0IDUuNTE1MzMgNDEuOTQ3IDQuNjU3MzIgNDIuMTQzNCA0LjEyNTM1TDQyLjQwNjYgNS4zNDY5MUM0Mi40MDY2IDUuMzQ2OTEgNDMuMTUyIDguNzI4OTcgNDMuMzA3OCA5LjQzODExSDQwLjA3NjJWOS40MzgzM1oiIGZpbGw9IiMzRjNGNDAiLz4KPHBhdGggZD0iTTAuMDQ5MjE2OSAwLjM3NTA3TDAgMC42NjQxNDJDMS41MjIxOCAxLjAyNjYyIDIuODgxNyAxLjU1MTIzIDQuMDcyIDIuMjAzOTJMNy40ODg3NCAxNC4yNUwxMS41NjI4IDE0LjI0NTZMMTcuNjI1IDAuMzc1MDdIMTMuNTQ1OEw5Ljc3NjAyIDkuODUxODhMOS4zNzQ0OSA3LjkyNTkyQzkuMzU1MzQgNy44NjYgOS4zMzUyOCA3LjgwNjM2IDkuMzE0MyA3Ljc0NzAzTDguMDAzNzggMS41NDgyNUM3Ljc3MDY5IDAuNjY4MjU5IDcuMDk0NzEgMC40MDU2NjggNi4yNTgzOSAwLjM3NUgwLjA0OTIxNjlWMC4zNzUwN1oiIGZpbGw9IiMzRjNGNDAiLz4KPC9zdmc+Cg==" />
+                      </div>
+                    </td>
+                    <td class="pb8" colspan="4">
+                      Aceito em maquininhas e em lojas online em todos
+                      os estabelecimentos que aceitem VISA na função crédito.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="svg-container pb8" colspan="2">
+                      <div class="svg-wrapper">
+                        <img class="img"
+                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2Ljg0ODYgMjVDMTUuMTkxMSAyNSAxMy44NDg2IDIzLjY1NzUgMTMuODQ4NiAyMkMxMy44NDg2IDIwLjM0MjUgMTUuMTkxMSAxOSAxNi44NDg2IDE5QzE3LjM5NDYgMTkgMTcuOTA3NiAxOS4xNDU1IDE4LjM0ODYgMTkuNDAwNSIgZmlsbD0iIzNGM0Y0MCIvPgo8cGF0aCBkPSJNMTYuODQ4NiAyNUMxNS4xOTExIDI1IDEzLjg0ODYgMjMuNjU3NSAxMy44NDg2IDIyQzEzLjg0ODYgMjAuMzQyNSAxNS4xOTExIDE5IDE2Ljg0ODYgMTlDMTcuMzk0NiAxOSAxNy45MDc2IDE5LjE0NTUgMTguMzQ4NiAxOS40MDA1TDE2Ljg0ODYgMjVaIiBzdHJva2U9IiMzRjNGNDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+CjxwYXRoIGQ9Ik0yNS4zMzQzIDEzLjUxNDVDMjMuMTYyMyAxMS4zNDI1IDIwLjE2MjMgMTAgMTYuODQ4OCAxMEMxMy41MzUzIDEwIDEwLjUzNTMgMTEuMzQyNSA4LjM2MzI4IDEzLjUxNDUiIHN0cm9rZT0iIzNGM0Y0MCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiLz4KPHBhdGggZD0iTTMxLjY5NyA3LjE1MTVDMjcuODk3NSAzLjM1MDUgMjIuNjQ3NSAxIDE2Ljg0ODUgMUMxMS4wNDk1IDEgNS43OTk1IDMuMzUwNSAyIDcuMTUxNSIgc3Ryb2tlPSIjM0YzRjQwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIvPgo8cGF0aCBkPSJNMzMuMzQ4NiAyNi41SDIxLjM0ODZWMzRIMzMuMzQ4NlYyNi41WiIgZmlsbD0iI0Y3MTk2MyIgc3Ryb2tlPSIjRjcxOTYzIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIvPgo8cGF0aCBkPSJNMjQuMzQ4NiAyNi41VjIyQzI0LjM0ODYgMjAuMzUgMjUuNjk4NiAxOSAyNy4zNDg2IDE5QzI4Ljk5ODYgMTkgMzAuMzQ4NiAyMC4zNSAzMC4zNDg2IDIyVjI2LjUiIHN0cm9rZT0iI0Y3MTk2MyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiLz4KPC9zdmc+Cg==" />
+                      </div>
+                    </td>
+                    <td class="pb8" colspan="4">
+                      Pagamento contactless e com mais segurança com a tecnologia Visa payWave.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="svg-container pb8" colspan="2">
+                      <div class="svg-wrapper">
+                        <img class="img"
+                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTM0LjUgMTJIMS41QzAuNjcyIDEyIDAgMTIuNjcyIDAgMTMuNVYzNC41QzAgMzUuMzI4IDAuNjcyIDM2IDEuNSAzNkgzNC41QzM1LjMyOCAzNiAzNiAzNS4zMjggMzYgMzQuNVYxMy41QzM2IDEyLjY3MiAzNS4zMjggMTIgMzQuNSAxMlpNMTggMjguNUMxNS41MTQ1IDI4LjUgMTMuNSAyNi40ODU1IDEzLjUgMjRDMTMuNSAyMS41MTQ1IDE1LjUxNDUgMTkuNSAxOCAxOS41QzIwLjQ4NTUgMTkuNSAyMi41IDIxLjUxNDUgMjIuNSAyNEMyMi41IDI2LjQ4NTUgMjAuNDg1NSAyOC41IDE4IDI4LjVaIiBmaWxsPSIjM0YzRjQwIi8+CjxwYXRoIGQ9Ik0zMS41IDZINC41VjlIMzEuNVY2WiIgZmlsbD0iI0Y3MTk2MyIvPgo8cGF0aCBkPSJNMjUuNSAwSDEwLjVWM0gyNS41VjBaIiBmaWxsPSIjRjcxOTYzIi8+Cjwvc3ZnPgo=" />
+                      </div>
+                    </td>
+                    <td class="pb8" colspan="4">
+                      Saque nos caixas da rede Banco24Horas.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pb7" colspan="6">
+                      Abraços,<br /> Equipe VTEX.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pb7" colspan="6">
+                      <hr class="line">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="footer-text pb1" colspan="6">
+                      <span>Não responda a esse e-mail, ele é enviado automaticamente pelo sistema.</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nowrap pb7 footer-text" colspan="2">
+                      Precisa de ajuda?
+                    </td>
+                    <td class="pb7" colspan="4">
+                      <a class="ph1 nowrap underline footer-text" target="_blank" href="#">Fale Conosco</a>
+                      <a class="ph1 nowrap underline footer-text" target="_blank" href="#">Termos de uso</a>
+                      <a class="ph1 nowrap underline footer-text" target="_blank" href="#">Privacidade</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="footer-text">&copy; VTEX</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
