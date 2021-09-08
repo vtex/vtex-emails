@@ -1,5 +1,5 @@
 const gulp = require( 'gulp' ),
-		sass = require( 'gulp-sass')(require('sass')),
+		sass = require( 'gulp-sass' )(require('sass')),
 		data = require( 'gulp-data' ),
 		gcmq = require( 'gulp-group-css-media-queries' ),
 		gutil = require( 'gulp-util' ),
