@@ -54,7 +54,7 @@ And it has other important features:
 
 ### Developing
 
-0.  Requires node `8.x`
+0.  Requires node `16.x`
 1.  Run `npm run gulp dev`
 2.  Go to [http://localhost:8000/](http://localhost:8000/)
 3.  Choose the language folder and open the template that you want to preview
