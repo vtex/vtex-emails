@@ -1,0 +1,33 @@
+{
+    "productLink": "http://lorem1.com",
+    "productName": "lorem2",
+    "productDescription": "lorem3",
+    "_accountInfo": {
+		"HostName": "vtexgame1",
+		"MainAccountName": "vtexgame1",
+		"IsPersisted": true,
+		"IsRemoved": false,
+		"Id": "e39d05f9-0c54-4469-a626-8bb5cff169f8",
+		"Cnpj": "99999999999999",
+		"CompanyName": "VTEX Developers",
+		"TradingName": "VTEX Developers",
+		"AccountName": "vtexgame1",
+		"DefaultUrl": null,
+		"Address": null,
+		"Number": null,
+		"Complement": null,
+		"District": null,
+		"City": null,
+		"State": null,
+		"PostalCode": null,
+		"Country": "Brasil",
+		"Telephone": null,
+		"IsActive": true,
+		"Sponsor": "eb436322-473b-4296-89a9-f129c479be4c",
+		"Logo": null,
+		"AppId": "fddf74e6-cc47-4a7d-8956-f0a6629cb23b",
+		"IsOperating": false,
+		"LV": "LV-1068069",
+		"Sigla": null
+	}
+}
