@@ -95,7 +95,7 @@ gulp.task( 'inline:css', function( done ) {
 			juice( {
 				applyHeightAttributes: false,
 				applyWidthAttributes: false,
-				xmlMode: true,
+				// xmlMode: true,
 				// preserveMediaQueries: false,
 				webResources: {
 					relativeTo: path.resolve( __dirname, 'temp/' ),
