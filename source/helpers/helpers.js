@@ -137,7 +137,7 @@ helpers.math = function( lvalue, operator, rvalue ) {
 
 helpers.eval = function( expr, options ) {
 	'use strict';
-	var reg = new RegExp( '\\${( \\S+ )}', 'g' );
+	var reg = new RegExp( '\\${(\\S+)}', 'g' );
 	var compiled = expr.replace( reg, function( match, pull ) {
 		return options.hash[ pull ];
 	} );
