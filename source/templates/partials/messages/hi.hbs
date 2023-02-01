@@ -2,7 +2,7 @@
   {{#if orders}}
     {{#if orders.0.clientProfileData.firstName}}
       {{#compare orders.0.clientProfileData.firstName '!=' 'isAnonymous'}}
-        ((i18n.common.hi)), {{orders.0.clientProfileData.firstName}}.
+        ((i18n.common.hi)), {{orders.0.clientProfileData.firstName}}!
       {{/compare}}
     {{/if}}
   {{else}}

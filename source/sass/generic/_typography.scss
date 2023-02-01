@@ -111,6 +111,10 @@ ul, ol {
 .bg-color-picpay{
 	background-color: $color-success-500;
 }
+
+.bg-color-primary-700{
+	background-color: #136C4C;
+}
 .f24-px{
 	font-size: $size-28px;
 }
@@ -137,8 +141,14 @@ ul, ol {
 .pb12-px{
  padding-bottom: $size-12px;
 }
-.pv24-px {
-	padding-bottom: $size-24px;
+.pt24-px {
+	padding-top: $size-24px;
+}
+.pl24-px {
+	padding-left: $size-24px;
+}
+.pr24-px {
+	padding-right: $size-24px;
 }
 .pl24-px {
 	padding-left: $size-24px;
@@ -148,4 +158,10 @@ ul, ol {
 }
 .pb24-px {
 	padding-bottom: $size-24px;
+}
+.p48-px {
+	padding-top: 3rem;
+}
+.pb48-px {
+	padding-bottom: 3rem;
 }

@@ -1,100 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
-  <!-- partial:partials/html-head.hbs --><!-- partial -->
-	<body>
-		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-				<td align="center" valign="top">
-					<table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
+<!-- partial:partials/html-head.hbs --><!-- partial -->
 
-            <!-- Header -->
-            <!-- partial:partials/header.hbs --><!-- partial -->
+<body>
+  <table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" valign="top">
+        <table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0"
+          cellspacing="0">
 
+          <!-- Header -->
+          <!-- partial:partials/header.hbs --><!-- partial -->
 
-            <!-- Intro message -->
-            <!-- partial:partials/messages/intro.hbs --><!-- partial -->
+          <!-- Intro message -->
 
-            <!-- Shipping Summary -->
-            <tr>
-              <td class="w-100 ph4-ns pv4 bt bb b--light-gray bw3">
-                <div>2</div>
-                <h3 class="mt0">((i18n.shipping.summaryTitle))</h3>
-                {{#each orders}}
-                  <!-- partial:partials/shipping-summary.hbs --><!-- partial -->
+          <!-- partial:partials/messages/intro.hbs --><!-- partial -->
+
+          <!-- Order info -->
+          {{#each orders}}
+          <tr>
+            <td class="w-100 ph4-ns pv4 bt b--light-gray">
+              <div>4</div>
+              <h2>((i18n.common.order)) <span class="fw5">#{{orderId}}</span></h2>
+              <p class="mt1 mb2 silver">((i18n.package.seller)) {{sellers.0.name}}</p>
+
+              <!-- Payment - splitted -->
+              {{#compare split "==" true}}
+              <div class="fl w-100 w-50-ns pb3 v-top">
+                <h3>((i18n.payment.title))</h3>
+                {{#each paymentData.transactions}}
+                <!-- partial:partials/payment.hbs --><!-- partial -->
+                <div class="dib mt2 pv1 ph2 bg-moon-gray f6">((i18n.payment.pending))</div>
                 {{/each}}
-              </td>
-            </tr>
+              </div>
+              {{/compare}}
 
-            <!-- Payment - not splitted -->
-            {{#compare split "!=" true}}
-            <tr>
-              <td class="w-100 ph4-ns pv4 bt b--light-gray">
-                <div>3</div>
-                <h3 class="ma0">((i18n.payment.title))</h3>
-                {{#each orders.0.paymentData.transactions}}
-                  <!-- partial:partials/payment.hbs --><!-- partial -->
-                  <div class="dib mt2 pv1 ph2 bg-moon-gray f6">((i18n.payment.pending))</div>
-                {{/each}}
-              </td>
-            </tr>
-            {{/compare}}
+              <!-- partial:partials/totals.hbs --><!-- partial -->
 
-            <!-- Order info -->
-            {{#each orders}}
-						<tr>
-							<td class="w-100 ph4-ns pv4 bt b--light-gray">
-                <div>4</div>
-								<h2>((i18n.common.order)) <span class="fw5">#{{orderId}}</span></h2>
-                <p class="mt1 mb2 silver">((i18n.package.seller)) {{sellers.0.name}}</p>
+              {{#richShippingData shippingData}}
+              {{#group logisticsInfo by="addessId"}}
+              <div class="cb fn pt3">
 
-                <!-- Payment - splitted -->
-                {{#compare split "==" true}}
-                  <div class="fl w-100 w-50-ns pb3 v-top">
-                    <h3>((i18n.payment.title))</h3>
-                    {{#each paymentData.transactions}}
-                    <!-- partial:partials/payment.hbs --><!-- partial -->
-                    <div class="dib mt2 pv1 ph2 bg-moon-gray f6">((i18n.payment.pending))</div>
-                    {{/each}}
-                  </div>
+                <!-- Address info -->
+                <!-- partial:partials/address-delivery-title.hbs --><!-- partial -->
+                <!-- partial:partials/address-pickup-title.hbs --><!-- partial -->
+
+                <!-- Packages -->
+                {{#group items by="packageId"}}
+                {{#compare item.length '>' 1}}
+                <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}}</h3>
                 {{/compare}}
 
-                <!-- partial:partials/totals.hbs --><!-- partial -->
+                <!-- partial:partials/package.hbs --><!-- partial -->
+                {{/group}}
+              </div>
+              {{/group}}
+              {{/richShippingData}}
+            </td>
+          </tr>
+          {{/each}}
+          <!-- partial:partials/footer.hbs --><!-- partial -->
+      
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
 
-                {{#richShippingData shippingData}}
-                  {{#group logisticsInfo by="addessId"}}
-                    <div class="cb fn pt3">
-
-                      <!-- Address info -->
-                      <!-- partial:partials/address-delivery-title.hbs --><!-- partial -->
-                      <!-- partial:partials/address-pickup-title.hbs --><!-- partial -->
-
-                      <!-- Packages -->
-                      {{#group items by="packageId"}}
-                        {{#compare item.length '>' 1}}
-                          <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}}</h3>
-                        {{/compare}}
-
-                        <!-- partial:partials/package.hbs --><!-- partial -->
-                      {{/group}}
-                    </div>
-                  {{/group}}
-                {{/richShippingData}}
-							</td>
-						</tr>
-            {{/each}}
-
-            <tr>
-              <td class="ph4-ns pv3 bt b--light-gray">
-                <div>5</div>
-                <p>
-                  ((i18n.shipping.estimateMessage))
-                </p>
-                <!-- partial:partials/messages/regards.hbs --><!-- partial -->
-              </td>
-            </tr>
-					</table>
-				</td>
-			</tr>
-		</table>
-	</body>
 </html>

@@ -8,21 +8,19 @@
         Agradecemos pela sua compra!
       </div>
     </div>
-      <!-- partial:hi.hbs --><!-- partial -->
-      ((i18n.order.introMessage))
+    <!-- partial:hi.hbs --><!-- partial -->
+    <div class="pb12-px">
+      Tudo bem? Esperamos que sim!
+    </div>
 
-    <!-- partial:order-link.hbs --><!-- partial -->
+    <div class="pb12-px">
+      Seu pedido foi realizado e estamos aguardando a confirmação do fornecedor
+      para prosseguirmos com a entrega.
+    </div>
 
-    <!-- Boleto bancário -->
-    {{#each orders.0.paymentData.transactions}}
-      {{#each payments}}
-        {{#eq paymentSystemName 'Boleto Bancário'}}
-          <p>((i18n.payment.bankInvoiceReminder))</p>
-          <p>
-            <a class="dib ph3 pv2 br2 white bg-green no-underline fw5" href="{{replace url '{Installment}' installments}}">((i18n.payment.bankInvoiceShow))</a>
-          </p>
-        {{/eq}}
-      {{/each}}
-    {{/each}}
+    <div class="pb12-px">
+      Fique tranquilo, pois informaremos por e-mail todas as etapas do andamento
+      do seu pedido!
+    </div>
   </td>
 </tr>
