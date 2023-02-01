@@ -50,6 +50,22 @@
               </div>
             </td>
           </tr>
+          <tr>
+            <td class="w-100 pl24-px pr24-px pb40-px f7">
+              {{#richShippingData shippingData}}
+              {{#group logisticsInfo by="addessId"}}
+              <div class="pb3 f4 fw7">
+                Endereco de entrega:
+              </div>
+              <div>
+              <!-- Address info -->
+              <!-- partial:partials/address-delivery-no-title.hbs --><!-- partial -->
+              <!-- partial:partials/address-pickup-no-title.hbs --><!-- partial -->
+              </div>
+              {{/group}}
+              {{/richShippingData}}
+            </td>
+          </tr>
           {{/each}}
           <tr>
             <td class="w-100 pl24-px pr24-px pb40-px f7">
