@@ -19,50 +19,45 @@
           <!-- partial:partials/messages/intro.hbs --><!-- partial -->
 
           <!-- Order info -->
+          <tr>
+            <td class="w-100 pl24-px pb3 fw7 f4">
+              <div>Resumo do pedido</div>
+            </td>
+          </tr>
           {{#each orders}}
           <tr>
-            <td class="w-100 ph4-ns pv4 bt b--light-gray">
-              <div>4</div>
-              <h2>((i18n.common.order)) <span class="fw5">#{{orderId}}</span></h2>
-              <p class="mt1 mb2 silver">((i18n.package.seller)) {{sellers.0.name}}</p>
+            <td class="w-100 pl24-px pr24-px">
+              <div class="border-gray-200 pv3 ph3 mb36-px">
+                <div class="color-success-500 f5 fw7">((i18n.common.order)) <span class="fw5">#{{orderId}}</span></div>
+                <div class="gray-scale-900 pb2">((i18n.package.seller)) <span class="fw7">{{sellers.0.name}}</span></div>
 
-              <!-- Payment - splitted -->
-              {{#compare split "==" true}}
-              <div class="fl w-100 w-50-ns pb3 v-top">
-                <h3>((i18n.payment.title))</h3>
-                {{#each paymentData.transactions}}
-                <!-- partial:partials/payment.hbs --><!-- partial -->
-                <div class="dib mt2 pv1 ph2 bg-moon-gray f6">((i18n.payment.pending))</div>
-                {{/each}}
-              </div>
-              {{/compare}}
+                {{#richShippingData shippingData}}
+                {{#group logisticsInfo by="addessId"}}
+                <div class="cb fn pt3">
+                  <!-- Packages -->
+                  {{#group items by="packageId"}}
+                  <!-- partial:partials/items.hbs --><!-- partial -->
+                  {{#compare item.length '>' 1}}
+                  <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}} </h3>
+                  {{/compare}}
 
-              <!-- partial:partials/totals.hbs --><!-- partial -->
-
-              {{#richShippingData shippingData}}
-              {{#group logisticsInfo by="addessId"}}
-              <div class="cb fn pt3">
-
-                <!-- Address info -->
-                <!-- partial:partials/address-delivery-title.hbs --><!-- partial -->
-                <!-- partial:partials/address-pickup-title.hbs --><!-- partial -->
-
-                <!-- Packages -->
-                {{#group items by="packageId"}}
-                {{#compare item.length '>' 1}}
-                <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}}</h3>
-                {{/compare}}
-
-                <!-- partial:partials/package.hbs --><!-- partial -->
+                  {{/group}}
+                </div>
                 {{/group}}
+                {{/richShippingData}}
+                <!-- partial:partials/totals.hbs --><!-- partial -->
               </div>
-              {{/group}}
-              {{/richShippingData}}
             </td>
           </tr>
           {{/each}}
+          {{#with orders}}
+            <tr>
+              <td>
+                {{orderFormId}}
+              </td>
+            </tr>
+          {{/with}}
           <!-- partial:partials/footer.hbs --><!-- partial -->
-      
         </table>
       </td>
     </tr>

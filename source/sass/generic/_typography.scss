@@ -115,6 +115,9 @@ ul, ol {
 .bg-color-primary-700{
 	background-color: #136C4C;
 }
+.color-gray-dark{
+	color: #494949;
+}
 .f24-px{
 	font-size: $size-28px;
 }
@@ -150,18 +153,26 @@ ul, ol {
 .pr24-px {
 	padding-right: $size-24px;
 }
-.pl24-px {
-	padding-left: $size-24px;
-}
-.pr24-px {
-	padding-right: $size-24px;
-}
 .pb24-px {
 	padding-bottom: $size-24px;
+}
+.mb36-px {
+	margin-bottom: 2.25rem;
+}
+.ml24-px {
+	margin-left: $size-24px;
+}
+
+.mr24-px {
+	margin-right: $size-24px;
 }
 .p48-px {
 	padding-top: 3rem;
 }
 .pb48-px {
 	padding-bottom: 3rem;
+}
+.border-gray-200{
+	border: 1px solid #EBEBEB;
+	border-radius: 12px;
 }
