@@ -9,6 +9,8 @@ $color-dark: #2c3e50 !default;
 $color-red: #e74c3c !default;
 $color-green: #2ecc71 !default;
 $color-blue: #3498db !default;
+$color-success-500: #238662;
+$gray-scale-900: #333333;
 
 // Grid
 $color-container-bg: $color-white !default;
@@ -48,3 +50,35 @@ $button-bg-color: #bbbbbb !default;
 
 /* ----- RWD breakpoints ----- */
 $breakpoint-mobile: $grid-container-width !default;
+
+$size-4px: 0.25rem !default;
+$size-8px: 0.5rem !default;
+$size-12px: 0.75rem !default;
+$size-14px: 0.875rem !default;
+$size-16px: 1rem !default;
+$size-18px: 1.125rem !default;
+$size-20px: 1.25rem !default;
+$size-24px: 1.5rem !default;
+$size-28px: 1.75rem !default;
+$size-32px: 2rem !default;
+$size-40px: 2.5rem !default;
+$size-48px: 3rem !default;
+$size-56px: 3.5rem !default;
+$size-64px: 4rem !default;
+$size-72px: 4.5rem !default;
+$size-80px: 5rem !default;
+$size-88px: 5.5rem !default;
+$size-90px: 5.625rem !default;
+$size-96px: 6rem !default; 
+
+$size-320px: 20rem;
+$size-600px: 37.5rem;
+$size-640px: 40rem;
+$size-1024px: 64rem;
+$size-1440px: 90rem;
+$size-1920px: 120rem;
+
+$size-border-00: 0;
+$size-border-01: 0.063rem;
+$size-border-02: 0.125rem;
+$size-border-03: 0.188rem;

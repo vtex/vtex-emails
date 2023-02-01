@@ -16,7 +16,7 @@ td {
 body,
 table,
 td {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; /* 2 */
+	font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; /* 2 */
 }
 
 /* ----- Headings ----- */
@@ -101,4 +101,51 @@ ul, ol {
 
 .fw5 {
   font-weight: 500;
+}
+
+.ptb-1-5{
+	padding-top: $size-24px;
+	padding-bottom: $size-24px;
+}
+
+.bg-color-picpay{
+	background-color: $color-success-500;
+}
+.f24-px{
+	font-size: $size-28px;
+}
+
+.color-success-500{
+	color: $color-success-500;
+}
+
+.gray-scale-900{
+	color: $gray-scale-900;
+}
+.pv40-px{
+	padding-top: 2.5rem;
+}
+.pv8-px{
+ padding-top: $size-8px;
+}
+.pb8-px {
+	padding-bottom: $size-8px;
+}
+.pv12-px {
+	padding-top: $size-12px;
+}
+.pb12-px{
+ padding-bottom: $size-12px;
+}
+.pv24-px {
+	padding-bottom: $size-24px;
+}
+.pl24-px {
+	padding-left: $size-24px;
+}
+.pr24-px {
+	padding-right: $size-24px;
+}
+.pb24-px {
+	padding-bottom: $size-24px;
 }
