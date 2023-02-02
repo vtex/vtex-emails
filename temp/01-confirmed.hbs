@@ -1,0 +1,535 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
+<!-- partial:partials/html-head.hbs --><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{_accountInfo.TradingName}}</title>
+
+  <!--[if gte mso 9]>
+  <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+
+  <link rel="stylesheet" href="css/embedded.css" data-inline data-embed />
+  <link rel="stylesheet" href="css/inlined.css" data-inline />
+  <link rel="stylesheet" href="css/tachyons.css" data-inline />
+</head>
+<!-- partial -->
+
+<body>
+  <table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" valign="top">
+        <table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0"
+          cellspacing="0">
+
+          <!-- Header -->
+          <!-- partial:partials/header.hbs --><tr>
+  <td class="w-100 tc">
+    <div class="w-100 center bg-color-picpay ptb-1-5">
+      <img alt="" border="0" width="auto" alt="picpay-empresas-logo.png"
+        src="https://lojapicpayb2b.vteximg.com.br/arquivos/picpay-empresas-logo.png" style="max-height: 80px">
+    </div>
+  </td>
+</tr>
+
+<!-- partial -->
+
+          <!-- Intro message -->
+
+          <!-- partial:partials/messages/intro.hbs --><tr>
+  <td class="w-100 pl24-px pr24-px pb4">
+    <div>
+      <div class="f24-px fw7 gray-scale-900 pv40-px">
+        Recebemos o seu pedido
+      </div>
+      <div class="pv12-px pb24-px color-success-500 f5 fw6">
+        Agradecemos pela sua compra!
+      </div>
+    </div>
+    <!-- partial:hi.hbs --><div class="fw7 f5 pb12-px">
+  {{#if orders}}
+    {{#if orders.0.clientProfileData.firstName}}
+      {{#compare orders.0.clientProfileData.firstName '!=' 'isAnonymous'}}
+        ((i18n.common.hi)), {{orders.0.clientProfileData.firstName}}!
+      {{/compare}}
+    {{/if}}
+  {{else}}
+    {{#if clientProfileData.firstName}}
+      {{#compare clientProfileData.firstName '!=' 'isAnonymous'}}
+        ((i18n.common.hi)), {{clientProfileData.firstName}}!
+      {{/compare}}
+    {{/if}}
+  {{/if}}
+</div>
+<!-- partial -->
+    <div class="pb12-px">
+      Tudo bem? Esperamos que sim!
+    </div>
+
+    <div class="pb12-px">
+      Seu pedido foi realizado e estamos aguardando a confirmação do fornecedor
+      para prosseguirmos com a entrega.
+    </div>
+
+    <div class="pb12-px">
+      Fique tranquilo, pois informaremos por e-mail todas as etapas do andamento
+      do seu pedido!
+    </div>
+  </td>
+</tr><!-- partial -->
+
+          <!-- Order info -->
+          <tr>
+            <td class="w-100 pl24-px pb3 fw7 f4 gray-scale-900">
+              <div>Resumo do pedido</div>
+            </td>
+          </tr>
+          {{#each orders}}
+          <tr>
+            <td class="w-100 pl24-px pr24-px">
+              <div class="border-gray-200 pv3 ph3 mb36-px">
+                <div class="color-success-500 f5 fw7">((i18n.common.order)) <span class="fw5">#{{orderId}}</span></div>
+                <div class="gray-scale-900 pb2">((i18n.package.seller)) <span class="fw7">{{sellers.0.name}}</span>
+                </div>
+
+                {{#richShippingData shippingData}}
+                {{#group logisticsInfo by="addessId"}}
+                <div class="cb fn pt3">
+                  <!-- Packages -->
+                  {{#group items by="packageId"}}
+                  <!-- partial:partials/items.hbs --><table class="pv0 mv0" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <thead>
+  </thead>
+  <tbody>
+  {{#each items}}
+    <!-- back to order items list -->
+    {{#each ../../../../items}}
+      <!-- show info for this shippingInfo item -->
+      {{#eq @index ../itemIndex}}
+        <tr>
+          <td class="v-top pv2 w3 pr2"><img alt="" src="{{imageUrl}}" /></td>
+          <td class="v-top ">
+            <div class="lh-title f6 fw7">{{name}}</div>
+            <div class="color-gray-dark pt2">
+              <div>
+              {{quantity}} unidade(s)
+              </div>
+              <div>
+              {{#if sellingPrice}}
+                ((i18n.common.currency)) {{formatCurrency sellingPrice}}
+              {{else}}
+                ((i18n.common.free))
+              {{/if}}
+              </div>
+            </div>
+          </td>
+        </tr>
+        {{#each bundleItems}}
+          {{#if name}}
+            <tr>
+              <td class="pv2 ph2"><img alt="" src="{{imageUrl}}" /></td>
+              <td class="pv2 ph2">
+                <div class="f5 lh-title mv1-ns">{{name}}</div>
+                <div class="gray">
+                  {{quantity}} ((i18n.common.units))
+                  {{#if price}}
+                    ((i18n.common.currency)) {{formatCurrency price}}
+                  {{else}}
+                    ((i18n.common.free))
+                  {{/if}}
+                </div>
+              </td>
+            </tr>
+          {{/if}}
+        {{/each}}
+      {{/eq}}
+    {{/each}}
+    </tbody>
+  {{/each}}
+</table>
+<!-- partial -->
+                  {{#compare item.length '>' 1}}
+                  <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}} </h3>
+                  {{/compare}}
+
+                  {{/group}}
+                </div>
+                {{/group}}
+                {{/richShippingData}}
+                <!-- partial:partials/totals.hbs --><div class="pt24-px">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    {{#each totals}}
+      {{#if value}}
+      <tr>
+        <td class="pv1">
+          {{#eq id "Items"}}((i18n.common.items)){{/eq}}
+          {{#eq id "Shipping"}}((i18n.common.shipping)){{/eq}}
+          {{#eq id "Discounts"}}<span class="color-success-500 fw4">((i18n.common.discounts))</span>{{/eq}}
+          {{#eq id "Tax"}}((i18n.common.taxes)){{/eq}}
+        </td>
+         {{#eq id "Discounts"}}<span class="color-success-500 fw7"><td class="pv1 tr color-success-500"> - ((i18n.common.currency)) {{formatCurrency value}}</td></span>{{/eq}}
+        {{#eq id "Items"}}<td class="pv1 tr">((i18n.common.currency)) {{formatCurrency value}}</td>{{/eq}}
+        {{#eq id "Shipping"}}<td class="pv1 tr">((i18n.common.currency)) {{formatCurrency value}}</td>{{/eq}}
+        {{#eq id "Tax"}}<td class="pv1 tr">((i18n.common.currency)) {{formatCurrency value}}</td>{{/eq}}
+        
+      </tr>
+      {{/if}}
+    {{/each}}
+    {{#if value}}
+      <tr>
+        <td class="pv1 fw5">((i18n.common.total))</td>
+        <td class="pv1 fw5 align-right tr">((i18n.common.currency)) {{formatCurrency value}}</td>
+      </tr>
+    {{/if}}
+  </table>
+</div>
+<!-- partial -->
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="w-100 pl24-px pr24-px pb40-px f7">
+              {{#richShippingData shippingData}}
+              {{#group logisticsInfo by="addessId"}}
+              <div class="pb3 f4 fw7 gray-scale-900">
+                Endereco de entrega
+              </div>
+              <div>
+                <!-- Address info -->
+                <!-- partial:partials/address-delivery-no-title.hbs -->{{#compare items.0.selectedDeliveryChannel '==' null}}
+  <div class="gray-scale-900">
+    <!-- partial:address-delivery-info.hbs -->{{#if orders.0.giftRegistryData}}
+  {{orders.0.giftRegistryData.description}}
+{{else}}
+  {{#each ../../shippingData.availableAddresses}}
+    {{#eq ../addressId AddressId}}
+      <strong class="color-success-500 pb2">{{receiverName}}</strong>
+      <br/>{{street}}, {{number}}{{#if complement}} - {{complement}}{{/if}}
+      <br />{{neighborhood}} - {{city}} - {{state}}
+      <br />((i18n.shipping.postalCode)) {{postalCode}}
+    {{/eq}}
+  {{/each}}
+{{/if}}
+<!-- partial -->
+  </div>
+{{/compare}}
+
+{{#eq items.0.selectedDeliveryChannel "delivery"}}
+  <div class="gray-scale-900">
+    <!-- partial:address-delivery-info.hbs -->{{#if orders.0.giftRegistryData}}
+  {{orders.0.giftRegistryData.description}}
+{{else}}
+  {{#each ../../shippingData.availableAddresses}}
+    {{#eq ../addressId AddressId}}
+      <strong class="color-success-500 pb2">{{receiverName}}</strong>
+      <br/>{{street}}, {{number}}{{#if complement}} - {{complement}}{{/if}}
+      <br />{{neighborhood}} - {{city}} - {{state}}
+      <br />((i18n.shipping.postalCode)) {{postalCode}}
+    {{/eq}}
+  {{/each}}
+{{/if}}
+<!-- partial -->
+  </div>
+{{/eq}}
+<!-- partial -->
+                <!-- partial:partials/address-pickup-no-title.hbs -->{{#eq items.0.selectedDeliveryChannel "pickup-in-point"}}
+  <div class="bg-light-gray pa3 mw5-5 mb3">
+    <!-- partial:address-pickup-info.hbs -->{{#each items.0.slas}}
+  {{#compare ../items.0.selectedSla '==' id}}
+    <strong>{{pickupStoreInfo.friendlyName}}</strong>
+    {{#with pickupStoreInfo.address}}
+      <br />{{street}}, {{number}}{{#if complement}}, {{complement}}{{/if}}
+      <br />{{neighborhood}}
+    {{/with}}
+  {{/compare}}
+{{/each}}
+<!-- partial -->
+  </div>
+{{/eq}}
+<!-- partial -->
+              </div>
+              <div>
+                {{#group items by="packageId"}}
+                {{#compare items.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
+                <!-- partial:partials/items.hbs --><table class="pv0 mv0" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <thead>
+  </thead>
+  <tbody>
+  {{#each items}}
+    <!-- back to order items list -->
+    {{#each ../../../../items}}
+      <!-- show info for this shippingInfo item -->
+      {{#eq @index ../itemIndex}}
+        <tr>
+          <td class="v-top pv2 w3 pr2"><img alt="" src="{{imageUrl}}" /></td>
+          <td class="v-top ">
+            <div class="lh-title f6 fw7">{{name}}</div>
+            <div class="color-gray-dark pt2">
+              <div>
+              {{quantity}} unidade(s)
+              </div>
+              <div>
+              {{#if sellingPrice}}
+                ((i18n.common.currency)) {{formatCurrency sellingPrice}}
+              {{else}}
+                ((i18n.common.free))
+              {{/if}}
+              </div>
+            </div>
+          </td>
+        </tr>
+        {{#each bundleItems}}
+          {{#if name}}
+            <tr>
+              <td class="pv2 ph2"><img alt="" src="{{imageUrl}}" /></td>
+              <td class="pv2 ph2">
+                <div class="f5 lh-title mv1-ns">{{name}}</div>
+                <div class="gray">
+                  {{quantity}} ((i18n.common.units))
+                  {{#if price}}
+                    ((i18n.common.currency)) {{formatCurrency price}}
+                  {{else}}
+                    ((i18n.common.free))
+                  {{/if}}
+                </div>
+              </td>
+            </tr>
+          {{/if}}
+        {{/each}}
+      {{/eq}}
+    {{/each}}
+    </tbody>
+  {{/each}}
+</table>
+<!-- partial -->
+                {{else}}
+                <!-- partial:partials/package.hbs --><!-- for each item in package -->
+{{#each items}}
+  <!-- print SLA info just one time at the top -->
+  {{#compare @index '==' 0}}
+    <!-- compare order's items to package items -->
+    {{#each ../../../../items}}
+      {{#eq id ../itemId}}
+          <div class="fw5">
+            {{#compare ../selectedDeliveryChannel "!=" "pickup-in-point"}}
+              {{#if ../deliveryWindow}}
+                <div class="f7 gray">((i18n.shipping.scheduled)) Agendada para</div>
+              {{else}}
+                <div class="fw7 color-success-500 pt3">Agendada para</div>
+              {{/if}}
+            {{/compare}}
+
+            <!-- Scheduled shipping -->
+            {{#if ../deliveryWindow}}
+              <!-- partial:shipping-estimate-scheduled.hbs -->{{formatDate ../deliveryWindow.startDateUtc}}
+((i18n.common.lowercase.between))
+{{formatTime ../deliveryWindow.startDateUtc}}
+((i18n.common.lowercase.and))
+{{formatTime ../deliveryWindow.endDateUtc}}
+<!-- partial -->
+            {{else}}
+              <!-- show info for estimate range or date -->
+              {{#unless ../shippingEstimateDate}}
+                <!-- partial:shipping-estimate-range.hbs --><!-- Available Today -->
+{{#eq ../shippingEstimateDays "0"}}
+  {{#eq ../selectedDeliveryChannel "pickup-in-point"}}
+    ((i18n.shipping.fromToday))
+  {{else}}
+    ((i18n.shipping.today))
+  {{/eq}}
+
+<!-- Available in another day -->
+{{else}}
+  <!-- Delivery or Pickup -->
+  {{#eq ../selectedDeliveryChannel "pickup-in-point"}}
+    ((i18n.shipping.from))
+  {{else}}
+    ((i18n.shipping.inUpTo))
+  {{/eq}}
+
+  <!-- partial:shipping-estimate-range-time.hbs --><!-- Single or many days -->
+{{#compare shippingEstimateDays ">" "1"}}
+  <!-- Running days or Business days -->
+  {{#eq shippingEstimateDaysType "bd"}}
+    {{shippingEstimateDays}} ((i18n.shipping.businessDays))
+  {{else}}
+    {{#eq shippingEstimateDaysType "d"}}
+      {{shippingEstimateDays}} ((i18n.shipping.days))
+    {{else}}
+      {{#eq shippingEstimateDaysType "h"}}
+        {{shippingEstimateDays}} ((i18n.shipping.hours))
+      {{else}}
+        {{shippingEstimateDays}} ((i18n.shipping.minutes))
+      {{/eq}}
+    {{/eq}}
+  {{/eq}}
+{{else}}
+  <!-- Running days or Business days -->
+  {{#eq shippingEstimateDaysType "bd"}}
+    {{shippingEstimateDays}} ((i18n.shipping.businessDay))
+  {{else}}
+    {{#eq shippingEstimateDaysType "d"}}
+      {{shippingEstimateDays}} ((i18n.shipping.day))
+    {{else}}
+      {{#eq shippingEstimateDaysType "h"}}
+        {{shippingEstimateDays}} ((i18n.shipping.hour))
+      {{else}}
+        {{shippingEstimateDays}} ((i18n.shipping.minute))
+      {{/eq}}
+    {{/eq}}
+  {{/eq}}
+{{/compare}}
+<!-- partial -->
+{{/eq}}
+<!-- partial -->
+              {{else}}
+                <!-- partial:shipping-estimate-date.hbs --><!-- Delivery or Pickup -->
+{{#eq ../deliveryChannel "pickup-in-point"}}
+  ((i18n.shipping.from))
+{{else}}
+  ((i18n.shipping.upTo))
+{{/eq}}
+
+{{formatDate ../shippingEstimateDate}}
+<!-- partial -->
+              {{/unless}}
+            {{/if}}
+          </div>
+      {{/eq}}
+    {{/each}}
+  {{/compare}}
+  <!-- back to items list -->
+{{/each}}
+<!-- partial -->
+                {{/compare}}
+                {{/group}}
+              </div>
+              {{/group}}
+              {{/richShippingData}}
+            </td>
+          </tr>
+          {{#each paymentData.transactions}}
+          <tr>
+            <td class="w-100 pl24-px pr24-px pb2 f7">
+              <div class="f4 gray-scale-900 fw7 pb3">Forma de pagamento</div>
+              <!-- partial:partials/payment.hbs --><!-- 1 payment -->
+
+{{#compare payments.length "==" 1}}
+  {{#each payments}}
+  <div class="f6 gray-scale-900 fw4">
+    {{paymentSystemName}}
+    {{#if lastDigits}} ((i18n.payment.lastDigits)) {{lastDigits}} {{/if}}
+    <br />((i18n.common.currency)) {{formatCurrency value}}
+    {{#eq installments 1}}
+      ((i18n.payment.atSight))
+    {{else}}
+      ((i18n.payment.in)) {{installments}}x
+    {{/eq}}
+  </div>
+  {{/each}}
+{{/compare}}
+
+<!-- N payments -->
+
+{{#compare payments.length "!=" 1}}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  {{#each payments}}
+  <tr>
+    <td class="f6 gray-scale-900 fw4">
+      {{paymentSystemName}}
+      {{#if lastDigits}} ((i18n.payment.lastDigits)) {{lastDigits}} {{/if}}
+      {{#eq installments 1}}
+        ((i18n.payment.atSight))
+      {{else}}
+        ((i18n.payment.in)) {{installments}}x
+      {{/eq}}
+    </td>
+    <td class="f6 gray-scale-900 fw4">((i18n.common.currency)) {{formatCurrency value}}</td>
+  </tr>
+  {{/each}}
+</table>
+{{/compare}}
+<!-- partial -->
+            </td>
+          </tr>
+          {{/each}}
+          {{/each}}
+          <!-- partial:partials/state-payment.hbs -->{{#each orders}}
+  {{#if state}}
+    <tr>
+      <td class="w-100 pt0 pl24-px pr24-px pb40-px f7 color-success-500 fw7">
+      {{#eq state "order-completed"}}Aguardando aprovação{{/eq}}
+      {{#eq state "Shipping"}}{{state}}{{/eq}}
+      {{#eq state "Discounts"}}{{state}}{{/eq}}
+      {{#eq state "Tax"}}{{state}}{{/eq}}
+      </td>
+    </tr>
+  {{/if}}
+{{/each}}<!-- partial -->
+          <tr>
+            <td class="w-100 pl24-px pr24-px pb40-px f7 gray-scale-900">
+              <p class="mt0">
+                <span class="fw7">Importante:</span> Seu pedido será confirmado pela loja. A confirmação não garante o
+                recebimento de todos os
+                itens.
+                Consulte os
+                prazos de aprovação clicando aqui.
+              </p>
+
+              <p>
+                Todos os pedidos estão sujeitos à confirmação de disponibilidade e estoque. Em caso de divergência,
+                entraremos em
+                contato através desse email informado em seu cadastro.
+              </p>
+              <p>
+                Caso a entrega apresente divergências como embalagem aberta ou avariada, falta de acessórios ou produto
+                em
+                desacordo
+                com
+                o solicitado, recuse imediatamente e contate nossa Central de Atendimento.
+              </p>
+              <p>
+                <span class="fw7">Atenciosamente,</span>
+                Equipe PICPAY INSTITUICAO DE PAGAMENTO SA - BR
+              </p>
+            </td>
+          </tr>
+          <!-- partial:partials/footer.hbs --><tr>
+  <td class="white">
+    <div class="w-100 flex-l justify-center tc bg-color-primary-700 pv3">
+      <span class="fw7">Dúvidas acesse nossa:</span> <span class="pl2 fw4 underline">Central de
+        atendimento</span>
+    </div>
+    <div class="w-100 flex-l flex-column tc bg-color-picpay">
+      <div class="pt24-px pb48-px"><!-- partial:logo-redes-sociais.hbs --><img alt="" border="0" width="auto" alt="picpay-empresas-logo.png"
+  src="https://lojapicpayb2b.vteximg.com.br/arquivos/redes-sociais.png" style="max-height: 80px">
+<!-- partial --></div>
+      <div class="pb24-px"><!-- partial:logo.hbs --><img alt="" border="0" width="auto" alt="picpay-empresas-logo.png"
+  src="https://lojapicpayb2b.vteximg.com.br/arquivos/picpay-empresas-logo.png" style="max-height: 80px">
+<!-- partial --></div>
+      <div class="pb4 pl24-px pr24-px">
+        <div>
+          Copyright © 2021 PicPay. Todos os direitos reservados.
+        </div>
+        <div>
+          CNPJ nº 22.896.431/0001-10 Av. Manuel Bandeira, 291 - SP
+        </div>
+      </div>
+    </div>
+  </td>
+</tr><!-- partial -->
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

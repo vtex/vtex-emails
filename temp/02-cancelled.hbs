@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+  <!-- partial:partials/html-head.hbs --><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{_accountInfo.TradingName}}</title>
+
+  <!--[if gte mso 9]>
+  <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+
+  <link rel="stylesheet" href="css/embedded.css" data-inline data-embed />
+  <link rel="stylesheet" href="css/inlined.css" data-inline />
+  <link rel="stylesheet" href="css/tachyons.css" data-inline />
+</head>
+<!-- partial -->
+	<body>
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top">
+					<table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+            <!-- Header -->
+            <tr>
+              <td class="w-100 ph4-ns pb4 bb b--light-gray tc">
+                <!-- partial:partials/logo.hbs --><img alt="" border="0" width="auto" alt="picpay-empresas-logo.png"
+  src="https://lojapicpayb2b.vteximg.com.br/arquivos/picpay-empresas-logo.png" style="max-height: 80px">
+<!-- partial -->
+
+                <h1>((i18n.order.titleCancelled))</h1>
+
+                <!-- partial:partials/messages/order-reference.hbs --><div class="mt2 gray">
+  ((i18n.order.reference)) <span class="fw7">#{{orderId}}</span>
+</div>
+<!-- partial -->
+              </td>
+            </tr>
+
+						<tr>
+							<td class="w-100 ph4-ns pt2 pb4 bt b--light-gray">
+                <!-- partial:partials/totals.hbs --><div class="pt24-px">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    {{#each totals}}
+      {{#if value}}
+      <tr>
+        <td class="pv1">
+          {{#eq id "Items"}}((i18n.common.items)){{/eq}}
+          {{#eq id "Shipping"}}((i18n.common.shipping)){{/eq}}
+          {{#eq id "Discounts"}}<span class="color-success-500 fw4">((i18n.common.discounts))</span>{{/eq}}
+          {{#eq id "Tax"}}((i18n.common.taxes)){{/eq}}
+        </td>
+         {{#eq id "Discounts"}}<span class="color-success-500 fw7"><td class="pv1 tr color-success-500"> - ((i18n.common.currency)) {{formatCurrency value}}</td></span>{{/eq}}
+        {{#eq id "Items"}}<td class="pv1 tr">((i18n.common.currency)) {{formatCurrency value}}</td>{{/eq}}
+        {{#eq id "Shipping"}}<td class="pv1 tr">((i18n.common.currency)) {{formatCurrency value}}</td>{{/eq}}
+        {{#eq id "Tax"}}<td class="pv1 tr">((i18n.common.currency)) {{formatCurrency value}}</td>{{/eq}}
+        
+      </tr>
+      {{/if}}
+    {{/each}}
+    {{#if value}}
+      <tr>
+        <td class="pv1 fw5">((i18n.common.total))</td>
+        <td class="pv1 fw5 align-right tr">((i18n.common.currency)) {{formatCurrency value}}</td>
+      </tr>
+    {{/if}}
+  </table>
+</div>
+<!-- partial -->
+
+                {{#richShippingData shippingData}}
+                  {{#group logisticsInfo by="addessId"}}
+                    <div class="cb fn">
+                      {{#compare items.length '>' 1}}
+                        <h3 class="ma0">((i18n.order.products))</h3>
+                      {{else}}
+                        <h3 class="ma0">((i18n.order.product))</h3>
+                      {{/compare}}
+
+                      {{#group items by="packageId"}}
+                        <!-- partial:partials/items.hbs --><table class="pv0 mv0" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <thead>
+  </thead>
+  <tbody>
+  {{#each items}}
+    <!-- back to order items list -->
+    {{#each ../../../../items}}
+      <!-- show info for this shippingInfo item -->
+      {{#eq @index ../itemIndex}}
+        <tr>
+          <td class="v-top pv2 w3 pr2"><img alt="" src="{{imageUrl}}" /></td>
+          <td class="v-top ">
+            <div class="lh-title f6 fw7">{{name}}</div>
+            <div class="color-gray-dark pt2">
+              <div>
+              {{quantity}} unidade(s)
+              </div>
+              <div>
+              {{#if sellingPrice}}
+                ((i18n.common.currency)) {{formatCurrency sellingPrice}}
+              {{else}}
+                ((i18n.common.free))
+              {{/if}}
+              </div>
+            </div>
+          </td>
+        </tr>
+        {{#each bundleItems}}
+          {{#if name}}
+            <tr>
+              <td class="pv2 ph2"><img alt="" src="{{imageUrl}}" /></td>
+              <td class="pv2 ph2">
+                <div class="f5 lh-title mv1-ns">{{name}}</div>
+                <div class="gray">
+                  {{quantity}} ((i18n.common.units))
+                  {{#if price}}
+                    ((i18n.common.currency)) {{formatCurrency price}}
+                  {{else}}
+                    ((i18n.common.free))
+                  {{/if}}
+                </div>
+              </td>
+            </tr>
+          {{/if}}
+        {{/each}}
+      {{/eq}}
+    {{/each}}
+    </tbody>
+  {{/each}}
+</table>
+<!-- partial -->
+                      {{/group}}
+                    </div>
+                  {{/group}}
+                {{/richShippingData}}
+							</td>
+						</tr>
+
+            <tr>
+              <td class="ph4-ns pv3 bt b--light-gray">
+                <!-- partial:partials/messages/regards.hbs --><p>
+  ((i18n.common.regards))<br />((i18n.common.team)) {{_accountInfo.TradingName}}
+</p>
+<!-- partial -->
+              </td>
+            </tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
