@@ -3,7 +3,7 @@
 {{#compare payments.length "==" 1}}
   {{#each payments}}
   <div class="f6 gray-scale-900 fw4">
-    {{paymentSystemName}}
+    {{#eq paymentSystemName "Promissory"}}Boleto{{/eq}}
     {{#if lastDigits}} ((i18n.payment.lastDigits)) {{lastDigits}} {{/if}}
     <br />((i18n.common.currency)) {{formatCurrency value}}
     {{#eq installments 1}}
