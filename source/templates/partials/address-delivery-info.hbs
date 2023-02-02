@@ -3,7 +3,7 @@
 {{else}}
   {{#each ../../shippingData.availableAddresses}}
     {{#eq ../addressId AddressId}}
-      <strong>{{receiverName}}</strong>
+      <strong class="color-success-500 pb2">{{receiverName}}</strong>
       <br/>{{street}}, {{number}}{{#if complement}} - {{complement}}{{/if}}
       <br />{{neighborhood}} - {{city}} - {{state}}
       <br />((i18n.shipping.postalCode)) {{postalCode}}

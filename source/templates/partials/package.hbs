@@ -5,12 +5,12 @@
     <!-- compare order's items to package items -->
     {{#each ../../../../items}}
       {{#eq id ../itemId}}
-          <div class="bg-light-gray ph3 pv2 mw5-5 mv3 fw5">
+          <div class="fw5">
             {{#compare ../selectedDeliveryChannel "!=" "pickup-in-point"}}
               {{#if ../deliveryWindow}}
-                <div class="f7 gray">((i18n.shipping.scheduled))</div>
+                <div class="f7 gray">((i18n.shipping.scheduled)) Agendada para</div>
               {{else}}
-                <div class="f7 gray">{{../selectedSla}}</div>
+                <div class="fw7 color-success-500 pt3">Agendada para</div>
               {{/if}}
             {{/compare}}
 

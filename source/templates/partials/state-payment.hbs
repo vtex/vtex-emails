@@ -1,0 +1,12 @@
+{{#each orders}}
+  {{#if state}}
+    <tr>
+      <td class="w-100 pt0 pl24-px pr24-px pb40-px f7 color-success-500 fw7">
+      {{#eq state "order-completed"}}Aguardando aprovação{{/eq}}
+      {{#eq state "Shipping"}}{{state}}{{/eq}}
+      {{#eq state "Discounts"}}{{state}}{{/eq}}
+      {{#eq state "Tax"}}{{state}}{{/eq}}
+      </td>
+    </tr>
+  {{/if}}
+{{/each}}

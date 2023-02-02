@@ -158,12 +158,12 @@
 				{
 					"id": "Discounts",
 					"name": "Total dos Descontos",
-					"value": 0
+					"value": 3000
 				},
 				{
 					"id": "Shipping",
 					"name": "Total do Frete",
-					"value": 199
+					"value": 0
 				},
 				{
 					"id": "Tax",
