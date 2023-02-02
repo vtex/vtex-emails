@@ -8,9 +8,9 @@
           <div class="fw5">
             {{#compare ../selectedDeliveryChannel "!=" "pickup-in-point"}}
               {{#if ../deliveryWindow}}
-                <div class="f7 gray">((i18n.shipping.scheduled)) Agendada para</div>
+                <div class="fw7 color-success-500 pt3">((i18n.shipping.scheduled))</div>
               {{else}}
-                <div class="fw7 color-success-500 pt3">Agendada para</div>
+                <div class="fw7 color-success-500 pt3">((i18n.shipping.scheduled))</div>
               {{/if}}
             {{/compare}}
 
