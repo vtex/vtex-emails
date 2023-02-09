@@ -125,6 +125,18 @@ ul, ol {
 .f24-px{
 	font-size: $size-24px;
 }
+.f28-px{
+	font-size: $size-28px;
+}
+.lh21-px {
+	line-height: $line-height-21px-body;
+}
+.lh25-px {
+	line-height: $line-height-25px-small;
+}
+.lh34-px {
+	line-height: $line-height-34px-medium;
+}
 
 .color-success-500{
 	color: $color-success-500;
@@ -134,7 +146,7 @@ ul, ol {
 	color: $gray-scale-900;
 }
 .pt40-px{
-	padding-top: 2.5rem;
+	padding-top: $size-40px;
 }
 .pt8-px{
  padding-top: $size-8px;
@@ -146,7 +158,13 @@ ul, ol {
 	padding-top: $size-12px;
 }
 .pb12-px{
- padding-bottom: $size-12px;
+  padding-bottom: $size-12px;
+}
+.pb16-px{
+  padding-bottom: $size-16px;
+}
+.pt16-px {
+	padding-top: $size-16px
 }
 .pt24-px {
 	padding-top: $size-24px;
@@ -160,6 +178,9 @@ ul, ol {
 .pb24-px {
 	padding-bottom: $size-24px;
 }
+.pb32-px {
+	padding-bottom: $size-32px;
+}
 .mt28-px {
 	margin-top: $size-28px;
 }
@@ -172,6 +193,10 @@ ul, ol {
 
 .mr24-px {
 	margin-right: $size-24px;
+}
+
+.mb20-px {
+	margin-bottom: $size-20px;
 }
 .pt48-px {
 	padding-top: 3rem;
