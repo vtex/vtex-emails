@@ -4,9 +4,9 @@
   {{#each ../../shippingData.availableAddresses}}
     {{#eq ../addressId AddressId}}
       <strong class="color-success-500 pb2">{{receiverName}}</strong>
-      <br/>{{street}}, {{number}}{{#if complement}} - {{complement}}{{/if}}
-      <br />{{neighborhood}} - {{city}} - {{state}}
-      <br />((i18n.shipping.postalCode)) {{postalCode}}
+      <br/><span class="gray-scale-900">{{street}}, {{number}}{{#if complement}} - {{complement}}{{/if}}</span>
+      <br /><span class="gray-scale-900">{{neighborhood}} - {{city}} - {{state}}</span>
+      <br /><span class="gray-scale-900">((i18n.shipping.postalCode)) {{postalCode}}</span>
     {{/eq}}
   {{/each}}
 {{/if}}

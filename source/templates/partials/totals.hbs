@@ -5,13 +5,11 @@
       <tr>
         <td class="pv1">
           {{#eq id "Items"}}((i18n.common.items)){{/eq}}
-          {{#eq id "Shipping"}}((i18n.common.shipping)){{/eq}}
           {{#eq id "Discounts"}}<span class="color-success-500 fw4">((i18n.common.discounts))</span>{{/eq}}
           {{#eq id "Tax"}}((i18n.common.taxes)){{/eq}}
         </td>
          {{#eq id "Discounts"}}<span class="color-success-500 fw7"><td class="pv1 tr color-success-500"> - ((i18n.common.currency)) {{formatCurrency value}}</td></span>{{/eq}}
         {{#eq id "Items"}}<td class="pv1 tr">((i18n.common.currency)) {{formatCurrency value}}</td>{{/eq}}
-        {{#eq id "Shipping"}}<td class="pv1 tr">((i18n.common.currency)) {{formatCurrency value}}</td>{{/eq}}
         {{#eq id "Tax"}}<td class="pv1 tr">((i18n.common.currency)) {{formatCurrency value}}</td>{{/eq}}
         
       </tr>
