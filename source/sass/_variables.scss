@@ -9,8 +9,6 @@ $color-dark: #2c3e50 !default;
 $color-red: #e74c3c !default;
 $color-green: #2ecc71 !default;
 $color-blue: #3498db !default;
-$color-success-500: #238662;
-$gray-scale-900: #333333;
 
 // Grid
 $color-container-bg: $color-white !default;
@@ -19,37 +17,61 @@ $color-container-bg: $color-white !default;
 // General
 $email-bg-color: #f1f1f1 !default;
 
-// Font sizes
-$font-size-base: 14px !default;
-$font-size-h1: 50px !default;
-$font-size-h2: 24px !default;
-$font-size-h3: 20px !default;
-$font-size-h4: 16px !default;
-$font-size-h5: 16px !default;
-$font-size-h6: 12px !default;
+/* PicPay variables */
+$color-base-primary-900: #05271B;
+$color-base-primary-800: #13563E;
+$color-base-primary-500: #238662;
+$color-base-primary-200: #9ADBC2;
+$color-base-primary-50: #E1FAF0;
+$color-base-primary-opacity-10: rgba(154, 219, 194, 0.102);
+$color-base-primary-opacity-25: rgba(154, 219, 194, 0.251);
 
-// Line heights
-$line-height-base: 20px !default;
-$line-height-h1: 58px !default;
-$line-height-h2: 24px !default;
-$line-height-h3: 36px !default;
-$line-height-h4: 29px !default;
-$line-height-h5: 23px !default;
-$line-height-h6: 20px !default;
+$color-base-secondary-900: #123F29;
+$color-base-secondary-800: #116C40;
+$color-base-secondary-500: #11C76F !default;
+$color-base-secondary-200: #88E3B7;
+$color-base-secondary-50: #E7F9F1;
 
-/* ----- Objects ----- */
-// Grid
-$grid-columns: 12 !default;
-$grid-container-width: 600px !default;
-$grid-column-width: $grid-container-width / $grid-columns !default;
-$grid-gutter: 12px !default;
+$dark: #000000;
+$dark-elevate-00: #121212;
+$dark-elevate-01: #1B1B1B;
+$dark-elevate-02: #252525;
+$dark-elevate-03: #2E2E2E;
 
-/* ----- Components ----- */
-// Buttons
-$button-bg-color: #bbbbbb !default;
+$light: #FFFFFF;
+$gray-scale-50: #F5F5F5;
+$gray-scale-200: #EBEBEB;
+$gray-scale-500: #898989;
+$gray-scale-800: #717171;
+$gray-scale-900: #333333;
 
-/* ----- RWD breakpoints ----- */
-$breakpoint-mobile: $grid-container-width !default;
+$color-neutral-900: #0F1D46;
+$color-neutral-800: #2A4195;
+$color-neutral-500: #486DE8;
+$color-neutral-200: #B0C2FF;
+$color-neutral-50: #EFF2FF;
+
+$color-critical-900: #440D0C;
+$color-critical-800: #941817;
+$color-critical-500: #E62320;
+$color-critical-200: #FFABAA;
+$color-critical-50: #FFE9E9;
+
+$color-warning-900: #3D1F04;
+$color-warning-800: #CE7A03;
+$color-warning-500: #F7B228;
+$color-warning-200: #FCDF8B;
+$color-warning-50: #FFF1D9;
+
+$color-success-900: #05271B;
+$color-success-800: #13563E;
+$color-success-500: #238662;
+$color-success-200: #9ADBC2;
+$color-success-50: #E1FAF0;
+
+$color-shadow-primary-200: $color-base-primary-opacity-25;
+$color-shadow-dark-100: rgba(0, 0, 0, 0.04);
+$color-shadow-dark-200: rgba(0, 0, 0, 0.06);
 
 $size-4px: 0.25rem !default;
 $size-8px: 0.5rem !default;
@@ -82,3 +104,61 @@ $size-border-00: 0;
 $size-border-01: 0.063rem;
 $size-border-02: 0.125rem;
 $size-border-03: 0.188rem;
+
+$background-hover-primary: linear-gradient(0deg, $color-base-primary-opacity-10, $color-base-primary-opacity-10), $color-base-primary-500;
+$background-hover-secondary: linear-gradient(0deg, $color-base-primary-opacity-10,$color-base-primary-opacity-10), $gray-scale-50;
+$background-hover-tertiary: $color-base-primary-opacity-10;
+
+$background-press-primary: linear-gradient(0deg, $color-base-primary-opacity-25, $color-base-primary-opacity-25), $color-base-primary-500;
+$background-press-secondary: linear-gradient(0deg, $color-base-primary-opacity-25,$color-base-primary-opacity-25), $gray-scale-50;
+$background-press-tertiary: $color-base-primary-opacity-25;
+
+$border-focus: $size-border-02 solid $color-neutral-500;
+
+$background-disabled: $gray-scale-200;
+
+$line-height-41px-large: 2.563rem;
+$line-height-34px-medium: 2.125rem;
+$line-height-25px-small: 1.563rem;
+$line-height-21px-body: 1.313rem;
+$line-height-18px-note: 1.125rem;
+$line-height-label: $size-16px;
+
+$border-radius-0: 0;
+$border-radius-50: $size-4px;
+$border-radius-100: $size-8px;
+$border-radius-150: $size-12px;
+$border-radius-200: $size-16px;
+$border-radius-full: 100%;
+
+// Font sizes
+$font-size-base: 14px !default;
+$font-size-h1: 50px !default;
+$font-size-h2: 24px !default;
+$font-size-h3: 20px !default;
+$font-size-h4: 16px !default;
+$font-size-h5: 16px !default;
+$font-size-h6: 12px !default;
+
+// Line heights
+$line-height-base: 20px !default;
+$line-height-h1: 58px !default;
+$line-height-h2: 24px !default;
+$line-height-h3: 36px !default;
+$line-height-h4: 29px !default;
+$line-height-h5: 23px !default;
+$line-height-h6: 20px !default;
+
+/* ----- Objects ----- */
+// Grid
+$grid-columns: 12 !default;
+$grid-container-width: 600px !default;
+$grid-column-width: $grid-container-width / $grid-columns !default;
+$grid-gutter: 12px !default;
+
+/* ----- Components ----- */
+// Buttons
+$button-bg-color: #bbbbbb !default;
+
+/* ----- RWD breakpoints ----- */
+$breakpoint-mobile: $grid-container-width !default;
