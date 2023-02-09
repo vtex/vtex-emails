@@ -1,3 +1,58 @@
 {
-  
+  "email": "email@teste.com",
+  "items": [
+    {
+      "id": "880010",
+      "productName": "adidas Men's Performance Polo - Blast Blue S",
+      "image": "http://lojapicpayb2b.vteximg.com.br/arquivos/ids/155459-55-55/-cards-brand.jpg?v=638072282147470000",
+      "sellingPrice": "455.00",
+      "quantity": "1",
+      "link": "adidas-mens-performance-polo-blast-blue",
+      "availabilityQuantity": 1000000
+    },
+    {
+      "id": "880010",
+      "productName": "Outro produto de teste - texto",
+      "image": "http://lojapicpayb2b.vteximg.com.br/arquivos/category-gallery-image-square.jpg",
+      "sellingPrice": "455.00",
+      "quantity": "1",
+      "link": "adidas-mens-performance-polo-blast-blue",
+      "availabilityQuantity": 1000000
+    }
+  ],
+  "addToCartURL": "add?sku=121&qty=1&seller=1&sc=1",
+  "additionalFields": {
+    "firstName": "John"
+  },
+  "_accountInfo": {
+    "MainAccountName": "MainAccountName",
+    "AccountName": "AccountName",
+    "Cnpj": null,
+    "Id": "278fe15c-f0eb-4c30-81a2-f42b29113f1a",
+    "AppId": null,
+    "IsActive": true,
+    "IsOperating": false,
+    "CreationDate": "2022-06-21T19:58:01.3387095Z",
+    "OperationDate": null,
+    "CompanyName": "Companhia Brasileira de Tecnologia para ecommerce",
+    "TradingName": "PicPay",
+    "City": null,
+    "Complement": null,
+    "Country": null,
+    "State": null,
+    "Address": null,
+    "District": null,
+    "Number": null,
+    "PostalCode": null,
+    "Licenses": [
+      7
+    ],
+    "ParentAccountId": null,
+    "ParentAccountName": null,
+    "InactivationDate": null,
+    "Platform": "vtex",
+    "Privacy": null,
+    "HasPiiRestriction": false,
+    "Infra": null
+  }
 }
