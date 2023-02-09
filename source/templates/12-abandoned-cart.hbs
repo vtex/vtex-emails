@@ -14,52 +14,53 @@
           <!-- Header -->
           <!-- partial:partials/header.hbs --><!-- partial -->
 
+          <!-- Intro message -->
+          <!-- partial:partials/messages/intro-abandoned-cart.hbs --><!-- partial -->
+
+          <!-- Order info -->
           <tr>
-            <td class="w-100 pl24-px pr24-px pt32-px">
-              <p class="mt0 f5 fw7 color-success-500">
-                Você gostou destes itens, agora vamos levá-lo para seu estabelecimento!
-              </p>
-              <p class="mt0 fw7 mt28-px gray-scale-900">
-                Olá, John! 
-              </p>
-              <p class="mt0 fw4 gray-scale-900">
-                Tudo bem? Esperamos que sim!
-              </p>
-              <p class="mt0 fw4 gray-scale-900">
-                Viemos te avisar que os itens que você guardou para depois estão te esperando no carrinho de compras!
-              </p>
-
-            </td>
-          </tr>
-
-          <tr>
-            <td class="w-100 pl24-px pr24-px pb40-px f7 gray-scale-900">
-              <p class="mt0">
-                <span class="fw7">Importante:</span> Seu pedido será confirmado pela loja. A confirmação não garante o
-                recebimento de todos os
-                itens.
-                Consulte os
-                prazos de aprovação clicando aqui.
-              </p>
-
-              <p>
-                Todos os pedidos estão sujeitos à confirmação de disponibilidade e estoque. Em caso de divergência,
-                entraremos em
-                contato através desse email informado em seu cadastro.
-              </p>
-              <p>
-                Caso a entrega apresente divergências como embalagem aberta ou avariada, falta de acessórios ou produto
-                em
-                desacordo
-                com
-                o solicitado, recuse imediatamente e contate nossa Central de Atendimento.
-              </p>
-              <p>
-                <span class="fw7">Atenciosamente,</span><br>
-                Equipe PICPAY INSTITUICAO DE PAGAMENTO SA - BR
+            <td class="w-100 pl24-px pr24-px pt16-px pb16-px">
+              <p class="mv0 fw7 f4 lh25-px gray-scale-900">
+                Itens do carrinho
               </p>
             </td>
           </tr>
+          <tr>
+            <td class="w-100 pl24-px pr24-px pb32-px gray-scale-900">
+              <div class="container-products border-gray-200 pv3 ph3">
+                {{#each items}}
+                  <div class="products">
+                    <img class="product-image" src="{{image}}" alt="Imagem do produto">
+                    <div class="product-infos">
+                      <p class="product-info-name">
+                        {{productName}}
+                      </p>
+                      <p class="product-info-quantity">
+                        {{quantity}} unidade(s).
+                      </p>
+                      <p class="product-info-price">
+                        {{#if sellingPrice}}
+                        R${{formatCurrency sellingPrice}}
+                        {{else}}
+                        Grátis
+                        {{/if}}
+                      </p>
+                    </div>
+                  </div>
+                {{/each}}
+              <div/>
+            </td>
+          </tr>
+          <tr>
+            <td class="container-button" align="center" valign="center">
+              <a href="http://lojapicpayb2b.myvtex.com/checkout/#/cart" class="btn btn-green" target="_blank">
+                <span>Voltar para o meu carrinho</span>
+              </a>
+            </td>
+          </tr>
+          
+          <!-- partial:partials/messages/notice.hbs --><!-- partial -->
+          
           <!-- partial:partials/footer.hbs --><!-- partial -->
         </table>
       </td>
