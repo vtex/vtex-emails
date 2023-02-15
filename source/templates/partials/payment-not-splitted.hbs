@@ -1,0 +1,12 @@
+{{#compare split "!=" true}}
+<tr>
+    <td class="w-100 ph4-ns pv4 bt b--light-gray">
+        <div>3</div>
+        <h3 class="ma0">((i18n.payment.title))</h3>
+        {{#each orders.0.paymentData.transactions}}
+        <!-- partial:partials/payment.hbs --><!-- partial -->
+        <div class="dib mt2 pv1 ph2 bg-moon-gray f6">((i18n.payment.pending))</div>
+        {{/each}}
+    </td>
+</tr>
+{{/compare}}

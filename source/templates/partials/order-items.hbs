@@ -1,16 +1,17 @@
 <!-- for each item in package -->
+<!-- partial:items.hbs --><!-- partial -->
 {{#each items}}
   <!-- print SLA info just one time at the top -->
   {{#compare @index '==' 0}}
     <!-- compare order's items to package items -->
     {{#each ../../../../items}}
       {{#eq id ../itemId}}
-          <div class="fw5">
+          <div class="bg-light-gray ph3 pv2 mw5-5 mv3 fw5">
             {{#compare ../selectedDeliveryChannel "!=" "pickup-in-point"}}
               {{#if ../deliveryWindow}}
-                <div class="fw7 color-success-500 pt3">((i18n.shipping.scheduled))</div>
+                <div class="f7 gray">((i18n.shipping.scheduled))</div>
               {{else}}
-                <div class="fw7 color-success-500 pt3">((i18n.shipping.scheduled))</div>
+                <div class="f7 gray">{{../selectedSla}}</div>
               {{/if}}
             {{/compare}}
 
@@ -31,3 +32,4 @@
   {{/compare}}
   <!-- back to items list -->
 {{/each}}
+

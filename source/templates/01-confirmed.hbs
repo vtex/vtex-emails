@@ -1,101 +1,123 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
-  <!-- partial:partials/html-head.hbs --><!-- partial -->
-	<body>
-		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-				<td align="center" valign="top">
-					<table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
+<!-- partial:partials/html-head.hbs --><!-- partial -->
 
-            <!-- Header -->
-            <tr>
-              <td class="w-100 ph4-ns pb4 bb b--light-gray tc">
-                <!-- partial:partials/logo.hbs --><!-- partial -->
+<body>
+  <table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" valign="top">
+        <table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0"
+          cellspacing="0">
 
-                <h1>((i18n.order.title))</h1>
-              </td>
-            </tr>
+          <!-- Header -->
+          <!-- partial:partials/header.hbs --><!-- partial -->
 
-            <!-- Intro message -->
-            <!-- partial:partials/messages/intro.hbs --><!-- partial -->
+          <!-- Intro message -->
 
-            <!-- Shipping Summary -->
-            <tr>
-              <td class="w-100 ph4-ns pv4 bt bb b--light-gray bw3">
-                <h3 class="mt0">((i18n.shipping.summaryTitle))</h3>
-                {{#each orders}}
-                  <!-- partial:partials/shipping-summary.hbs --><!-- partial -->
-                {{/each}}
-              </td>
-            </tr>
+          <!-- partial:partials/messages/intro.hbs --><!-- partial -->
 
-            <!-- Payment - not splitted -->
-            {{#compare split "!=" true}}
-            <tr>
-              <td class="w-100 ph4-ns pv4 bt b--light-gray">
-                <h3 class="ma0">((i18n.payment.title))</h3>
-                {{#each orders.0.paymentData.transactions}}
-                  <!-- partial:partials/payment.hbs --><!-- partial -->
-                  <div class="dib mt2 pv1 ph2 bg-moon-gray f6">((i18n.payment.pending))</div>
-                {{/each}}
-              </td>
-            </tr>
-            {{/compare}}
-
-            <!-- Order info -->
-            {{#each orders}}
-						<tr>
-							<td class="w-100 ph4-ns pv4 bt b--light-gray">
-								<h2>((i18n.common.order)) <span class="fw5">#{{orderId}}</span></h2>
-                <p class="mt1 mb2 silver">((i18n.package.seller)) {{sellers.0.name}}</p>
-
-                <!-- Payment - splitted -->
-                {{#compare split "==" true}}
-                  <div class="fl w-100 w-50-ns pb3 v-top">
-                    <h3>((i18n.payment.title))</h3>
-                    {{#each paymentData.transactions}}
-                    <!-- partial:partials/payment.hbs --><!-- partial -->
-                    <div class="dib mt2 pv1 ph2 bg-moon-gray f6">((i18n.payment.pending))</div>
-                    {{/each}}
-                  </div>
-                {{/compare}}
-
-                <!-- partial:partials/totals.hbs --><!-- partial -->
+          <!-- Order info -->
+          <tr>
+            <td class="w-100 pl24-px pb3 fw7 f4 gray-scale-900">
+              <div>Resumo do pedido</div>
+            </td>
+          </tr>
+          {{#each orders}}
+          <tr>
+            <td class="w-100 pl24-px pr24-px">
+              <div class="border-gray-200 pv3 ph3 mb36-px">
+                <div class="color-success-500 f5 fw7">((i18n.common.order)) <span class="fw5">#{{orderId}}</span></div>
+                <div class="gray-scale-900 pb2">((i18n.package.seller)) <span class="fw7">{{sellers.0.name}}</span>
+                </div>
 
                 {{#richShippingData shippingData}}
-                  {{#group logisticsInfo by="addessId"}}
-                    <div class="cb fn pt3">
+                {{#group logisticsInfo by="addessId"}}
+                <div class="cb fn pt3">
+                  <!-- Packages -->
+                  {{#group items by="packageId"}}
+                  <!-- partial:partials/items.hbs --><!-- partial -->
+                  {{#compare item.length '>' 1}}
+                  <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}} </h3>
+                  {{/compare}}
 
-                      <!-- Address info -->
-                      <!-- partial:partials/address-delivery-title.hbs --><!-- partial -->
-                      <!-- partial:partials/address-pickup-title.hbs --><!-- partial -->
-
-                      <!-- Packages -->
-                      {{#group items by="packageId"}}
-                        {{#compare item.length '>' 1}}
-                          <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}}</h3>
-                        {{/compare}}
-
-                        <!-- partial:partials/package.hbs --><!-- partial -->
-                      {{/group}}
-                    </div>
                   {{/group}}
+                </div>
+                {{/group}}
                 {{/richShippingData}}
-							</td>
-						</tr>
-            {{/each}}
+                <!-- partial:partials/totals.hbs --><!-- partial -->
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="w-100 pl24-px pr24-px pb40-px f7">
+              {{#richShippingData shippingData}}
+              {{#group logisticsInfo by="addessId"}}
+              <div class="pb3 f4 fw7 gray-scale-900">
+                Endereco de entrega
+              </div>
+              <div>
+                <!-- Address info -->
+                <!-- partial:partials/address-delivery-no-title.hbs --><!-- partial -->
+                <!-- partial:partials/address-pickup-no-title.hbs --><!-- partial -->
+              </div>
+              <div>
+                {{#group items by="packageId"}}
+                {{#compare items.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
+                <!-- partial:partials/items.hbs --><!-- partial -->
+                {{else}}
+                <!-- partial:partials/package.hbs --><!-- partial -->
+                {{/compare}}
+                {{/group}}
+              </div>
+              {{/group}}
+              {{/richShippingData}}
+            </td>
+          </tr>
+          {{#each paymentData.transactions}}
+          <tr>
+            <td class="w-100 pl24-px pr24-px pb2 f7">
+              <div class="f4 gray-scale-900 fw7 pb3">Forma de pagamento</div>
+              <!-- partial:partials/payment.hbs --><!-- partial -->
+            </td>
+          </tr>
+          {{/each}}
+          {{/each}}
+          <!-- partial:partials/state-payment.hbs --><!-- partial -->
+          <tr>
+            <td class="w-100 pl24-px pr24-px pb40-px f7 gray-scale-900">
+              <p class="mt0">
+                <span class="fw7">Importante:</span> Seu pedido será confirmado pela loja. A confirmação não garante o
+                recebimento de todos os
+                itens.
+                Consulte os
+                prazos de aprovação clicando aqui.
+              </p>
 
-            <tr>
-              <td class="ph4-ns pv3 bt b--light-gray">
-                <p>
-                  ((i18n.shipping.estimateMessage))
-                </p>
-                <!-- partial:partials/messages/regards.hbs --><!-- partial -->
-              </td>
-            </tr>
-					</table>
-				</td>
-			</tr>
-		</table>
-	</body>
+              <p>
+                Todos os pedidos estão sujeitos à confirmação de disponibilidade e estoque. Em caso de divergência,
+                entraremos em
+                contato através desse email informado em seu cadastro.
+              </p>
+              <p>
+                Caso a entrega apresente divergências como embalagem aberta ou avariada, falta de acessórios ou produto
+                em
+                desacordo
+                com
+                o solicitado, recuse imediatamente e contate nossa Central de Atendimento.
+              </p>
+              <p>
+                <span class="fw7">Atenciosamente,</span>
+                Equipe PICPAY INSTITUICAO DE PAGAMENTO SA - BR
+              </p>
+            </td>
+          </tr>
+          <!-- partial:partials/footer.hbs --><!-- partial -->
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
 </html>

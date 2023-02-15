@@ -16,7 +16,7 @@ td {
 body,
 table,
 td {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; /* 2 */
+	font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; /* 2 */
 }
 
 /* ----- Headings ----- */
@@ -101,4 +101,81 @@ ul, ol {
 
 .fw5 {
   font-weight: 500;
+}
+
+.ptb-1-5{
+	padding-top: $size-24px;
+	padding-bottom: $size-24px;
+}
+
+.bg-color-picpay{
+	background-color: $color-success-500;
+}
+
+.bg-color-primary-700{
+	background-color: #136C4C;
+}
+.color-gray-dark{
+	color: #494949;
+}
+.f24-px{
+	font-size: $size-24px;
+}
+
+.color-success-500{
+	color: $color-success-500;
+}
+
+.gray-scale-900{
+	color: $gray-scale-900;
+}
+.pt40-px{
+	padding-top: 2.5rem;
+}
+.pt8-px{
+ padding-top: $size-8px;
+}
+.pb8-px {
+	padding-bottom: $size-8px;
+}
+.pt12-px {
+	padding-top: $size-12px;
+}
+.pb12-px{
+ padding-bottom: $size-12px;
+}
+.pt24-px {
+	padding-top: $size-24px;
+}
+.pl24-px {
+	padding-left: $size-24px;
+}
+.pr24-px {
+	padding-right: $size-24px;
+}
+.pb24-px {
+	padding-bottom: $size-24px;
+}
+.mb36-px {
+	margin-bottom: 2.25rem;
+}
+.ml24-px {
+	margin-left: $size-24px;
+}
+
+.mr24-px {
+	margin-right: $size-24px;
+}
+.pt48-px {
+	padding-top: 3rem;
+}
+.pb48-px {
+	padding-bottom: 3rem;
+}
+.pb40-px{
+	padding-bottom: 2.5rem;
+}
+.border-gray-200{
+	border: 1px solid #EBEBEB;
+	border-radius: 12px;
 }

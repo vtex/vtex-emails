@@ -2,8 +2,8 @@
 
 {{#compare payments.length "==" 1}}
   {{#each payments}}
-  <div class="f4 lh-copy">
-    {{paymentSystemName}}
+  <div class="f6 gray-scale-900 fw4">
+    {{#eq paymentSystemName "Promissory"}}Boleto{{/eq}}
     {{#if lastDigits}} ((i18n.payment.lastDigits)) {{lastDigits}} {{/if}}
     <br />((i18n.common.currency)) {{formatCurrency value}}
     {{#eq installments 1}}
@@ -21,7 +21,7 @@
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   {{#each payments}}
   <tr>
-    <td class="f5 pv1 bb b--light-gray">
+    <td class="f6 gray-scale-900 fw4">
       {{paymentSystemName}}
       {{#if lastDigits}} ((i18n.payment.lastDigits)) {{lastDigits}} {{/if}}
       {{#eq installments 1}}
@@ -30,7 +30,7 @@
         ((i18n.payment.in)) {{installments}}x
       {{/eq}}
     </td>
-    <td class="f5 pv1 bb b--light-gray align-right">((i18n.common.currency)) {{formatCurrency value}}</td>
+    <td class="f6 gray-scale-900 fw4">((i18n.common.currency)) {{formatCurrency value}}</td>
   </tr>
   {{/each}}
 </table>
