@@ -3,57 +3,35 @@
  */
 
 /* ----- General ----- */
-.btn {
-	td {
-		text-align: center;
-		background-color: $button-bg-color;
-		padding-top: 15px;
-		padding-right: 35px;
-		padding-bottom: 15px;
-		padding-left: 35px;
-	}
 
-	a {
-		color: $color-white;
-		text-decoration: none;
-	}
-}
-
-/* ----- Variations ----- */
-.btn--full-width {
+.container-button {
+	display: block;
 	width: 100%;
+	margin-bottom: $size-32px;
 
-	td {
-		text-align: center;
+	.btn {
+		display: block;
+		margin: auto;
+		width: fit-content;
+		height: $size-48px;
+		padding: $size-4px $size-24px;
+		text-decoration: none;
+		border-radius: $border-radius-150;
+		
+		cursor: pointer;
+	
+		span {
+			font-weight: 700;
+			display: inline-block;
+			padding-top: $size-8px;
+			font-size: $size-16px;
+			line-height: $line-height-21px-body;
+			text-align: center;
+		}
 	}
-}
-
-.btn--rounded {
-	td {
-		border-radius: 50px;
-	}
-}
-
-.btn--green {
-	td {
-		background-color: $color-green;
-	}
-}
-
-.btn--red {
-	td {
-		background-color: $color-red;
-	}
-}
-
-.btn--blue {
-	td {
-		background-color: $color-blue;
-	}
-}
-
-.btn--dark {
-	td {
-		background-color: $color-dark;
+	
+	.btn-green {
+		background: $color-success-500;
+		color: $color-white;
 	}
 }

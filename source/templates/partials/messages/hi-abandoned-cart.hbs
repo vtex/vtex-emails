@@ -1,0 +1,7 @@
+<p class="mv0 pb12-px fw7 f5 lh25-px">
+  {{#if additionalFields}}
+    {{#compare additionalFields.firstName '!=' 'isAnonymous'}}
+      ((i18n.common.hi)), {{additionalFields.firstName}}!
+    {{/compare}}
+  {{/if}}
+</p>    

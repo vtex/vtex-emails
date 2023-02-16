@@ -1,0 +1,71 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
+<!-- partial:partials/html-head.hbs --><!-- partial -->
+
+<body>
+  <table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" valign="top">
+        <table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0"
+          cellspacing="0">
+
+          <!-- Header -->
+          <!-- partial:partials/header.hbs --><!-- partial -->
+
+          <!-- Intro message -->
+          <!-- partial:partials/messages/intro-abandoned-cart.hbs --><!-- partial -->
+
+          <!-- Order info -->
+          <tr>
+            <td class="w-100 pl24-px pr24-px pt16-px pb16-px">
+              <p class="mv0 fw7 f4 lh25-px gray-scale-900">
+                Itens do carrinho
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="w-100 pl24-px pr24-px pb32-px gray-scale-900">
+              <div class="container-products border-gray-200 pv3 ph3">
+                {{#each items}}
+                  <div class="products">
+                    <img class="product-image" src="{{image}}" alt="Imagem do produto">
+                    <div class="product-infos">
+                      <p class="product-info-name">
+                        {{productName}}
+                      </p>
+                      <p class="product-info-quantity">
+                        {{quantity}} unidade(s).
+                      </p>
+                      <p class="product-info-price">
+                        {{#if sellingPrice}}
+                        R${{formatCurrency sellingPrice}}
+                        {{else}}
+                        Grátis
+                        {{/if}}
+                      </p>
+                    </div>
+                  </div>
+                {{/each}}
+              <div/>
+            </td>
+          </tr>
+          <tr>
+            <td class="container-button" align="center" valign="center">
+              <a href="http://lojapicpayb2b.myvtex.com/checkout/#/cart" class="btn btn-green" target="_blank">
+                <span>Voltar para o meu carrinho</span>
+              </a>
+            </td>
+          </tr>
+          
+          <!-- partial:partials/messages/notice.hbs --><!-- partial -->
+          
+          <!-- partial:partials/footer.hbs --><!-- partial -->
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
